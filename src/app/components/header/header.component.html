@@ -1,38 +1,102 @@
-<body>
-	<nav class="navbar navbar-expand-lg fixed-top">
-		<div class="container">
-			<a href="#" class="nav-brand"><img src="./assets/img/logo.jpg" class="logo-brand" alt="logo"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><img src="#">
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="serviciosDropdown" aria-haspopup="true" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Servicios
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="serviciosDropdown">
-              <li><a class="dropdown-item" href="#servicio1">Residencial</a></li>
-              <li><a class="dropdown-item" href="#servicio2">Emplesarial</a></li>
-              <li><a class="dropdown-item" href="#servicio3">Tratamientos</a></li>
-            </ul>
+<!-- PRIMER HEADER -->
+<header class="site-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-12 d-flex flex-wrap">
+        <p class="d-flex me-4 mb-0">
+          <i class="bi-geo-alt me-2"></i>
+          Ecuador - Guayaquil
+        </p>
+
+        <p class="d-flex mb-0">
+          <i class="bi-envelope me-2"></i>
+
+          <a href="mailto:info@company.com">
+            info@ecovitali.net
+          </a>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+        <ul class="social-icon">
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-twitter"></a>
           </li>
-          <li class="nav-item">
-            <a class="scroll nav-link" href="#quienes somos">Quienes somos</a>
+
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-facebook"></a>
           </li>
-					<li class="nav-item">
-						<a class="scroll nav-link" href="#servicios">Servicios</a>
-					</li>
-					<li class="nav-item">
-						<a class="scroll nav-link" href="#procesos">Nuestros Procesos</a>
-					</li>
-					<li class="nav-item">
-            <a class="scroll nav-link" href="#contacto">Contactanos</a>
-					</li>
-          <li class="nav-item">
-            <a class="scroll nav-link" href="#procesos">Noticias</a>
+
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-instagram"></a>
           </li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-youtube"></a>
+          </li>
+
+          <li class="social-icon-item">
+            <a href="#" class="social-icon-link bi-whatsapp"></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- 2DO HEADER -->
+<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="./assets/img/logo.jpg" class="logo img-fluid" alt="Ecovitali">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" href="#section_1" id="navbarLightDropdownMenuLink"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+            <li><a class="dropdown-item" href="residencial.html">Residencial</a></li>
+            <li><a class="dropdown-item" href="empresarial.html">Emplesarial</a></li>
+            <li><a class="dropdown-item" href="tratamientos.html">Tratamientos</a></li>
+            <li><a class="dropdown-item" href="bfundamental.html">Base Fundamental</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" href="#section_2" id="navbarLightDropdownMenuLink"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+            <li><a class="dropdown-item" href="M-Empresarial.html">Metodología Empresarial</a></li>
+            <li><a class="dropdown-item" href="MIP.html">Metodología Empresarial - MIP</a></li>
+            <li><a class="dropdown-item" href="M.I.P.html">Mecanismos y Medidas - M.I.P</a></li>
+            <li><a class="dropdown-item" href="A.I.M.html">Metodología Empresarial - AIM</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="nosotros.html">Sobre Nosotros</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="certificaciones.html">Certificaciones</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link click-scroll" href="certificaciones.html">Blog</a>
+        </li>
+
+        <li class="nav-item ms-3">
+          <a class="nav-link custom-btn custom-border-btn btn" href="contacto.html">Contáctanos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

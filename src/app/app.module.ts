@@ -13,6 +13,7 @@ import { ProcesosComponent } from './components/procesos/procesos.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     ProcesosComponent,
     NosotrosComponent,
     NoticiasComponent,
-    ContactoComponent
+    ContactoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
