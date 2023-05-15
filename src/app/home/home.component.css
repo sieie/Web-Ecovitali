@@ -1,33 +1,44 @@
-.text
-{
-height:470px;
-width:540px;
+/*---------------------------------------
+CUSTOM BUTTON
+-----------------------------------------*/
+.custom-btn {
+  background: var(--secondary-color);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-weight-normal);
+  line-height: normal;
+  padding: 15px 25px;
+}
+
+
+.custom-btn:hover {
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.custom-border-btn {
+  background: var(--primary-color);
+  border-color: transparent;
+  color: var(--white-color);
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
+.custom-border-btn:hover {
+  background: var(--white-color);
+  border: 2px solid var(--custom-btn-bg-color);
+  color: var(--site-footer-bg-color);
+}
+
+.certificados {
+height:200px;
+width:733px;
 padding:0px;
 display:flex;
 flex-direction:column;
-gap:16px;
-}
-.expertos-plagas
-{
-color:#18191f;
-text-align:left;
-vertical-align:text-top;
-font-size:72px;
-font-family:Inter;
-line-height:98px;
-border-style:hidden;
-outline:none;
-width:540px;
-}
-.nuestros-tecnicos
-{
-color:#18191f;
-text-align:left;
-vertical-align:text-top;
-font-size:18px;
-font-family:Inter;
-line-height:32px;
-border-style:hidden;
-outline:none;
-width:540px;
+left:657px;
+top:62.5px;
+position:relative;
 }

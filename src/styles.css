@@ -301,16 +301,7 @@ object-fit: cover;
 /*---------------------------------------
 CUSTOM BUTTON
 -----------------------------------------*/
-.custom-btn {
-background: var(--secondary-color);
-border: 2px solid transparent;
-border-radius: var(--border-radius-large);
-color: var(--white-color);
-font-size: var(--btn-font-size);
-font-weight: var(--font-weight-normal);
-line-height: normal;
-padding: 15px 25px;
-}
+
 
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn {
 color: var(--custom-btn-bg-color);
@@ -329,12 +320,7 @@ border: 2px solid var(--custom-btn-bg-color);
 color: var(--primary-color);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
-.custom-border-btn:hover {
-background: var(--custom-btn-bg-hover-color);
-border-color: transparent;
-color: var(--white-color);
-}
+
 
 
 /*---------------------------------------
@@ -410,10 +396,6 @@ font-weight: var(--font-weight-medium);
 position: relative;
 padding-top: 10px;
 padding-bottom: 10px;
-}
-
-.dropdown-menu li:last-child .dropdown-item {
-padding-top: 0;
 }
 
 .dropdown-item.active,
@@ -1261,72 +1243,6 @@ background: var(--white-color);
 margin-bottom: 0;
 }
 
-
-/*---------------------------------------
-SITE FOOTER
------------------------------------------*/
-.site-footer {
-background-color: var(--site-footer-bg-color);
-padding-top: 70px;
-}
-
-.site-footer-bottom {
-background-color: var(--secondary-color);
-position: relative;
-z-index: 2;
-margin-top: 70px;
-padding-top: 25px;
-padding-bottom: 25px;
-}
-
-.site-footer-bottom a {
-color: var(--white-color);
-}
-
-.site-footer-bottom a:hover {
-color: #FF6;
-}
-
-.site-footer-link {
-color: var(--white-color);
-}
-
-.copyright-text {
-color: var(--section-bg-color);
-font-size: var(--copyright-font-size);
-margin-right: 30px;
-}
-
-.site-footer .custom-btn {
-font-size: var(--copyright-font-size);
-}
-
-.site-footer .custom-btn:hover {
-background: var(--primary-color);
-}
-
-
-/*---------------------------------------
-FOOTER MENU
------------------------------------------*/
-.footer-menu {
-margin: 0;
-padding: 0;
-}
-
-.footer-menu-item {
-list-style: none;
-display: block;
-}
-
-.footer-menu-link {
-font-size: var(--p-font-size);
-color: var(--white-color);
-display: inline-block;
-vertical-align: middle;
-margin-right: 10px;
-margin-bottom: 5px;
-}
 
 
 /*---------------------------------------
