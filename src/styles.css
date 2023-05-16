@@ -589,8 +589,8 @@ opacity: 1;
 background-color: var(--secondary-color);
 border-radius: var(--border-radius-large);
 background-size: 60% 60%;
-width: 80px;
-height: 80px;
+width: 0px;
+height: 0px;
 opacity: 0;
 transition: all 0.5s;
 }
@@ -1392,8 +1392,8 @@ h6 {
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   opacity: 1;
-  width: 60px;
-  height: 60px;
+  width: 0px;
+  height: 0px;
 }
 
 .news-detail-header-section {
@@ -1531,8 +1531,8 @@ h5 {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 45px;
-  height: 45px;
+  width: 0px;
+  height: 0px;
 }
 
 .volunteer-image {
