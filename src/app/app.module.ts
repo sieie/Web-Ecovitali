@@ -14,6 +14,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
+import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     NosotrosComponent,
     NoticiasComponent,
     ContactoComponent,
-    HomeComponent
+    HomeComponent,
+    CertificacionesComponent
   ],
   imports: [
     BrowserModule,
