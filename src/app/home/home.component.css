@@ -38,3 +38,68 @@ CUSTOM BUTTON
   width: 130px;
   height: 130px;
   }
+
+
+/* CSS DE LOS SECTORES */
+.icon-sector{
+  border-radius: 50%;
+  border: 4px solid green;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 5px green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sectores-btn{
+display: flex;
+color: var(--custom-btn-bg-color);
+margin-top: 0;
+padding: 15px 90px;
+}
+
+.sectores-btn:hover {
+background: var(--primary-color);
+color: var(--white-color);
+}
+
+.sectores-btn-border {
+background: transparent;
+border: 2px solid var(--custom-btn-bg-color);
+border-left: none;
+color: var(--primary-color);
+}
+
+.border-empresarial{
+  border: 2px solid var(--custom-btn-bg-color);
+}
+
+.activate{
+background: var(--primary-color);
+}
+
+
+/* .sectores-grid{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(2000px, 1fr));
+ grid-gap: 20px;
+}
+
+@media(max-width: 768px){
+  parent{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media(max-width: 480px){
+  parent{
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */

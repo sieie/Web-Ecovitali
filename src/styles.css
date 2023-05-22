@@ -75,6 +75,12 @@ body {
 background-color: var(--white-color);
 font-family: var(--body-font-family);
 }
+.space-top {
+  margin-top: 100px;
+}
+.space-bot{
+  margin-bottom: 200px;
+}
 
 
 /*---------------------------------------
@@ -1027,12 +1033,12 @@ width: 45px;
 height: 45px;
 }
 
-#testimonial-carousel .carousel-indicators .active,
+/* #testimonial-carousel .carousel-indicators .active,
 #testimonial-carousel .carousel-indicators .active .avatar-image {
 background: transparent;
 width: 50px;
 height: 50px;
-}
+} */
 
 
 /*---------------------------------------
