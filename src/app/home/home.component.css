@@ -41,25 +41,41 @@ CUSTOM BUTTON
 
 
 /* CSS DE LOS SECTORES */
-.icon-sector{
-  border-radius: 50%;
+
+.icon-sector {
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  background: rgba(217, 217, 217, 0.58);
   border: 4px solid green;
-  width: 80px;
-  height: 80px;
-  box-shadow: 0 0 5px green;
+  box-shadow: 0 0 20px green;
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
 }
 
-.icon-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.icon-sector:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.icon-sector:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+.icon-sector{
+
 }
 
 .sectores-btn{
-display: flex;
 color: var(--custom-btn-bg-color);
 margin-top: 0;
 padding: 15px 90px;
@@ -81,9 +97,12 @@ color: var(--primary-color);
   border: 2px solid var(--custom-btn-bg-color);
 }
 
-.activate{
-background: var(--primary-color);
-}
+
+
+
+
+
+
 
 
 /* .sectores-grid{
