@@ -10,7 +10,6 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { HeaderComponent } from './components/header/header.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch:'full' },
   { path: 'home', component:Component },
   { path: 'header', component: HeaderComponent},
   { path: 'tratamientos', component: TratamientosComponent},
@@ -20,6 +19,7 @@ const routes: Routes = [
   { path: 'noticias', component: NoticiasComponent},
   { path: 'nosotros', component: NosotrosComponent},
   { path: 'contacto', component: ContactoComponent},
+  { path: '', redirectTo: '/home', pathMatch:'full' },
 
 ];
 
