@@ -15,6 +15,10 @@ import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
+import { ResidencialComponent } from './components/residencial/residencial.component';
+import { EmpresarialComponent } from './components/empresarial/empresarial.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { CertificacionesComponent } from './components/certificaciones/certifica
     NoticiasComponent,
     ContactoComponent,
     HomeComponent,
-    CertificacionesComponent
+    CertificacionesComponent,
+    ServiciosComponent,
+    BaseFundamentalComponent,
+    ResidencialComponent,
+    EmpresarialComponent
   ],
   imports: [
     BrowserModule,

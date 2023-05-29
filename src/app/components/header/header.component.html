@@ -48,7 +48,7 @@
 
 <nav class="navbar navbar-expand-lg bg-light shadow-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" routerLink="home">
       <img src="./assets/img/logo.jpg" class="logo img-fluid" alt="Ecovitali">
     </a>
 
@@ -60,12 +60,24 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" href="#section_1" id="navbarLightDropdownMenuLink"
+          <a class="nav-link click-scroll dropdown-toggle" routerLink="servicios" id="navbarLightDropdownMenuLink"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
           <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item" href="residencial.html">Residencial</a></li>
-            <li><a class="dropdown-item" href="empresarial.html">Empresarial</a></li>
-            <li><a class="dropdown-item" href="bfundamental.html">Base Fundamental</a></li>
+            <li><a class="dropdown-item" routerLink="residencial">Residencial</a></li>
+            <li><a class="dropdown-item" routerLink="empresarial">Empresarial</a></li>
+            <li><a class="dropdown-item" routerLink="base-fundamental">Base Fundamental</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link click-scroll dropdown-toggle" href="#section_1" id="navbarLightDropdownMenuLink"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamientos</a>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+            <li><a class="dropdown-item" routerLink="residencial" href="residencial.html">Manejo Integral de Plagas</a></li>
+            <li><a class="dropdown-item" routerLink="desinsectacion">Desinsectación</a></li>
+            <li><a class="dropdown-item" routerLink="desratización">Desratización</a></li>
+            <li><a class="dropdown-item" routerLink="tratamiento-granos">Tratamiento de Granos</a></li>
+            <li><a class="dropdown-item" routerLink="tratamiento-termitas">Tratamiento de Termitas</a></li>
           </ul>
         </li>
 
@@ -92,7 +104,7 @@
         </li>
 
         <li class="nav-item ms-3">
-          <a class="nav-link custom-btn custom-border-btn btn" href="contacto.html">Contáctanos</a>
+          <a class="nav-link custom-btn custom-border-btn btn" href="#contacto">Contáctanos</a>
         </li>
       </ul>
     </div>
