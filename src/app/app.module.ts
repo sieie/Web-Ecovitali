@@ -19,6 +19,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
 import { ResidencialComponent } from './components/residencial/residencial.component';
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
+import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +39,14 @@ import { EmpresarialComponent } from './components/empresarial/empresarial.compo
     ServiciosComponent,
     BaseFundamentalComponent,
     ResidencialComponent,
-    EmpresarialComponent
+    EmpresarialComponent,
+    PreguntasFrecuentesComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

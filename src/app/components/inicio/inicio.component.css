@@ -1,0 +1,45 @@
+.header-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-img {
+  height: 60vh;
+}
+
+.icon-container {
+  height: 30vh;
+}
+
+
+
+.dark-mode .header-img {
+  background-image: url('/src/assets/img/website/Logo-Ecovitali-Blanco.png');
+}
+
+.light-mode .header-img {
+  background-image: url('/src/assets/img/website/Logo-Ecovitali-Gris.png');
+}
+
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+.dark-mode-button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* .dark-mode-button:hover {
+
+} */
+
+.svg-elements {
+  filter: invert(100%);
+}
