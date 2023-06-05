@@ -20,7 +20,6 @@
 --h6-font-size:                 14px;
 --p-font-size:                  16px;
 --btn-font-size:                18px;
---copyright-font-size:          18px;
 
 --border-radius-large:          100px;
 --border-radius-medium:         20px;
@@ -33,14 +32,30 @@
 }
 
 body {
+  --text-color: #000;
+  --bkg-color: #fff;
   transition: background-color 0.3s ease;
-  background-color: var(--white-color);
   font-family: var(--body-font-family);
+}
+
+/* MODO OSCURO */
+body.dark-mode {
+  --text-color: #fff;
+  background-color: #333;
+}
+
+
+.dark-mode .svg-elements img {
+  filter: invert(100%);
 }
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: var(--bkg-color);
 }
 
 
@@ -53,7 +68,7 @@ h3,
 h4,
 h5,
 h6 {
-color: var(--dark-color);
+color: var(--text-color);
 }
 
 h1,
@@ -97,6 +112,7 @@ font-size: var(--h6-font-size);
 
 p {
 font-size: var(--p-font-size);
+color: var(--text-color);
 font-weight: 500;
 }
 
@@ -1509,22 +1525,4 @@ h5 {
 .donate-form {
   padding: 25px;
 }
-}
-
-
-
-/* BOTON MODO OSCURO */
-
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-
-.dark-mode span h1 h2 h3 h4 h5  {
-  color: #fff;
-}
-
-.dark-mode .svg-elements img {
-  filter: invert(100%);
 }

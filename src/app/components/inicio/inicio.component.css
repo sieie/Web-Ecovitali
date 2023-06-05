@@ -12,18 +12,16 @@
 }
 
 .icon-container {
-  box-sizing: border-box;
   width: 180px;
   height: 180px;
   backdrop-filter: blur(6px);
   border-radius: 100%;
   font-weight: bolder;
-  color: var(--dark-color);
+  color: var(--text-color);
   transition: all 0.5s;
   text-decoration: none;
-  text-align: center;
-  justify-content: center;
   margin: 30px auto;
+  cursor: pointer;
 }
 
 .icon-container:hover {
@@ -49,7 +47,6 @@
 .dark-mode-button.active {
   color: #000;
   margin: 0 auto;
-  position: absolute;
 }
 
 .dark-mode .svg-elements img {
