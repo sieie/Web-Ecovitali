@@ -12,6 +12,7 @@
 }
 
 .icon-container {
+  box-sizing: border-box;
   width: 180px;
   height: 180px;
   backdrop-filter: blur(6px);
@@ -34,21 +35,7 @@
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-
-.dark-mode .header-img {
-  background-image: url('/src/assets/img/website/Logo-Ecovitali-Blanco.webp');
-}
-
-.light-mode .header-img {
-  background-image: url('/src/assets/img/website/Logo-Ecovitali-Gris.webp');
-}
-
-
-.dark-mode-button.active {
-  color: #000;
-  margin: 0 auto;
-}
-
-.dark-mode .svg-elements img {
-  filter: invert(100%);
+.svg-elements img {
+  width: 100%;
+  height: auto;
 }

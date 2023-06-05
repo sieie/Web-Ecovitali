@@ -45,10 +45,6 @@ body.dark-mode {
 }
 
 
-.dark-mode .svg-elements img {
-  filter: invert(100%);
-}
-
 * {
   margin: 0;
   padding: 0;

@@ -1,21 +1,3 @@
-/* MODO OSCURO */
-
-.dark-mode-button {
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  position: absolute;
-}
-
-
-.dark-mode .svg-elements img {
-  filter: invert(100%);
-}
-
-
-
 .navbar {
   background: var(--white-color);
   z-index: 9;

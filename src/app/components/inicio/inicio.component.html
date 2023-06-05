@@ -1,16 +1,14 @@
 <div class="header-container section">
   <div class="container">
-  <div class="dark-mode-button">
-    <div [ngClass]="{'svg-elements': darkMode}" (click)="toggleDarkMode()">
-      <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
+    <div class="dark-mode-button light-mode-button">
+      <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
+        <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
+      </div>
     </div>
-  </div>
     <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-        <div [ngClass]="{'dark-mode': darkMode, 'light-mode': !darkMode}" class="header-img">
-          <img
-            [src]="darkMode ? 'assets/img/website/Logo-Ecovitali-Blanco.webp' : 'assets/img/website/Logo-Ecovitali-Gris.webp'"
-            alt="Imagen" class="img-fluid">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center">
+        <div [ngClass]="{'darkMode': darkMode, 'light-mode': !darkMode}">
+          <img [src]="darkMode ? 'assets/img/website/Logo-Ecovitali-Blanco.webp' : 'assets/img/website/Logo-Ecovitali-Gris.webp'" alt="Imagen" class="img-fluid header-img m-0">
         </div>
       </div>
     </div>
@@ -18,9 +16,9 @@
     <div class="row justify-content-between text-center">
       <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
         <div class="icon-container">
-          <div [ngClass]="{'svg-elements': darkMode}">
+          <div [ngClass]="{'svg-elements': true, 'dark-mode': darkMode}">
             <a (click)="redirectToServicios()">
-              <img src="./assets/img/website/SVG-Icono-Division-07.svg" alt="">
+              <img [src]="darkMode ? 'assets/img/website/SVG-Icono-Division-11.svg' : '/assets/img/website/SVG-Icono-Division-07.svg'" alt="Control de Plagas">
             </a>
             <span class="fw-bold">Control de Plagas</span>
           </div>
@@ -30,7 +28,7 @@
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
             <a (click)="redirectToServicios()">
-              <img src="./assets/img/website/SVG-Icono-Division-08.svg" alt="">
+              <img [src]="darkMode ? '/assets/img/website/SVG-Icono-Division-12.svg' : '/assets/img/website/SVG-Icono-Division-08.svg'" alt="Limpieza y Desinfección">
             </a>
             <span class="fw-bold">Limpieza y Desinfección</span>
           </div>
@@ -40,7 +38,7 @@
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
             <a (click)="redirectToServicios()">
-              <img src="./assets/img/website/SVG-Icono-Division-09.svg" alt="">
+              <img [src]="darkMode ? '/assets/img/website/SVG-Icono-Division-13.svg' : '/assets/img/website/SVG-Icono-Division-09.svg'" alt="Prados y Jardines">
             </a>
             <span class="fw-bold">Prados y Jardines</span>
           </div>
@@ -50,10 +48,10 @@
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
             <a (click)="redirectToServicios()">
-              <img src="./assets/img/website/SVG-Icono-Division-10.svg" alt="">
+              <img [src]="darkMode ? '/assets/img/website/SVG-Icono-Division-14.svg' : '/assets/img/website/SVG-Icono-Division-10.svg'" alt="Sanitización">
             </a>
+            <span class="fw-bold">Sanitización</span>
           </div>
-          <span class="fw-bold">Sanitización</span>
         </div>
       </div>
     </div>
