@@ -1,56 +1,55 @@
-<div class="header-container">
+<div class="header-container section">
   <div class="container">
+  <div class="dark-mode-button">
+    <div [ngClass]="{'svg-elements': darkMode}" (click)="toggleDarkMode()">
+      <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
+    </div>
+  </div>
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-        <div class="dark-mode-button text-end">
-          <div [ngClass]="{'svg-elements': darkMode}" (click)="toggleDarkMode()">
-            <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
-          </div>
-        </div>
         <div [ngClass]="{'dark-mode': darkMode, 'light-mode': !darkMode}" class="header-img">
           <img
-            [src]="darkMode ? 'assets/img/website/Logo-Ecovitali-Blanco.png' : 'assets/img/website/Logo-Ecovitali-Gris.png'"
+            [src]="darkMode ? 'assets/img/website/Logo-Ecovitali-Blanco.webp' : 'assets/img/website/Logo-Ecovitali-Gris.webp'"
             alt="Imagen" class="img-fluid">
         </div>
-        <!-- BOTONES SVG -->
       </div>
     </div>
-    <div class="row">
-    <div class="d-flex justify-content-between text-center">
-      <div class="col-6 col-md-3 col-lg-3 col-xl-2 mt-3">
+    <!-- BOTONES SVG -->
+    <div class="row justify-content-between text-center">
+      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
-            <a href="">
+            <a (click)="redirectToServicios()" type="button">
               <img src="./assets/img/website/SVG-Icono-Division-07.svg" alt="">
               <span class="fw-bold">Procesadores de alimentos y bebidas</span>
             </a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-3 col-lg-3 col-xl-2 mt-3">
+      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
-            <a href="">
+            <a (click)="redirectToServicios()" type="button">
               <img src="./assets/img/website/SVG-Icono-Division-08.svg" alt="">
               <span class="fw-bold">Procesadores de alimentos y bebidas</span>
             </a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-3 col-lg-3 col-xl-2 mt-3">
+      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
-            <a href="">
+            <a (click)="redirectToServicios()" type="button">
               <img src="./assets/img/website/SVG-Icono-Division-09.svg" alt="">
               <span class="fw-bold">Procesadores de alimentos y bebidas</span>
             </a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-3 col-lg-3 col-xl-2 mt-3">
+      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
         <div class="icon-container">
           <div [ngClass]="{'svg-elements': darkMode}">
-            <a href="">
+            <a (click)="redirectToServicios()" type="button">
               <img src="./assets/img/website/SVG-Icono-Division-10.svg" alt="">
               <span class="fw-bold">Procesadores de alimentos y bebidas</span>
             </a>

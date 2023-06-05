@@ -1,4 +1,21 @@
-<!-- PRIMER HEADER -->
+<!-- BOTON DARKMODE -->
+<div class="dark-mode-button">
+  <div [ngClass]="{'svg-elements': darkMode}" (click)="toggleDarkMode()">
+    <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PRIMER HEADER
 <header class="site-header">
   <div class="container">
     <div class="row">
@@ -47,7 +64,7 @@
   </div>
 </header>
 
-<!-- NAVBAR -->
+ NAVBAR
 
 <nav class="navbar navbar-expand-lg bg-light shadow-lg sticky-top">
   <div class="container">
@@ -76,7 +93,8 @@
           <a class="nav-link click-scroll dropdown-toggle" href="#section_1" id="navbarLightDropdownMenuLink"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamientos</a>
           <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item" routerLink="residencial" href="residencial.html">Manejo Integral de Plagas</a></li>
+            <li><a class="dropdown-item" routerLink="residencial" href="residencial.html">Manejo Integral de Plagas</a>
+            </li>
             <li><a class="dropdown-item" routerLink="desinsectacion">Desinsectación</a></li>
             <li><a class="dropdown-item" routerLink="desratización">Desratización</a></li>
             <li><a class="dropdown-item" routerLink="tratamiento-granos">Tratamiento de Granos</a></li>
@@ -85,7 +103,8 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" href="#section_2" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
+          <a class="nav-link click-scroll dropdown-toggle" href="#section_2" id="navbarLightDropdownMenuLink"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
           <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
             <li><a class="dropdown-item" href="M-Empresarial.html">Metodología Empresarial</a></li>
             <li><a class="dropdown-item" href="MIP.html">Metodología Empresarial - MIP</a></li>
@@ -112,4 +131,4 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->

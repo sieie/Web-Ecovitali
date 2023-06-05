@@ -1,45 +1,57 @@
 .header-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .header-img {
-  height: 60vh;
+  height: 60%;
+  max-height: 60vh;
+  margin-bottom: auto;
+  position: relative;
 }
 
 .icon-container {
-  height: 30vh;
+  box-sizing: border-box;
+  width: 180px;
+  height: 180px;
+  backdrop-filter: blur(6px);
+  border-radius: 100%;
+  font-weight: bolder;
+  color: var(--dark-color);
+  transition: all 0.5s;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  margin: 30px auto;
 }
 
+.icon-container:hover {
+  color: var(--primary-color);
+  transition: all 0.3s;
+  transform: scale(1.05);
+}
+
+.icon-container:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
 
 
 .dark-mode .header-img {
-  background-image: url('/src/assets/img/website/Logo-Ecovitali-Blanco.png');
+  background-image: url('/src/assets/img/website/Logo-Ecovitali-Blanco.webp');
 }
 
 .light-mode .header-img {
-  background-image: url('/src/assets/img/website/Logo-Ecovitali-Gris.png');
+  background-image: url('/src/assets/img/website/Logo-Ecovitali-Gris.webp');
 }
 
-body.dark-mode {
-  background-color: #111;
-  color: #fff;
-}
 
-.dark-mode-button {
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.dark-mode-button.active {
+  color: #000;
+  margin: 0 auto;
   position: absolute;
 }
 
-/* .dark-mode-button:hover {
-
-} */
-
-.svg-elements {
+.dark-mode .svg-elements img {
   filter: invert(100%);
 }

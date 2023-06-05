@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-
-
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -8,23 +7,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 
-export class InicioComponent {
-  // MODO  OSCURO
-  darkMode: boolean = false;
+export class InicioComponent implements AfterViewInit {
+
+  constructor(private router: Router) { }
+//   // MODO  OSCURO
+//   toggleDarkMode() : void {
+//     document.body.classList.toggle('darkMode');
+//  }
+
+darkMode: boolean = false;
 
   toggleDarkMode() {
     this.darkMode = !this.darkMode;
     document.body.classList.toggle('dark-mode');
   }
 
-  // ANIMACION SVG CON GSAP
-  // const svgElement = document.querySelector('division7');
 
-  // const tl = gsap.timeline();
-  // tl.from(svgElement, { x: -100, opacity: 0, duration: 1, ease: 'power1.out' });
+  // REDIRECION AL COMPONENTE SERVICIO
+  redirectToServicios() {
+    this.router.navigate(['/servicios']);
+  }
 
-  // tl.play();
-
-
-
+  //ANIMACIÓN ENTRE COMPONENTES CON GSAP
+  ngAfterViewInit() {
+    gsap.from('.section', {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      stagger: 0.3
+    });
+  }
 }

@@ -1,0 +1,90 @@
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: "";
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+  left: -30px;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.cta-section::after {
+  content: "";
+  border: 20px solid var(--custom-btn-bg-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+
+
+/* BOTON DE CONTACTO CON ASESORES */
+
+.flip-boton {
+  background-color: transparent;
+  width: 400px;
+  height: 100px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.title2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: azure;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-boton-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.flip-boton:hover .flip-boton-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-boton-front, .flip-boton-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-boton-front {
+  background: linear-gradient(190deg, rgba(89,112,129,1) 0%, rgba(89,112,129,1) 35%, rgba(89,112,129,0.6474964985994398) 100%);
+}
+
+.flip-boton-back {
+  background: linear-gradient(190deg, rgba(91,193,172,1) 0%, rgba(91,193,172,1) 35%, rgba(91,193,172,0.5046393557422969) 100%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 1600px) {
+  .flip-boton {
+    min-height: inherit;
+  }
+}
