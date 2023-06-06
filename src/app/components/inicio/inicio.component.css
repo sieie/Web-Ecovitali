@@ -24,10 +24,6 @@
   cursor: pointer;
 }
 
-.dark-mode .svg-elements img{
-  width: 180px;
-  height: 180px;
-}
 
 .icon-container:hover {
   color: var(--primary-color);
@@ -40,6 +36,7 @@
 }
 
 .svg-elements img {
-  width: 100%;
+  width: 180px;
+
   height: auto;
 }
