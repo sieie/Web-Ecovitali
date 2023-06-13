@@ -12,8 +12,8 @@
 }
 
 .icon-container {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   backdrop-filter: blur(6px);
   border-radius: 100%;
   font-weight: bolder;
@@ -23,7 +23,6 @@
   margin: 30px auto;
   cursor: pointer;
 }
-
 
 .icon-container:hover {
   color: var(--primary-color);
@@ -35,8 +34,3 @@
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-.svg-elements img {
-  width: 180px;
-
-  height: auto;
-}
