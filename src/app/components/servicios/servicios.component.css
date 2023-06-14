@@ -7,7 +7,7 @@
   content: "";
   background-color: var(--primary-color);
   border-radius: 50%;
-  position: absolute;
+  position: sticky;
   top: -100px;
   left: -30px;
   margin: auto;
