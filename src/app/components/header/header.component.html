@@ -1,10 +1,9 @@
 <!-- BOTON DARKMODE -->
-<div class="dark-mode-button">
-  <div [ngClass]="{'svg-elements': darkMode}" (click)="toggleDarkMode()">
-    <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
+<div class="container">
+  <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
+    <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
   </div>
 </div>
-
 
 
 

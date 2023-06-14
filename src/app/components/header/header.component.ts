@@ -9,13 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent {
 
-    darkMode = false;
+  darkMode: boolean = false;
 
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
-      const body = document.body;
-      body.classList.toggle('dark-mode', this.darkMode);
+      document.body.classList.toggle('dark-mode');
     }
-
 
 }

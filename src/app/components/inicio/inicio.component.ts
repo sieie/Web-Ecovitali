@@ -15,13 +15,11 @@ export class InicioComponent implements AfterViewInit {
 //     document.body.classList.toggle('darkMode');
 //  }
 
-darkMode: boolean = false;
-
+  darkMode: boolean = false;
   toggleDarkMode() {
     this.darkMode = !this.darkMode;
     document.body.classList.toggle('dark-mode');
   }
-
 
   // REDIRECION AL COMPONENTE SERVICIO
   redirectToServicios() {

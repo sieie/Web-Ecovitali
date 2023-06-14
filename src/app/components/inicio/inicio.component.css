@@ -31,7 +31,6 @@
 }
 
 .icon-container:hover {
-  color: var(--primary-color);
   transition: all 0.3s;
   transform: scale(1.05);
 }
@@ -43,4 +42,9 @@
 .darkmode .svg-elements {
   width: 160px;
   height: 160px;
+}
+
+.darkMode-button {
+  width: 40px;
+  height: 40px;
 }

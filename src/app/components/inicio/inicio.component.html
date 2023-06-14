@@ -1,9 +1,7 @@
 <div class="header-container section">
   <div class="container">
-    <div class="dark-mode-button light-mode-button">
-      <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
-        <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'">
-      </div>
+    <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
+      <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
     </div>
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center">
