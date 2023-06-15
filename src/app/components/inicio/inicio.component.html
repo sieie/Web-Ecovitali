@@ -1,4 +1,4 @@
-<div class="header-container section">
+<div class="header-container">
   <div class="container pt-3">
     <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
       <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
@@ -10,7 +10,8 @@
         </div>
       </div>
     </div>
-    <div class="row justify-content-between text-center">
+    <!-- BOTONES NAVBAR -->
+    <div class="row justify-content-center text-center">
       <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
         <div class="icon-container" [ngClass]="{'svg-elements': darkMode}">
           <a (click)="redirectToServicios()">
@@ -42,6 +43,64 @@
           </a>
           <span class="fw-bold">Sanitización</span>
         </div>
+      </div>
+    </div>
+    <div class="container justify-content-center text-center">
+      <div [ngClass]="{'darkMode': darkMode}">
+        <img [src]="darkMode ? './assets/img/website/south-arrow-ligth.svg' : './assets/img/website/south-arrow-dark.svg'" class="custom-btn-section mt-5" (click)="redirectToServicios()">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container section-padding">
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+      <div class="section-medium">
+        <h1 class="fw-semibold text-center text-lg-start">Mejorando su <strong>Salud y Calidad de vida</strong></h1>
+        <p class="text-center text-lg-start">En Ecovitali no exageramos cuando decimos que su bienestar es nuestra prioridad</p>
+        <div class="text-center text-lg-start">
+          <button type="submit" routerLink="/contactenos" class="btn-look-more">
+            Ver más
+          </button>
+          <button type="submit" routerLink="/contactenos" class="btn-m-v">Misión y Visión</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-9 col-lg-6 col-xl-6 text-center mx-auto">
+      <div class="img-supervisores img-fluid float-xl-end" alt="Supervisores-Ecovitali"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container section-padding">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="btn-servicios">Puntos claves de</div>
+      <h2 class="fw-semibold">Nuestro Servicio</h2>
+      <p class="mb-5">Comprometidos con la calidad y excelencia</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 col-xl-6">
+      <ul class="list-unstyled list-points">
+        <img src="./assets/img/website/inspeccion.svg" class="svg-icon">
+        <li class="mt-2 mb-5"><b>Inspección y Prevención</b>
+          <br>Inspeccionamos los puntos críticos y sus riesgos, permitiéndonos tomar acciones preventivas o
+          correctivas, eficaces y eficientes.
+        </li>
+        <img src="./assets/img/website/estructura.svg" class="svg-icon">
+        <li class="mb-5"><b>Estructura y Conocimiento</b> <br>Diseñamos el plan de acción en conjunto con la mejor
+          tecnología disponible y el respaldo científico actualizado.</li>
+        <img src="./assets/img/website/equipo.svg" class="svg-icon">
+        <li class="mb-5"><b>Equipo y tecnología</b> <br>Con el uso de herramientas digitales y un equipo altamente
+          capacitado, garantizamos el seguimiento del servicio y resultados.</li>
+      </ul>
+    </div>
+    <div class="col-12 col-md-6 col-xl-6">
+      <div class="serv-1">
       </div>
     </div>
   </div>
