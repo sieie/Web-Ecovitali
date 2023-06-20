@@ -2,18 +2,18 @@
                 FOOTER
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--site-footer-bg-color);
-  padding: 80px 0;
-  padding-top: 20px;
+  background-color: var(--bkg-color);
+  padding: 0;
+  padding-top: 50px;
 }
 
 .site-footer-bottom {
   background-color: var(--secondary-color);
   position: relative;
-  z-index: 2;
-  margin-top: 70px;
+  margin-top: 30px;
+  margin-bottom: 0;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
 }
 
 .site-footer-bottom a {
@@ -21,25 +21,23 @@
 }
 
 .site-footer-bottom a:hover {
-  color: #FF6;
+  color: var(--primary-color);
 }
 
 .site-footer-link {
   color: var(--white-color);
+  text-decoration: none;
 }
 
 .copyright-text {
   color: var(--section-bg-color);
   font-size: var(--copyright-font-size);
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .site-footer .custom-btn {
   font-size: var(--copyright-font-size);
-}
-
-.site-footer .custom-btn:hover {
-  background: var(--primary-color);
+  text-decoration: none;
 }
 
 
@@ -54,13 +52,60 @@
 .footer-menu-item {
   list-style: none;
   display: block;
+  font-size: var(--h6-font-size);
 }
 
 .footer-menu-link {
-  font-size: var(--p-font-size);
-  color: var(--white-color);
+  font-size: 18px;
+  color: var(--text-color);
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+/*---------------------------------------
+SOCIAL ICON
+-----------------------------------------*/
+.icon-img {
+  width: 87%;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+}
+
+.social-icon-item {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.social-icon-link {
+  color: var(--site-footer-bg-color);
+  font-size: var(--h5-font-size);
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  background: transparent;
+  width: inherit;
+  height: inherit;
+  line-height: inherit;
+  margin-right: 23px;
+}
+
+.social-icon-link:hover {
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+
+.site-header .social-icon {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.social-share .tags-block {
+  margin-bottom: 10px;
 }

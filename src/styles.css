@@ -15,7 +15,7 @@
   --h3-font-size: 32px;
   --h4-font-size: 28px;
   --h5-font-size: 24px;
-  --h6-font-size: 14px;
+  --h6-font-size: 16px;
   --p-font-size: 20px;
   --btn-font-size: 18px;
 
@@ -129,10 +129,6 @@ SECTION
   background-color: var(--section-bg-color);
 }
 
-
-
-
-
 /*---------------------------------------
 CUSTOM ICON COLOR
 -----------------------------------------*/
@@ -224,107 +220,6 @@ CUSTOM BUTTON
 
 
 /*---------------------------------------
-NAVIGATION
------------------------------------------*/
-.navbar {
-  background: var(--white-color);
-  z-index: 9;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.navbar-brand {
-  color: var(--primary-color);
-  font-size: var(--h6-font-size);
-  font-weight: var(--font-weight-bold);
-}
-
-.navbar-brand span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.navbar-brand small {
-  color: var(--secondary-color);
-  display: block;
-  font-size: 10px;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.logo {
-  width: 80px;
-  height: auto;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  margin-right: 0;
-  margin-left: 0;
-  padding: 20px;
-}
-
-.navbar-nav .nav-link {
-  display: inline-block;
-  color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-medium);
-  position: relative;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link:hover {
-  background: transparent;
-  color: var(--primary-color);
-}
-
-.dropdown-menu {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-  border: 0;
-  max-width: 50px;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.dropdown-item {
-  display: inline-block;
-  color: var(--p-bg-color);
-  font-size: var(--menu-font-size);
-  font-weight: var(--font-weight-medium);
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.dropdown-item.active,
-.dropdown-item:active,
-.dropdown-item:focus,
-.dropdown-item:hover {
-  background: transparent;
-  color: var(--primary-color);
-}
-
-.dropdown-toggle::after {
-  content: "\f282";
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-size: var(--copyright-font-size);
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  left: 2px;
-  border: 0;
-}
-
-/*---------------------------------------
 CONTACT
 -----------------------------------------*/
 .contact-section {
@@ -349,44 +244,6 @@ CONTACT
   width: 100%;
 }
 
-/*---------------------------------------
-SOCIAL ICON
------------------------------------------*/
-.social-icon {
-  margin: 0;
-  padding: 0;
-}
-
-.social-icon-item {
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.social-icon-link {
-  background: var(--site-footer-bg-color);
-  border-radius: var(--border-radius-large);
-  color: var(--white-color);
-  font-size: var(--copyright-font-size);
-  display: block;
-  margin-right: 5px;
-  text-align: center;
-  width: 35px;
-  height: 35px;
-  line-height: 38px;
-}
-
-.social-icon-link:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
-}
-
-.img-carousel {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
-
-}
 
 /*---------------------------------------
 RESPONSIVE STYLES
@@ -444,41 +301,6 @@ RESPONSIVE STYLES
     padding-bottom: 50px;
   }
 
-  .navbar {
-    padding-top: 6px;
-    padding-bottom: 6px;
-  }
-
-  .navbar-expand-lg .navbar-nav {
-    padding-bottom: 30px;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 8px 20px;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    left: 20px;
-  }
-
-  .site-header .social-icon {
-    text-align: left;
-    margin-top: 5px;
-  }
-
-  @media screen and (max-width: 580px) {
-
-    .hero-section-full-height,
-    #hero-slide .carousel-item,
-    .carousel-image {
-      min-height: 520px;
-    }
-  }
-
   @media screen and (max-width: 480px) {
     h1 {
       font-size: 40px;
@@ -500,45 +322,5 @@ RESPONSIVE STYLES
       font-size: 20px;
     }
 
-    #hero-slide .carousel-caption {
-      min-width: inherit;
-      padding-bottom: 30px;
-    }
-
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-      width: 0px;
-      height: 0px;
-    }
-
-    .volunteer-image {
-      width: 150px;
-      height: 150px;
-    }
-
-    .volunteer-section::after {
-      width: 200px;
-      height: 200px;
-    }
-
-    .testimonial-section::before {
-      top: -50px;
-      width: 100px;
-      height: 100px;
-    }
-
-    .testimonial-section::after {
-      bottom: -150px;
-      width: 200px;
-      height: 200px;
-    }
-
-    .social-share .tags-block {
-      margin-bottom: 10px;
-    }
-
-    .donate-form {
-      padding: 25px;
-    }
   }
 }

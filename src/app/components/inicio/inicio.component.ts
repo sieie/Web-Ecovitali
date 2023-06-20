@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,32 +7,46 @@ import { Router } from '@angular/router';
   styleUrls: ['./inicio.component.css']
 })
 
-export class InicioComponent implements AfterViewInit {
+export class InicioComponent implements OnInit, AfterViewInit  {
 
-  constructor(private router: Router) { }
-//   // MODO  OSCURO
-//   toggleDarkMode() : void {
-//     document.body.classList.toggle('darkMode');
-//  }
+  constructor(private router: Router ) { }
 
   darkMode: boolean = false;
   toggleDarkMode() {
     this.darkMode = !this.darkMode;
     document.body.classList.toggle('dark-mode');
   }
+  @ViewChild('carouselElement', { static: false }) carouselElement!: ElementRef;
+  carouselItems = [
+    { src: './assets/img/website/Logo-Ecovitali-Gris.webp', alt: 'Imagen 1' },
+    { src: './assets/img/website/Logo-Ecovitali-Gris.webp', alt: 'Imagen 2' },
+    { src: './assets/img/website/Logo-Ecovitali-Gris.webp', alt: 'Imagen 3' }
+  ];
+  currentIndex = 0;
 
-  // REDIRECION AL COMPONENTE SERVICIO
-  redirectToServicios() {
-    this.router.navigate(['/servicios']);
+  ngOnInit(): void {
   }
 
-  //ANIMACIÓN ENTRE COMPONENTES CON GSAP
+
   ngAfterViewInit() {
-    gsap.from('.section', {
-      duration: 1,
-      opacity: 0,
-      y: 50,
-      stagger: 0.3
+    this.startAnimation();
+  }
+
+  startAnimation() {
+    const carouselItems = this.carouselElement.nativeElement.querySelectorAll('.carousel-item');
+
+    carouselItems[this.currentIndex].addEventListener('animationend', () => {
+      carouselItems[this.currentIndex].classList.remove('active');
+      this.currentIndex = (this.currentIndex + 1) % carouselItems.length;
+      carouselItems[this.currentIndex].classList.add('active');
     });
   }
 }
+
+
+
+  // // REDIRECION AL COMPONENTE SERVICIO
+  // redirectToContacto() {
+  //   this.router.navigate(['/servicios']);
+  // }
+

@@ -1,18 +1,11 @@
-<!-- BOTON DARKMODE -->
+<!-- BOTON DARKMODE
 <div class="container">
   <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
     <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
   </div>
-</div>
+</div> -->
 
-
-
-
-
-
-
-
-<!-- PRIMER HEADER
+<!-- PRIMER HEADER -->
 <header class="site-header">
   <div class="container">
     <div class="row">
@@ -52,20 +45,22 @@
           <li class="social-icon-item">
             <a href="#" class="social-icon-link bi-whatsapp"></a>
           </li>
-          <li class="social-icon-item">
-            <button (click)="toggleDarkMode()">Modo oscuro</button>
-          </li>
+
+          <!-- <li [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
+            <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
+              <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
+            </div>
+          </li> -->
         </ul>
       </div>
     </div>
   </div>
 </header>
 
- NAVBAR
-
+ <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg bg-light shadow-lg sticky-top">
   <div class="container">
-    <a class="navbar-brand" routerLink="home">
+    <a class="navbar-brand">
       <img src="./assets/img/logo.jpg" class="logo img-fluid" alt="Ecovitali">
     </a>
 
@@ -77,55 +72,51 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" routerLink="servicios" id="navbarLightDropdownMenuLink"
+          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
           <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item" routerLink="residencial">Residencial</a></li>
-            <li><a class="dropdown-item" routerLink="empresarial">Empresarial</a></li>
-            <li><a class="dropdown-item" routerLink="base-fundamental">Base Fundamental</a></li>
+            <li><a class="dropdown-item">Residencial</a></li>
+            <li><a class="dropdown-item">Empresarial</a></li>
+            <li><a class="dropdown-item">Base Fundamental</a></li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" href="#section_1" id="navbarLightDropdownMenuLink"
+          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamientos</a>
           <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item" routerLink="residencial" href="residencial.html">Manejo Integral de Plagas</a>
+            <li><a class="dropdown-item">Manejo Integral de Plagas</a>
             </li>
-            <li><a class="dropdown-item" routerLink="desinsectacion">Desinsectación</a></li>
-            <li><a class="dropdown-item" routerLink="desratización">Desratización</a></li>
-            <li><a class="dropdown-item" routerLink="tratamiento-granos">Tratamiento de Granos</a></li>
-            <li><a class="dropdown-item" routerLink="tratamiento-termitas">Tratamiento de Termitas</a></li>
+            <li><a class="dropdown-item">Desinsectación</a></li>
+            <li><a class="dropdown-item">Desratización</a></li>
+            <li><a class="dropdown-item">Tratamiento de Granos</a></li>
+            <li><a class="dropdown-item">Tratamiento de Termitas</a></li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" href="#section_2" id="navbarLightDropdownMenuLink"
+          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
             role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
           <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item" href="M-Empresarial.html">Metodología Empresarial</a></li>
-            <li><a class="dropdown-item" href="MIP.html">Metodología Empresarial - MIP</a></li>
-            <li><a class="dropdown-item" href="M.I.P.html">Mecanismos y Medidas - M.I.P</a></li>
-            <li><a class="dropdown-item" href="A.I.M.html">Metodología Empresarial - AIM</a></li>
+            <li><a class="dropdown-item">Metodología Empresarial</a></li>
+            <li><a class="dropdown-item">Metodología Empresarial - MIP</a></li>
+            <li><a class="dropdown-item">Mecanismos y Medidas - M.I.P</a></li>
+            <li><a class="dropdown-item">Metodología Empresarial - AIM</a></li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link click-scroll" href="nosotros.html">Sobre Nosotros</a>
+          <a class="nav-link click-scroll">Sobre Nosotros</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link click-scroll" href="certificaciones.html">Certificaciones</a>
+          <a class="nav-link click-scroll">Certificaciones</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link click-scroll" href="certificaciones.html">Blog</a>
-        </li>
-
-        <li class="nav-item ms-3">
-          <a class="nav-link custom-btn custom-border-btn btn" routerLink="/contacto">Contáctanos</a>
+          <a class="nav-link click-scroll">Blog</a>
         </li>
       </ul>
     </div>
   </div>
-</nav> -->
+</nav>
