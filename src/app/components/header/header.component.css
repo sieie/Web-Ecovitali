@@ -60,7 +60,6 @@
   margin-top: 20px;
 }
 
-
 .dropdown-item {
   display: inline-block;
   color: var(--text-color);
@@ -97,18 +96,12 @@
   border: 0;
 }
 
-
-
-/*---------------------------------------
-CUSTOM ICON COLOR
------------------------------------------*/
+/* Custom Icon Color */
 .custom-icon {
   color: var(--secondary-color);
 }
 
-/*---------------------------------------
-CUSTOM LIST
------------------------------------------*/
+/* Custom List */
 .custom-list {
   margin-bottom: 0;
   padding-left: 0;
@@ -120,9 +113,7 @@ CUSTOM LIST
   margin-bottom: 10px;
 }
 
-/*---------------------------------------
-CUSTOM BUTTON
------------------------------------------*/
+/* Custom Button */
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn {
   color: var(--custom-btn-bg-color);
   margin-top: 8px;
@@ -147,12 +138,10 @@ CUSTOM BUTTON
   color: var(--bkg-color);
 }
 
-/*---------------------------------------
-SITE HEADER
------------------------------------------*/
+/* Site Header */
 .site-header {
   background: var(--secondary-color);
-  position: absolute;
+  position: relative;
   padding-top: 15px;
   padding-bottom: 10px;
 }
@@ -176,10 +165,7 @@ SITE HEADER
   margin-right: 15px;
 }
 
-
-/*---------------------------------------
-SOCIAL ICON
------------------------------------------*/
+/* Social Icon */
 .social-icon {
   margin: 0;
   padding: 0;
@@ -218,10 +204,7 @@ SOCIAL ICON
   margin-bottom: 10px;
 }
 
-
-
-/* RESPONSIVE */
-
+/* Responsive */
 @media screen and (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: block;

@@ -222,7 +222,9 @@
 }
 
 .carousel-inner {
-  width: 70%;
+  width: 80%;
+  height: auto;
+
 }
 
 
@@ -235,7 +237,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(0.8);
   }
   100% {
     transform: scale(1);
