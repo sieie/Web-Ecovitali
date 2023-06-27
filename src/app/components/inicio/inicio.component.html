@@ -1,53 +1,30 @@
-
 <app-header></app-header>
 <div class="header-container">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-center">
-        <div class="carousel slide" data-ride="carousel" #carouselElement>
-          <div class="carousel-inner">
-            <div *ngFor="let item of carouselItems; let i = index" class="carousel-item" [ngClass]="{'active': i === currentIndex}">
-              <img class="d-block w-100" [src]="item.src" [alt]="item.alt">
-            </div>
-          </div>
+      <div class="col-12 text-start">
+        <div class="container__titulos" [@fadeinUp]>
+          <p class="h1-titulo" *ngIf="tituloActual === 'GESTION DE SERVICIOS'">GESTIÓN DE SERVICIOS</p>
+          <p class="h1-titulo" *ngIf="tituloActual === 'CONTROL DE PLAGAS'">CONTROL DE PLAGAS</p>
+          <p class="h1-titulo" *ngIf="tituloActual === 'LIMPIEZA Y DESINFECCIÓN'">LIMPIEZA Y DESINFECCIÓN</p>
+          <p class="h1-titulo" *ngIf="tituloActual === 'PRADOS Y JARDINES'">PRADOS Y JARDINES</p>
+          <p class="h1-titulo" *ngIf="tituloActual === 'SANITIZACIÓN'">SANITIZACIÓN</p>
         </div>
       </div>
     </div>
     <!-- BOTONES NAVBAR -->
-    <div class="row justify-content-center text-center">
-      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
-        <div class="icon-container" [ngClass]="{'svg-elements': darkMode}">
-          <a routerLink="/">
-            <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-11.svg' : './assets/img/website/SVG-Icono-Division-07.svg'" alt="Control de Plagas">
+    <div class="container">
+      <div class="col-6 col-md-6 col-lg-12 col-xl-12">
+        <div class="icon-container">
+        <div class="ellipse">
+          <a routerLink="/" *ngFor="let image of images; let i = index" (click)="changeActiveImageIndex(i)" [class.active]="activeImageIndex === i">
+            <img [src]="getImagePath(image)"
+            [alt]="image.alt">
           </a>
-          <span class="fw-bold">Control de Plagas</span>
-        </div>
-      </div>
-      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
-        <div class="icon-container" [ngClass]="{'svg-elements': darkMode}">
-          <a routerLink="/">
-            <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-12.svg' : './assets/img/website/SVG-Icono-Division-08.svg'" alt="Limpieza y Desinfección">
-          </a>
-          <span class="fw-bold">Limpieza y Desinfección</span>
-        </div>
-      </div>
-      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
-        <div class="icon-container" [ngClass]="{'svg-elements': darkMode}">
-          <a routerLink="/">
-            <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-13.svg' : './assets/img/website/SVG-Icono-Division-09.svg'" alt="Prados y Jardines">
-          </a>
-          <span class="fw-bold">Prados y Jardines</span>
-        </div>
-      </div>
-      <div class="d-flex col-6 col-md-2 col-lg-2 col-xl-2">
-        <div class="icon-container" [ngClass]="{'svg-elements': darkMode}">
-          <a routerLink="/">
-            <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-14.svg' : './assets/img/website/SVG-Icono-Division-10.svg'" alt="Sanitización">
-          </a>
-          <span class="fw-bold">Sanitización</span>
         </div>
       </div>
     </div>
+    <button class="custom-btn-section mt-5">Conoce más acerca de este servicio</button>
     <div class="container justify-content-center text-center">
       <div [ngClass]="{'darkMode': darkMode}">
         <a routerLink="/">
