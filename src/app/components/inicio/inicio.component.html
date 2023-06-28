@@ -1,29 +1,39 @@
 <app-header></app-header>
 <div class="header-container">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-12 text-start">
+      <div class="col-xl-5 col-lg-5 col-md-5 col-12 text-start">
         <div class="container__titulos" [@fadeinUp]>
-          <p class="h1-titulo" *ngIf="tituloActual === 'GESTION DE SERVICIOS'">GESTIÓN DE SERVICIOS</p>
-          <p class="h1-titulo" *ngIf="tituloActual === 'CONTROL DE PLAGAS'">CONTROL DE PLAGAS</p>
-          <p class="h1-titulo" *ngIf="tituloActual === 'LIMPIEZA Y DESINFECCIÓN'">LIMPIEZA Y DESINFECCIÓN</p>
-          <p class="h1-titulo" *ngIf="tituloActual === 'PRADOS Y JARDINES'">PRADOS Y JARDINES</p>
-          <p class="h1-titulo" *ngIf="tituloActual === 'SANITIZACIÓN'">SANITIZACIÓN</p>
+          <p class="h1-titulo" *ngIf="tituloActual"> {{ tituloActual }} </p>
+        </div>
+        <!-- BOTONES NAVBAR -->
+        <div class="container-fluid icon-container">
+          <div class="ellipse">
+            <div class="control-plagas">
+              <a routerLink="/" (click)="changeActiveImageIndex(0)" class="">
+                <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-11.svg' : './assets/img/website/SVG-Icono-Division-07.svg'" [class.active]="activeImageIndex === 0" alt="Control de Plagas">
+              </a>
+            </div>
+            <div class="limpieza">
+              <a routerLink="/" (click)="changeActiveImageIndex(1)" class="">
+                <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-12.svg' : './assets/img/website/SVG-Icono-Division-08.svg'" [class.active]="activeImageIndex === 1" alt="Limpieza y Desinfección">
+              </a>
+            </div>
+            <div class="jardines">
+              <a routerLink="/" (click)="changeActiveImageIndex(2)" class="">
+                <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-13.svg' : './assets/img/website/SVG-Icono-Division-09.svg'" [class.active]="activeImageIndex === 2" alt="Prados y Jardines">
+              </a>
+            </div>
+            <div class="icon-styles">
+              <a routerLink="/" (click)="changeActiveImageIndex(3)" class="">
+                <img [src]="darkMode ? './assets/img/website/SVG-Icono-Division-14.svg' : './assets/img/website/SVG-Icono-Division-10.svg'" [class.active]="activeImageIndex === 3" alt="Sanitización">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- BOTONES NAVBAR -->
-    <div class="container">
-      <div class="col-6 col-md-6 col-lg-12 col-xl-12">
-        <div class="icon-container">
-        <div class="ellipse">
-          <a routerLink="/" *ngFor="let image of images; let i = index" (click)="changeActiveImageIndex(i)" [class.active]="activeImageIndex === i">
-            <img [src]="getImagePath(image)"
-            [alt]="image.alt">
-          </a>
-        </div>
-      </div>
-    </div>
+    
     <button class="custom-btn-section mt-5">Conoce más acerca de este servicio</button>
     <div class="container justify-content-center text-center">
       <div [ngClass]="{'darkMode': darkMode}">
@@ -33,7 +43,6 @@
       </div>
     </div>
   </div>
-</div>
 
 <div class="container section-padding">
   <div class="row">

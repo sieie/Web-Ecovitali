@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { trigger, style, animate, transition } from '@angular/animations';
-
-
-interface Image {
-  src: string;
-  alt: string;
-}
+import { trigger, style, animate, transition, state } from '@angular/animations';
 
 @Component({
   selector: 'app-inicio',
@@ -16,50 +10,46 @@ interface Image {
     trigger('fadeinUp', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(0px)' }),
-        animate('1200ms ease', style({ opacity: 1, transform: 'translateY(0)' })),
+        animate('1500ms ease', style({ opacity: 1, transform: 'translateY(0)' })),
       ]),
     ]),
+    // ANIMACION DE CARRUSEL ----------------------------------------------------------------
+    trigger('carouselRotation', [
+      state('active', style({ transform: 'rotate({{angle}}deg)' }), { params: { angle: 0 } }),
+      transition('* => active', animate('500ms ease-in-out'))
+    ])
   ],
 })
 export class InicioComponent implements OnInit {
 
-  //RULETA - ELLIPSE
-  images: Image[] = [
-    { src: 'SVG-Icono-Division-07.svg', alt: 'Control de Plagas' },
-    { src: 'SVG-Icono-Division-08.svg', alt: 'Limpieza y Desinfección' },
-    { src: 'SVG-Icono-Division-09.svg', alt: 'Prados y Jardines' },
-    { src: 'SVG-Icono-Division-10.svg', alt: 'Sanitización' }
-  ];
+  titulos: string[] = ['CONTROL DE PLAGAS', 'LIMPIEZA Y DESINFECCIÓN', 'SANITIZACIÓN', 'PRADOS Y JARDINES'];
+  tituloActual: string = 'GESTION DE SERVICIOS';
+  activeImageIndex: number = 0;
 
-  activeImageIndex = 0;
-  titulos = ['GESTION DE SERVICIOS', 'CONTROL DE PLAGAS', 'LIMPIEZA Y DESINFECCIÓN', 'SANITIZACIÓN', 'PRADOS Y JARDINES']
-  tituloActual = 'GESTION DE SERVICIOS';
-
-  changeActiveImageIndex(index: number) {
+  constructor() {}
+  
+  ngOnInit(): void {
+    this.tituloActual = 'GESTION DE SERVICIOS';
+  }
+  
+  changeActiveImageIndex(index: number): void {
     this.activeImageIndex = index;
     this.tituloActual = this.titulos[this.activeImageIndex];
   }
 
-  getImagePath(image: Image): string {
-    return `assets/img/website${image.src}`;
-  }
-
-
-  // CAMBIO DE TITULO CON EL BOTON DE LA DIVISION
-  ngOnInit() {
-    this.tituloActual = 'GESTION DE SERVICIOS';
-  }
-
-  cambiarTitulo(titulo: string) {
+  cambiarTitulo(titulo: string): void {
     this.tituloActual = titulo;
   }
-
+  
   darkMode: boolean = false;
   toggleDarkMode() {
-    this.darkMode = !this.darkMode;
-    document.body.classList.toggle('dark-mode');
-  }
+      this.darkMode = !this.darkMode;
+      document.body.classList.toggle('dark-mode');
+    }
+  
+  
 }
+
 
 
 
@@ -67,4 +57,5 @@ export class InicioComponent implements OnInit {
   // redirectToContacto() {
   //   this.router.navigate(['/servicios']);
   // }
+
 

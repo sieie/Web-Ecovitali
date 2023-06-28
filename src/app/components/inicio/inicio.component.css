@@ -15,6 +15,8 @@
   display: block;
   align-items: flex-start;
   text-align: center;
+  width: 500px;
+  margin: 40px;
 }
 
 .h1-titulo {
@@ -23,7 +25,8 @@
   font: 400 100px/110px "Anton", sans-serif;
   margin-top: 40px;
   position: relative;
-  width: 716px;
+  width: auto;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -31,60 +34,103 @@
 
 /* Contenedor de divisiones */
 .icon-container {
+  width: 800px;
+  height: 800px;
   display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  width: 1400px;
-  height: 300px;
-  position: relative;
+  justify-content: flex-end;
 }
-
-.rotate {
-  animation: rotate 1s linear infinite;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-}
-
 
 .ellipse {
-  position: relative;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.control-plagas {
   display: flex;
-  align-items: center;
+  width: 20%;
+  height: 20%;
+  transform: rotate(-15deg);
+  padding: 6% 25% 25% 6%;
   justify-content: center;
-  transition: transform 0.5s ease;
-  border-radius: 1400px;
+  align-items: center;
+  position: relative;
 }
 
-.ellipse a {
+.control-plagas img {
+  width: 300px;
+  height: 300px;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  opacity: 0.5;
-  transform: translateX(-50%);
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  border-radius: 50%;
 }
 
-.ellipse img.active {
-  opacity: 1;
+.limpieza {
+  display: flex;
+  width: 20%;
+  height: 20%;
   transform: rotate(15deg);
+  padding: 6% 25% 25% 6%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
 }
 
-ellipse img:hover {
-  background: lightgray 50% / cover no-repeat;
-  box-shadow: 0px 4px 50px 0px rgba(237, 152, 44, 0.50);
+.limpieza img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
 }
 
+.jardines {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  transform: rotate(45deg);
+  padding: 6% 45% 45% 6%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.jardines img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.sanitizacion {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  transform: rotate(75deg);
+  padding: 6% 25% 25% 6%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.sanitizacion img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+/* @keyframes rotate-carousel {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+} */
 
 
 
@@ -211,7 +257,7 @@ ellipse img:hover {
   height: 600px;
   display: flex;
   flex-direction: row;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
   background-size: contain;
@@ -306,9 +352,11 @@ ellipse img:hover {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.8);
   }
+
   100% {
     transform: scale(1);
   }
