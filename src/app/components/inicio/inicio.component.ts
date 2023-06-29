@@ -15,7 +15,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
     ]),
     // ANIMACION DE CARRUSEL ----------------------------------------------------------------
     trigger('carouselRotation', [
-      state('active', style({ transform: 'rotate({{angle}}deg)' }), { params: { angle: 0 } }),
+      state('active', style({ transform: 'rotate({{angle}}deg)' }), { params: { angle: 45 } }),
       transition('* => active', animate('500ms ease-in-out'))
     ])
   ],
