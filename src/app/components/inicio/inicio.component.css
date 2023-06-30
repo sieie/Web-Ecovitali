@@ -36,23 +36,12 @@
 .icon-container {
   box-sizing: border-box;
   width: 700px;
-  height: 700px;
-  position: absolute;
-  object-fit: contain;
-  margin-left: calc(50% - 225.19px);
-  margin-top: calc(20% - 125.19px);
-  transform: translateY(-50%);
-}
-
-.ellipse {
-  box-sizing: border-box;
-  width: 690px;
-  height: 690px;
-  border-radius: 50%;
-  background-color: #141C24;
+  height: 400px;
   position: relative;
-  top: calc(50% - 642.29);
-  left: calc(50% - 742.29);
+  left: calc(50% - 225.19px);
+  top: calc(50% - 225.19px);
+  margin-top: 80px;
+  transform: translateY(-50%);
 }
 
 .control-plagas {
@@ -60,8 +49,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  margin-left: 105.41px;
-  margin-top: -7.84px;
+  left: 170px;
+  top: -7.84px;
   transform-origin: 0 0;
   transform: rotate(-15deg) scale(1, 1);
 }
@@ -71,8 +60,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: calc(50% - 225.19px);
-  top: calc(50% - 225.19px);
+  left: calc(50% - 120px);
+  top: calc(50% - 120px);
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   transition: box-shadow 0.3s ease;
@@ -87,7 +76,7 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 785.47px;
+  left: 850px;
   top: -211.13px;
   transform-origin: 0 0;
   transform: rotate(15deg) scale(1, 1);
@@ -98,25 +87,21 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  object-fit: contain;
-  left: calc(50% - 225.36px);
-  top: calc(50% - 225.19px);
+  left: calc(50% - 200px);
+  top: calc(50% - 150px);
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   transition: box-shadow 0.3s ease;
 }
 .limpieza img:hover{
   box-shadow: 0px 4.49px 56.18px 0px rgba(237, 152, 44, 0.5);
-
 }
-
 
 .jardines {
   border-radius: 561.83px;
   width: 250px;
   height: 250px;
   position: absolute;
-  object-fit: contain;
   left: 1430.43px;
   top: 94.44px;
   transform-origin: 0 0;
@@ -128,9 +113,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  object-fit: contain;
-  left: calc(50% - 225.27px);
-  top: calc(50% - 225.24px);
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
   transition: box-shadow 0.3s ease;
 }
 .jardines img:hover {
@@ -153,8 +137,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: calc(50% - 225.27px);
-  top: calc(50% - 225.75px);
+  left: calc(50% - 150px);
+  top: calc(50% - 150px);
   transform-origin: 0 0;
   transform: rotate(0deg) scale(1, 1);
   transition: box-shadow 0.3s ease;
@@ -165,15 +149,18 @@
 }
 
 
-/* @keyframes rotate-carousel {
-  0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
+.icon-container.active {
+  animation: rotate 0.3s ease;
+}
 
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+@keyframes rotate {
+  from {
+    transform: rotate(-50%, -50%) rotate(0deg);
   }
-} */
+  to {
+    transform: rotate(-50%, -50%) rotate(45deg);
+  }
+}
 
 
 

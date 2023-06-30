@@ -23,7 +23,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
 })
 export class InicioComponent implements OnInit {
 
-  titulos: string[] = ['CONTROL DE PLAGAS', 'LIMPIEZA Y DESINFECCIÓN', 'SANITIZACIÓN', 'PRADOS Y JARDINES'];
+  titulos: string[] = ['CONTROL DE PLAGAS', 'LIMPIEZA Y DESINFECCIÓN', 'PRADOS Y JARDINES', 'SANITIZACIÓN' ];
   tituloActual: string = 'GESTION DE SERVICIOS';
   activeImageIndex: number = 0;
 
