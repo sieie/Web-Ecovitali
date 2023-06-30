@@ -1,5 +1,5 @@
 :root {
-  --white-color: #ffffff;
+  --white-color: #f0f8ff;
   --primary-color: #5bc1ac;
   --secondary-color: #5a6f80;
   --section-bg-color: #f0f8ff;
@@ -31,14 +31,14 @@
 
 body {
   --text-color: #212529;
-  --bkg-color: #fff;
+  --bkg-color: #f0f8ff;
   transition: background-color 0.3s ease;
   font-family: var(--body-font-family);
 }
 
 /* MODO OSCURO */
 body.dark-mode {
-  --text-color: #fff;
+  --text-color: #f0f8ff;
   background-color: #333;
 }
 

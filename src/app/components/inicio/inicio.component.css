@@ -36,11 +36,11 @@
 .icon-container {
   box-sizing: border-box;
   width: 700px;
-  height: 400px;
+  height: 700px;
   position: absolute;
   object-fit: contain;
-  left: calc(100% - 225.19px);
-  top: calc(100% - 225.19px);
+  margin-left: calc(50% - 225.19px);
+  margin-top: calc(20% - 125.19px);
   transform: translateY(-50%);
 }
 
@@ -51,7 +51,7 @@
   border-radius: 50%;
   background-color: #141C24;
   position: relative;
-  top: calc(50% - 742.29);
+  top: calc(50% - 642.29);
   left: calc(50% - 742.29);
 }
 
@@ -60,8 +60,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 75.41px;
-  top: -7.84px;
+  margin-left: 105.41px;
+  margin-top: -7.84px;
   transform-origin: 0 0;
   transform: rotate(-15deg) scale(1, 1);
 }

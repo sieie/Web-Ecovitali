@@ -7,6 +7,7 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
   animations: [
+    // ANIMACIONES PARA EL MENU -----------------------------------------------
     trigger('fadeinUp', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(0px)' }),
@@ -27,11 +28,11 @@ export class InicioComponent implements OnInit {
   activeImageIndex: number = 0;
 
   constructor() {}
-  
+
   ngOnInit(): void {
     this.tituloActual = 'GESTION DE SERVICIOS';
   }
-  
+
   changeActiveImageIndex(index: number): void {
     this.activeImageIndex = index;
     this.tituloActual = this.titulos[this.activeImageIndex];
@@ -40,14 +41,14 @@ export class InicioComponent implements OnInit {
   cambiarTitulo(titulo: string): void {
     this.tituloActual = titulo;
   }
-  
+
   darkMode: boolean = false;
   toggleDarkMode() {
       this.darkMode = !this.darkMode;
       document.body.classList.toggle('dark-mode');
     }
-  
-  
+
+
 }
 
 
