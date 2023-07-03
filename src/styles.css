@@ -29,6 +29,10 @@
   --font-weight-bold: 800;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --text-color: #212529;
   --bkg-color: #f0f8ff;

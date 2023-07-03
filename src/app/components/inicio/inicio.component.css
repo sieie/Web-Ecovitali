@@ -2,6 +2,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 
 .darkmode .header-container {
@@ -35,13 +37,17 @@
 /* Contenedor de divisiones */
 .icon-container {
   box-sizing: border-box;
-  width: 700px;
+  background-color: #141C24;
+  width: 1200px;
   height: 400px;
   position: relative;
-  left: calc(50% - 225.19px);
-  top: calc(50% - 225.19px);
-  margin-top: 80px;
-  transform: translateY(-50%);
+  left: 70%;
+  top: 50%;
+  transform: translate(-40%,-80%);
+}
+
+.rotate {
+  transform: rotate(45deg);
 }
 
 .control-plagas {
@@ -148,19 +154,6 @@
   box-shadow: 0px 4.49px 56.18px 0px rgba(0, 94, 216, 0.5);
 }
 
-
-.icon-container.active {
-  animation: rotate 0.3s ease;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: rotate(-50%, -50%) rotate(45deg);
-  }
-}
 
 
 
@@ -367,27 +360,3 @@
   line-height: 1.5;
 }
 
-.carousel-inner {
-  width: 80%;
-  height: auto;
-
-}
-
-
-.carousel-item {
-  animation: expand 10s infinite alternate ease-in-out;
-}
-
-@keyframes expand {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.8);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}

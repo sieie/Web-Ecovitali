@@ -4,30 +4,37 @@
     <div class="row">
       <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-start">
         <div class="container__titulos" [@fadeinUp]>
-          <p class="h1-titulo" *ngIf="tituloActual"> {{ tituloActual }} </p>
+          <h1 class="h1-titulo" [@fadeinUp]="tituloActual"> {{ tituloActual }} </h1>
         </div>
         <!-- BOTONES NAVBAR -->
-        <div class="icon-container">
-          <div class="icon control-plagas">
+        <div class="icon-container" [ngClass]="{'carouselRotation': isAnyElementActive}">
+          <div class="control-plagas">
             <a routerLink="/" (click)="changeActiveImageIndex(0)">
               <img src="./assets/img/website/SVG-Icono-Division-07.svg" alt="Control de Plagas" />
             </a>
           </div>
-          <div class="icon limpieza">
+          <div class="limpieza">
             <a routerLink="/" (click)="changeActiveImageIndex(1)">
               <img src="./assets/img/website/SVG-Icono-Division-08.svg" alt="Limpieza" />
             </a>
           </div>
-          <div class="icon jardines">
+          <div class="jardines">
             <a routerLink="/" (click)="changeActiveImageIndex(2)">
               <img src="./assets/img/website/SVG-Icono-Division-09.svg" alt="Jardines" />
             </a>
           </div>
-          <div class="icon sanitizacion">
+          <div class="sanitizacion">
             <a routerLink="/" (click)="changeActiveImageIndex(3)">
               <img src="./assets/img/website/SVG-Icono-Division-10.svg" alt="Sanitización" />
             </a>
           </div>
+        </div>
+        <!-- BOTONES DE NAVEGACIÓN-->
+        <div class="btn-navigate">
+          <img src="./assets/img/website/south-arrow-dark.svg">
+        </div>
+        <div class="btn-navigate">
+          <img src="./assets/img/website/SVG-arrow-left">
         </div>
       </div>
     </div>

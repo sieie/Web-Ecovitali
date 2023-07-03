@@ -9,9 +9,9 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
   animations: [
     // ANIMACIONES PARA EL MENU -----------------------------------------------
     trigger('fadeinUp', [
-      transition(':enter', [
+      transition('* => *', [
         style({ opacity: 0, transform: 'translateY(0px)' }),
-        animate('1500ms ease', style({ opacity: 1, transform: 'translateY(0)' })),
+        animate('900ms ease', style({ opacity: 1, transform: 'translateY(0)' })),
       ]),
     ]),
     // ANIMACION DE CARRUSEL ----------------------------------------------------------------
@@ -26,11 +26,13 @@ export class InicioComponent implements OnInit {
   titulos: string[] = ['CONTROL DE PLAGAS', 'LIMPIEZA Y DESINFECCIÓN', 'PRADOS Y JARDINES', 'SANITIZACIÓN' ];
   tituloActual: string = 'GESTION DE SERVICIOS';
   activeImageIndex: number = 0;
+  isAnyElementActive: boolean = false;
+
 
   constructor() {}
 
   ngOnInit(): void {
-    this.tituloActual = 'GESTION DE SERVICIOS';
+    this.tituloActual = 'GESTIÓN DE SERVICIOS';
   }
 
   changeActiveImageIndex(index: number): void {
@@ -41,6 +43,12 @@ export class InicioComponent implements OnInit {
   cambiarTitulo(titulo: string): void {
     this.tituloActual = titulo;
   }
+
+
+detectActiveClass() {
+  const elements = document.querySelectorAll('.element-class.active');
+  this.isAnyElementActive = elements.length > 0;
+}
 
   darkMode: boolean = false;
   toggleDarkMode() {
