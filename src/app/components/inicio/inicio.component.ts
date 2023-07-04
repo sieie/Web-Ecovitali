@@ -15,18 +15,26 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
       ]),
     ]),
     // ANIMACION DE CARRUSEL ----------------------------------------------------------------
-    trigger('carouselRotation', [
-      state('active', style({ transform: 'rotate({{angle}}deg)' }), { params: { angle: 45 } }),
-      transition('* => active', animate('500ms ease-in-out'))
-    ])
+    trigger('rotateIcon', [
+      transition(':increment', [
+        style({ transform: 'rotate({{prevAngle}}deg)' }),
+        animate('900ms ease', style({ transform: 'rotate({{currentAngle}}deg)' })),
+      ], { params: { prevAngle: 0, currentAngle: -45 } }),
+      transition(':decrement', [
+        style({ transform: 'rotate({{prevAngle}}deg)' }),
+        animate('900ms ease', style({ transform: 'rotate({{currentAngle}}deg)' })),
+      ], { params: { prevAngle: 0, currentAngle: 45 } }),
+    ]),
   ],
 })
+
 export class InicioComponent implements OnInit {
 
   titulos: string[] = ['CONTROL DE PLAGAS', 'LIMPIEZA Y DESINFECCIÓN', 'PRADOS Y JARDINES', 'SANITIZACIÓN' ];
-  tituloActual: string = 'GESTION DE SERVICIOS';
+  tituloActual: string = 'GESTIÓN DE SERVICIOS';
   activeImageIndex: number = 0;
-  isAnyElementActive: boolean = false;
+
+  currentRotationAngle = 0;
 
 
   constructor() {}
@@ -38,17 +46,19 @@ export class InicioComponent implements OnInit {
   changeActiveImageIndex(index: number): void {
     this.activeImageIndex = index;
     this.tituloActual = this.titulos[this.activeImageIndex];
+
+    if (index === this.activeImageIndex) {
+      this.currentRotationAngle = (index + 1) * 45; // Rotación hacia la derecha
+    } else if (index < this.activeImageIndex) {
+      this.currentRotationAngle = (index - this.activeImageIndex) * -45; // Rotación hacia la izquierda
+    }
   }
+
 
   cambiarTitulo(titulo: string): void {
     this.tituloActual = titulo;
   }
 
-
-detectActiveClass() {
-  const elements = document.querySelectorAll('.element-class.active');
-  this.isAnyElementActive = elements.length > 0;
-}
 
   darkMode: boolean = false;
   toggleDarkMode() {

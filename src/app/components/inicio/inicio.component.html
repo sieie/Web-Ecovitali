@@ -6,35 +6,33 @@
         <div class="container__titulos" [@fadeinUp]>
           <h1 class="h1-titulo" [@fadeinUp]="tituloActual"> {{ tituloActual }} </h1>
         </div>
-        <!-- BOTONES NAVBAR -->
-        <div class="icon-container" [ngClass]="{'carouselRotation': isAnyElementActive}">
-          <div class="control-plagas">
+        <!-- RULETA -->
+        <div class="icon-container" [@rotateIcon]="{ value: activeImageIndex, params: { prevAngle: currentRotationAngle - 45, currentAngle: currentRotationAngle } }">
+          <div class="divisiones control-plagas">
             <a routerLink="/" (click)="changeActiveImageIndex(0)">
               <img src="./assets/img/website/SVG-Icono-Division-07.svg" alt="Control de Plagas" />
             </a>
           </div>
-          <div class="limpieza">
+          <div class="divisiones limpieza">
             <a routerLink="/" (click)="changeActiveImageIndex(1)">
               <img src="./assets/img/website/SVG-Icono-Division-08.svg" alt="Limpieza" />
             </a>
           </div>
-          <div class="jardines">
+          <div class="divisiones jardines">
             <a routerLink="/" (click)="changeActiveImageIndex(2)">
               <img src="./assets/img/website/SVG-Icono-Division-09.svg" alt="Jardines" />
             </a>
           </div>
-          <div class="sanitizacion">
+          <div class="divisiones sanitizacion">
             <a routerLink="/" (click)="changeActiveImageIndex(3)">
               <img src="./assets/img/website/SVG-Icono-Division-10.svg" alt="Sanitización" />
             </a>
           </div>
         </div>
         <!-- BOTONES DE NAVEGACIÓN-->
-        <div class="btn-navigate">
-          <img src="./assets/img/website/south-arrow-dark.svg">
-        </div>
-        <div class="btn-navigate">
-          <img src="./assets/img/website/SVG-arrow-left">
+        <div class="controls">
+          <button id="prevButton">Prev</button>
+          <button id="nextButton">Next</button>
         </div>
       </div>
     </div>
@@ -133,7 +131,6 @@
   </div>
 
 </section>
-
 
 
 <app-footer></app-footer>

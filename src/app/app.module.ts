@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -23,6 +22,7 @@ import { ResidencialComponent } from './components/residencial/residencial.compo
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { RuletaComponent } from './components/ruleta/ruleta.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     EmpresarialComponent,
     PreguntasFrecuentesComponent,
     InicioComponent,
+    RuletaComponent,
   ],
   imports: [
     BrowserModule,

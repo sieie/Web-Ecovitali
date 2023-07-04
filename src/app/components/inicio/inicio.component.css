@@ -1,3 +1,9 @@
+:root {
+  --travel-slider-height: 300px;
+  --travel-slider-city-image-size: 120px;
+  --travel-slider-vertical-padding: 64px
+}
+
 .header-container {
   min-height: 100vh;
   display: flex;
@@ -36,21 +42,62 @@
 
 /* Contenedor de divisiones */
 .icon-container {
-  box-sizing: border-box;
-  background-color: #141C24;
-  width: 1200px;
-  height: 400px;
   position: relative;
-  left: 70%;
-  top: 50%;
-  transform: translate(-40%,-80%);
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: #141C24;
 }
 
-.rotate {
-  transform: rotate(45deg);
+.icon-container img {
+  --travel-slider-planet-size: calc( var(--travel-slider-height) + var(--travel-slider-vertical-padding) * 2 );
+  --travel-slider-image-rotate: 0deg;
+  --travel-slider-image-scale: 1;
+  position: absolute;
+  bottom: 70%;
+  left: 50%;
+  transform: translate(-50%) scale(var(--travel-slider-image-scale)) rotate(var(--travel-slider-image-rotate));
+  transform-origin: center calc(var(--travel-slider-planet-size) / 2 * .95 * .95 + var(--travel-slider-city-image-size) * 1);
+  height: var(--travel-slider-city-image-size);
+  width: var(--travel-slider-city-image-size);
+  object-position: center bottom;
+  object-fit: contain
 }
 
-.control-plagas {
+.icon-container img:nth-child(1) {
+  --image-index: 1;
+}
+
+.icon-container img:nth-child(2) {
+  --image-index: 90deg;
+}
+
+.icon-container img:nth-child(3) {
+  --image-index: 3;
+}
+
+.icon-container img:nth-child(4) {
+  --image-index: 4;
+}
+
+.icon-container img:nth-child(5) {
+  --image-index: 5;
+}
+
+.icon-container img:nth-child(6) {
+  --image-index: 6;
+}
+
+.icon-container img:nth-child(7) {
+  --image-index: 7;
+}
+
+.icon-container img:nth-child(8) {
+  --image-index: 8;
+}
+
+
+/* .control-plagas {
   border-radius: 561.83px;
   width: 250px;
   height: 250px;
@@ -111,7 +158,6 @@
   left: 1430.43px;
   top: 94.44px;
   transform-origin: 0 0;
-  transform: rotate(45deg) scale(1, 1);
 }
 
 .jardines img {
@@ -135,7 +181,6 @@
   left: 1606.69px;
   top: 747.36px;
   transform-origin: 0 0;
-  transform: rotate(75deg) scale(1, 1);
 }
 
 .sanitizacion img {
@@ -152,7 +197,7 @@
 
 .sanitizacion img:hover {
   box-shadow: 0px 4.49px 56.18px 0px rgba(0, 94, 216, 0.5);
-}
+} */
 
 
 
