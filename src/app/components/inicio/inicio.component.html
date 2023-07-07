@@ -2,12 +2,14 @@
 <div class="header-container">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-12 text-start">
+      <div class="col-xl-4 col-lg-12 col-md-12 col-12 text-start">
         <div class="container__titulos" [@fadeinUp]>
           <h1 class="h1-titulo" [@fadeinUp]="tituloActual"> {{ tituloActual }} </h1>
         </div>
         <!-- RULETA -->
-        <div class="icon-container" [@rotateIcon]="{ value: activeImageIndex, params: { prevAngle: currentRotationAngle - 45, currentAngle: currentRotationAngle } }">
+      </div>
+      <div class="col-xl-8">
+        <div class="icon-container">
           <div class="divisiones control-plagas">
             <a routerLink="/" (click)="changeActiveImageIndex(0)">
               <img src="./assets/img/website/SVG-Icono-Division-07.svg" alt="Control de Plagas" />
@@ -30,15 +32,12 @@
           </div>
         </div>
         <!-- BOTONES DE NAVEGACIÓN-->
-        <div class="controls">
-          <button id="prevButton">Prev</button>
-          <button id="nextButton">Next</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        <!---- <button class="carousel-prev" (click)="prevSlide()">Previous</button>
+        <button class="carousel-next" (click)="nextSlide()">Next</button>
+      </div> -->
 
+
+    </div>
     <button class="custom-btn-section mt-5">Conoce más acerca de este servicio</button>
     <div class="container justify-content-center text-center">
       <div [ngClass]="{'darkMode': darkMode}">
@@ -47,6 +46,8 @@
         </a>
       </div>
     </div>
+  </div>
+</div>
 
 <div class="container section-padding">
   <div class="row">
@@ -110,27 +111,7 @@
   </div>
 </section>
 
-<section class="section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="img-garantia img-fluid">
 
-        </div>
-        <div class="col-4">
-          <div class="card">
-            <div class="card-content">
-              <h3 class="card-title">Título de la tarjeta</h3>
-              <p class="card-text">Contenido de la tarjeta Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-                laborum!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
 
 
 <app-footer></app-footer>

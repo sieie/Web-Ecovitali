@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { trigger, style, animate, transition, state } from '@angular/animations';
+import { gsap } from 'gsap';
+
 
 @Component({
   selector: 'app-inicio',
@@ -15,16 +17,12 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
       ]),
     ]),
     // ANIMACION DE CARRUSEL ----------------------------------------------------------------
-    trigger('rotateIcon', [
-      transition(':increment', [
-        style({ transform: 'rotate({{prevAngle}}deg)' }),
-        animate('900ms ease', style({ transform: 'rotate({{currentAngle}}deg)' })),
-      ], { params: { prevAngle: 0, currentAngle: -45 } }),
-      transition(':decrement', [
-        style({ transform: 'rotate({{prevAngle}}deg)' }),
-        animate('900ms ease', style({ transform: 'rotate({{currentAngle}}deg)' })),
-      ], { params: { prevAngle: 0, currentAngle: 45 } }),
-    ]),
+    trigger('carouselAnimation', [
+      state('active', style({ transform: 'rotate(0deg)' })),
+      state('inactive', style({ transform: 'rotate(45deg)' })),
+      transition('inactive => active', animate('500ms ease-in-out')),
+      transition('active => inactive', animate('500ms ease-in-out'))
+    ])
   ],
 })
 
@@ -34,10 +32,6 @@ export class InicioComponent implements OnInit {
   tituloActual: string = 'GESTIÓN DE SERVICIOS';
   activeImageIndex: number = 0;
 
-  currentRotationAngle = 0;
-
-
-  constructor() {}
 
   ngOnInit(): void {
     this.tituloActual = 'GESTIÓN DE SERVICIOS';
@@ -46,14 +40,7 @@ export class InicioComponent implements OnInit {
   changeActiveImageIndex(index: number): void {
     this.activeImageIndex = index;
     this.tituloActual = this.titulos[this.activeImageIndex];
-
-    if (index === this.activeImageIndex) {
-      this.currentRotationAngle = (index + 1) * 45; // Rotación hacia la derecha
-    } else if (index < this.activeImageIndex) {
-      this.currentRotationAngle = (index - this.activeImageIndex) * -45; // Rotación hacia la izquierda
-    }
   }
-
 
   cambiarTitulo(titulo: string): void {
     this.tituloActual = titulo;
