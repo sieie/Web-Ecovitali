@@ -22,7 +22,6 @@ import { ResidencialComponent } from './components/residencial/residencial.compo
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
-import { RuletaComponent } from './components/ruleta/ruleta.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +43,6 @@ import { RuletaComponent } from './components/ruleta/ruleta.component';
     EmpresarialComponent,
     PreguntasFrecuentesComponent,
     InicioComponent,
-    RuletaComponent,
   ],
   imports: [
     BrowserModule,

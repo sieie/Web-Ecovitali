@@ -1,57 +1,62 @@
 <app-header></app-header>
-<div class="header-container">
-  <div class="container-fluid">
+<div class="container-fluid">
+  <div class="header-container">
     <div class="row">
       <div class="col-xl-4 col-lg-12 col-md-12 col-12 text-start">
+        <!-- TITULOS DINAMICOS -->
         <div class="container__titulos" [@fadeinUp]>
           <h1 class="h1-titulo" [@fadeinUp]="tituloActual"> {{ tituloActual }} </h1>
+          <p class="resumen-div mt-3" [@fadeinUp]="resumenDiv"> {{ resumenDiv }}</p>
         </div>
-        <!-- RULETA -->
+        <div class="">
+          <button class="custom-btn-section mt-5 mx-5">Conoce más acerca de este servicio  <img src="./assets/img/website/south-arrow-dark.svg" alt=""></button>
+        </div>
       </div>
+      <!-- RULETA -->
       <div class="col-xl-8">
         <div class="icon-container">
-          <div class="divisiones control-plagas">
+          <div class="divisiones control-plagas" [ngClass]="{ 'active': activeImageIndex === 0 }">
             <a routerLink="/" (click)="changeActiveImageIndex(0)">
               <img src="./assets/img/website/SVG-Icono-Division-07.svg" alt="Control de Plagas" />
             </a>
           </div>
-          <div class="divisiones limpieza">
+          <div class="divisiones limpieza" [ngClass]="{ 'active': activeImageIndex === 1 }">
             <a routerLink="/" (click)="changeActiveImageIndex(1)">
               <img src="./assets/img/website/SVG-Icono-Division-08.svg" alt="Limpieza" />
             </a>
           </div>
-          <div class="divisiones jardines">
+          <div class="divisiones jardines" [ngClass]="{ 'active': activeImageIndex === 2 }">
             <a routerLink="/" (click)="changeActiveImageIndex(2)">
               <img src="./assets/img/website/SVG-Icono-Division-09.svg" alt="Jardines" />
             </a>
           </div>
-          <div class="divisiones sanitizacion">
+          <div class="divisiones sanitizacion" [ngClass]="{ 'active': activeImageIndex === 3 }">
             <a routerLink="/" (click)="changeActiveImageIndex(3)">
               <img src="./assets/img/website/SVG-Icono-Division-10.svg" alt="Sanitización" />
             </a>
           </div>
         </div>
-        <!-- BOTONES DE NAVEGACIÓN-->
-        <!---- <button class="carousel-prev" (click)="prevSlide()">Previous</button>
-        <button class="carousel-next" (click)="nextSlide()">Next</button>
-      </div> -->
-
-
-    </div>
-    <button class="custom-btn-section mt-5">Conoce más acerca de este servicio</button>
-    <div class="container justify-content-center text-center">
-      <div [ngClass]="{'darkMode': darkMode}">
-        <a routerLink="/">
-          <img [src]="darkMode ? './assets/img/website/south-arrow-ligth.svg' : './assets/img/website/south-arrow-dark.svg'" class="custom-btn-section mt-2">
-        </a>
       </div>
     </div>
+  </div>
+  <!-- BOTONES DE NAVEGACIÓN-->
+  <div class="d-flex justify-content-end col-11">
+    <button class="change-btn-div" (click)="handlePrevClick()"><img src="./assets/img/website/arrow-right.svg" alt=""></button>
+      <button class="change-btn-div" (click)="handleNextClick()"><img src="./assets/img/website/arrow-left.svg" alt=""></button>
   </div>
 </div>
 
 <div class="container section-padding">
   <div class="row">
     <div class="col-12 col-md-12 col-lg-6 col-xl-6">
+
+      <div class="container justify-content-center text-center">
+        <div [ngClass]="{'darkMode': darkMode}">
+          <a routerLink="/">
+            <img [src]="darkMode ? './assets/img/website/south-arrow-ligth.svg' : './assets/img/website/south-arrow-dark.svg'" class="custom-btn-section mt-2">
+          </a>
+        </div>
+      </div>
       <div class="section-medium">
         <h1 class="fw-semibold text-center text-lg-start">Mejorando su <strong>Salud y Calidad de vida</strong></h1>
         <p class="text-center text-lg-start">En Ecovitali no exageramos cuando decimos que su bienestar es nuestra prioridad</p>

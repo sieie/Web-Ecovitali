@@ -1,5 +1,5 @@
 .header-container {
-  min-height: 80vh;
+  max-height: 75vh;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -7,10 +7,14 @@
 }
 
 .darkmode .header-container {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
 }
+.space-tp {
+  margin-top: 200px;
+}
+
 
 /* HERO */
 .container__titulos {
@@ -35,76 +39,25 @@
 }
 
 /* Contenedor de divisiones */
-
-.carousel {
-  position: relative;
-  width: 700px;
-  height: 700px;
-}
-
-.carousel-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #141C24;
-}
-
-.carousel img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  position: absolute;
-}
-
-.carousel-slide {
-  flex: 0 0 100%;
-  transition: transform 0.5s ease-in-out;
-  z-index: -1; /* hide the slide behind */
-  object-fit: cover;
-}
-.carousel-slide:nth-child(1) {
-  transform: rotate(0deg) translateX(-50%) translateY(-100%);
-}
-
-.carousel-slide:nth-child(2) {
-  transform: rotate(45deg) translateX(-50%) translateY(-100%);
-}
-
-.carousel-slide:nth-child(3) {
-  transform: rotate(90deg) translateX(-50%) translateY(-100%);
-}
-
-.carousel-slide:nth-child(4) {
-  transform: rotate(135deg) translateX(-50%) translateY(-100%);
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 90%;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ccc;
-  border: none;
-  cursor: pointer;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
-}
-
 .icon-container {
   box-sizing: border-box;
   width: 900px;
-  height: 510px;
+  height: 900px;
+  left: 30%;
+  top: 30%;
   position: relative;
-  left: 20%;
-  top: 10%;
+  transition: transform 0.6s ease;
+  border-radius: 50%;
+}
+
+.change-btn-div {
+  display: flex;
+  width: 101.592px;
+  height: 52.456px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  position: relative;
 }
 
 .control-plagas {
@@ -112,6 +65,7 @@
   width: 250px;
   height: 250px;
   position: absolute;
+  left: -160px;
   transform-origin: 0 0;
   transform: rotate(-15deg) scale(1, 1);
 }
@@ -124,11 +78,10 @@
   left: calc(50% - 80px);
   top: calc(50% - 80px);
   transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
   transition: box-shadow 0.3s ease;
 }
 
-.control-plagas img:hover{
+.control-plagas img:hover {
   box-shadow: 0px 4.49px 56.18px 0px rgba(104, 50, 231, 0.5);
 }
 
@@ -137,8 +90,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 550px;
-  top: -170px;
+  left: 350px;
+  top: -250px;
   transform-origin: 0 0;
   transform: rotate(15deg) scale(1, 1);
 }
@@ -151,10 +104,10 @@
   left: calc(50% - 80px);
   top: calc(50% - 80px);
   transform-origin: 0 0;
-  transform: rotate(0deg) scale(1, 1);
   transition: box-shadow 0.3s ease;
 }
-.limpieza img:hover{
+
+.limpieza img:hover {
   box-shadow: 0px 4.49px 56.18px 0px rgba(237, 152, 44, 0.5);
 }
 
@@ -163,8 +116,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 880.43px;
-  top: 194.44px;
+  left: 860px;
+  top: -100px;
   transform-origin: 0 0;
   transform: rotate(45deg) scale(1, 1);
 }
@@ -178,6 +131,7 @@
   top: calc(50% - 80px);
   transition: box-shadow 0.3s ease;
 }
+
 .jardines img:hover {
   box-shadow: 0px 4.49px 56.18px 0px rgba(18, 231, 182, 0.5);
 }
@@ -187,8 +141,8 @@
   width: 250px;
   height: 250px;
   position: absolute;
-  left: 900.69px;
-  top: 720.36px;
+  left: 1050px;
+  top: 350px;
   transform-origin: 0 0;
   transform: rotate(75deg) scale(1, 1);
 }
@@ -414,4 +368,3 @@
   font-size: 14px;
   line-height: 1.5;
 }
-
