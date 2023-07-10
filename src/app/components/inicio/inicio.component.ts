@@ -50,9 +50,9 @@ export class InicioComponent {
 
   resumenDiv: string = 'Texto de Ecovitali como Gestor de Servicios';
 
-  getResumenDiv(): string {
-    return this.activeImageIndex !== -1 ? this.resumenes[this.activeImageIndex] : '';
-  }
+  // getResumenDiv(): string {
+  //   return this.activeImageIndex !== -1 ? this.resumenes[this.activeImageIndex] : '';
+  // }
 
 
 
