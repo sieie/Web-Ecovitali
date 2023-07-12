@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
 ]
 })
 export class HeaderComponent {
+  isScrolled: boolean = false;
 
-  darkMode: boolean = false;
-
-    toggleDarkMode() {
-      this.darkMode = !this.darkMode;
-      document.body.classList.toggle('dark-mode');
-    }
-
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
+  }
 }

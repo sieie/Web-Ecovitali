@@ -1,8 +1,19 @@
+header {
+  background-color: #F5F5F5;
+  transition: background-color 0.5s ease;
+}
+
+.glassmorphism {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
 .navbar {
-  background: var(--bkg-color);
-  z-index: 2;
+  background: transparent;
+  z-index: 99;
   padding-top: 0;
   padding-bottom: 0;
+  position: relative;
 }
 
 .navbar-brand {

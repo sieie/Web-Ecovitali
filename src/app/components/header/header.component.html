@@ -6,7 +6,7 @@
 </div> -->
 
 <!-- PRIMER HEADER -->
-<header class="site-header">
+<!-- <header class="site-header">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-12 d-flex flex-wrap">
@@ -46,77 +46,80 @@
             <a href="#" class="social-icon-link bi-whatsapp"></a>
           </li>
 
-          <!-- <li [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
+          <li [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
             <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
               <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
             </div>
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>
   </div>
-</header>
+</header> -->
 
  <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg bg-light shadow-lg sticky-top">
-  <div class="container">
-    <a class="navbar-brand">
-      <img src="./assets/img/logo.jpg" class="logo img-fluid" alt="Ecovitali">
-    </a>
+<header [ngClass]="{'glassmorphism': isScrolled}" class="sticky-top">
+  <nav class="navbar navbar-expand-lg shadow-lg ">
+    <div class="container">
+      <a class="navbar-brand">
+        <img src="./assets/img/logo.jpg" class="logo img-fluid" alt="Ecovitali">
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
-            role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
-          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item">Residencial</a></li>
-            <li><a class="dropdown-item">Empresarial</a></li>
-            <li><a class="dropdown-item">Base Fundamental</a></li>
-          </ul>
-        </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+              <li><a class="dropdown-item">Residencial</a></li>
+              <li><a class="dropdown-item">Empresarial</a></li>
+              <li><a class="dropdown-item">Base Fundamental</a></li>
+            </ul>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
-            role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamientos</a>
-          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item">Manejo Integral de Plagas</a>
-            </li>
-            <li><a class="dropdown-item">Desinsectación</a></li>
-            <li><a class="dropdown-item">Desratización</a></li>
-            <li><a class="dropdown-item">Tratamiento de Granos</a></li>
-            <li><a class="dropdown-item">Tratamiento de Termitas</a></li>
-          </ul>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamientos</a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+              <li><a class="dropdown-item">Manejo Integral de Plagas</a>
+              </li>
+              <li><a class="dropdown-item">Desinsectación</a></li>
+              <li><a class="dropdown-item">Desratización</a></li>
+              <li><a class="dropdown-item">Tratamiento de Granos</a></li>
+              <li><a class="dropdown-item">Tratamiento de Termitas</a></li>
+            </ul>
+          </li>
 
-        <li class="nav-item dropdown">
-          <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
-            role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
-          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-            <li><a class="dropdown-item">Metodología Empresarial</a></li>
-            <li><a class="dropdown-item">Metodología Empresarial - MIP</a></li>
-            <li><a class="dropdown-item">Mecanismos y Medidas - M.I.P</a></li>
-            <li><a class="dropdown-item">Metodología Empresarial - AIM</a></li>
-          </ul>
-        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+              <li><a class="dropdown-item">Metodología Empresarial</a></li>
+              <li><a class="dropdown-item">Metodología Empresarial - MIP</a></li>
+              <li><a class="dropdown-item">Mecanismos y Medidas - M.I.P</a></li>
+              <li><a class="dropdown-item">Metodología Empresarial - AIM</a></li>
+            </ul>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link click-scroll">Sobre Nosotros</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll">Sobre Nosotros</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link click-scroll">Certificaciones</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link click-scroll">Certificaciones</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link click-scroll">Blog</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link click-scroll">Blog</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
+

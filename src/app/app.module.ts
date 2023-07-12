@@ -22,6 +22,7 @@ import { ResidencialComponent } from './components/residencial/residencial.compo
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { Header2Component } from './components/header2/header2.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     EmpresarialComponent,
     PreguntasFrecuentesComponent,
     InicioComponent,
+    Header2Component,
   ],
   imports: [
     BrowserModule,

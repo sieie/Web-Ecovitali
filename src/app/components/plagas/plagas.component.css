@@ -1,0 +1,17 @@
+.plagas {
+  background: url(src/assets/img/website/banner-control-plagas.webp) center/cover no-repeat;
+  position: relative;
+  background-blend-mode: multiply;
+  height: 100vh;
+}
+
+.h1-cp {
+  font-family: Anton;
+  font-size: 62px;
+  position: relative;
+}
+.h2-cp {
+  font-style: normal;
+  line-height: 32px;
+  position: relative;
+}
