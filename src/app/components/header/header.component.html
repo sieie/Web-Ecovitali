@@ -1,68 +1,8 @@
-<!-- BOTON DARKMODE
-<div class="container">
-  <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
-    <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
-  </div>
-</div> -->
-
-<!-- PRIMER HEADER -->
-<!-- <header class="site-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-12 d-flex flex-wrap">
-        <p class="d-flex me-4 mb-0">
-          <i class="bi-geo-alt me-2"></i>
-          Ecuador - Guayaquil
-        </p>
-
-        <p class="d-flex mb-0">
-          <i class="bi-envelope me-2"></i>
-
-          <a href="mailto:info@ecovitali.net">
-            info@ecovitali.net
-          </a>
-        </p>
-      </div>
-
-      <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
-        <ul class="social-icon">
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-twitter"></a>
-          </li>
-
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-facebook"></a>
-          </li>
-
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-instagram"></a>
-          </li>
-
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-youtube"></a>
-          </li>
-
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-whatsapp"></a>
-          </li>
-
-          <li [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
-            <div [ngClass]="{'darkMode': darkMode}" (click)="toggleDarkMode()">
-              <img [src]="darkMode ? './assets/img/website/darkMode-sol.svg' : './assets/img/website/darkMode-luna.svg'" class="darkMode-button">
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header> -->
-
- <!-- NAVBAR -->
-<header [ngClass]="{'glassmorphism': isScrolled}" class="sticky-top">
+<section [ngClass]="{'glassmorphism': isScrolled}" class="sticky-top">
   <nav class="navbar navbar-expand-lg shadow-lg ">
     <div class="container">
       <a class="navbar-brand">
-        <img src="./assets/img/logo.jpg" class="logo img-fluid" alt="Ecovitali">
+        <img src="assets/img/website/Logo-Ecovitali-Gris.webp" class="logo img-fluid" alt="Ecovitali">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -84,14 +24,14 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">Tratamientos</a>
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">¿Quiénes Somos?</a>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-              <li><a class="dropdown-item">Manejo Integral de Plagas</a>
+              <li><a class="dropdown-item"></a>
               </li>
-              <li><a class="dropdown-item">Desinsectación</a></li>
-              <li><a class="dropdown-item">Desratización</a></li>
-              <li><a class="dropdown-item">Tratamiento de Granos</a></li>
-              <li><a class="dropdown-item">Tratamiento de Termitas</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
             </ul>
           </li>
 
@@ -99,19 +39,19 @@
             <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
               role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestros Procesos</a>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-              <li><a class="dropdown-item">Metodología Empresarial</a></li>
-              <li><a class="dropdown-item">Metodología Empresarial - MIP</a></li>
-              <li><a class="dropdown-item">Mecanismos y Medidas - M.I.P</a></li>
-              <li><a class="dropdown-item">Metodología Empresarial - AIM</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
+              <li><a class="dropdown-item">Menu</a></li>
             </ul>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll">Sobre Nosotros</a>
+            <a class="nav-link click-scroll">Certificaciones</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link click-scroll">Certificaciones</a>
+            <a class="nav-link click-scroll">Contacto</a>
           </li>
 
           <li class="nav-item">
@@ -121,5 +61,4 @@
       </div>
     </div>
   </nav>
-</header>
-
+</section>
