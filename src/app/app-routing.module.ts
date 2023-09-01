@@ -11,7 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
 import { ResidencialComponent } from './components/residencial/residencial.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';

@@ -8,10 +8,17 @@ import { Component, HostListener } from '@angular/core';
 ]
 })
 export class HeaderComponent {
-  isScrolled: boolean = false;
+  isNavbarColored = false;
 
-  @HostListener('window:scroll')
+  @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.isScrolled = window.scrollY > 0;
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const windowHeight = window.innerHeight;
+
+    if (scrollPosition >= windowHeight / 2) {
+      this.isNavbarColored = true;
+    } else {
+      this.isNavbarColored = false;
+    }
   }
 }

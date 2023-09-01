@@ -1,8 +1,8 @@
-<section [ngClass]="{'glassmorphism': isScrolled}" class="sticky-top">
-  <nav class="navbar navbar-expand-lg shadow-lg ">
+<section class="sticky-top">
+  <nav [ngClass]="{'navbar-colored': isNavbarColored}" class="navbar navbar-expand-lg shadow-lg">
     <div class="container">
       <a class="navbar-brand">
-        <img src="assets/img/website/Logo-Ecovitali-Gris.webp" class="logo img-fluid" alt="Ecovitali">
+        <img src="assets/img/website/ecovitali.svg" class="logo img-fluid" alt="Ecovitali">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -13,8 +13,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
-              role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+            <a class="nav-link click-scroll dropdown-toggle" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Servicios</a>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
               <li><a class="dropdown-item">Residencial</a></li>
               <li><a class="dropdown-item">Empresarial</a></li>
@@ -26,8 +26,6 @@
             <a class="nav-link click-scroll dropdown-toggle" id="navbarLightDropdownMenuLink"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">¿Quiénes Somos?</a>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-              <li><a class="dropdown-item"></a>
-              </li>
               <li><a class="dropdown-item">Menu</a></li>
               <li><a class="dropdown-item">Menu</a></li>
               <li><a class="dropdown-item">Menu</a></li>

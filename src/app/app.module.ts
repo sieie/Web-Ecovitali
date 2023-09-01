@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule}  from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +15,7 @@ import { ProcesosComponent } from './components/procesos/procesos.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
@@ -23,6 +24,8 @@ import { EmpresarialComponent } from './components/empresarial/empresarial.compo
 import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { Header2Component } from './components/header2/header2.component';
+import { PreloaderComponent } from './components/preloader/preloader.component';
+import { RuedaComponent } from './components/rueda/rueda.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +48,15 @@ import { Header2Component } from './components/header2/header2.component';
     PreguntasFrecuentesComponent,
     InicioComponent,
     Header2Component,
+    PreloaderComponent,
+    RuedaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
