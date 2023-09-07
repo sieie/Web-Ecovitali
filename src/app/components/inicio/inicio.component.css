@@ -234,10 +234,28 @@
   background:linear-gradient(90deg, rgba(213, 212, 208, 1.00) 0%,rgba(213, 212, 208, 1.00) 0.9999999776482582%,rgba(238, 238, 236, 1.00) 31.00000023841858%);
 }
 
-.title-excelencia {
-  color: #7a0a7c;
+.icon-sector {
+  box-sizing: border-box;
+  display: block;
+  width: 175px;
+  height: auto;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  font-weight: 600;
+  color: black;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.title-cooperacion {
-  color: #009cb1;
+.icon-sector:hover {
+  transform: scale(1.1); /* Escala el elemento al 110% en hover */
+}
+.icon-sector img {
+  width: 130px !important;
+  height: 130px;
+}
+.icon-sector span {
+  display: inline-block;
+  font-size: 11px;
 }

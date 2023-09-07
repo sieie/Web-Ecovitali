@@ -21,8 +21,8 @@ import { gsap } from 'gsap';
 
 export class InicioComponent {
 
-}
 
+}
 
   // // REDIRECION AL COMPONENTE SERVICIO
   // redirectToContacto() {

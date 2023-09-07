@@ -26,6 +26,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { Header2Component } from './components/header2/header2.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
+import { CardComponentComponent } from './components/card-component/card-component.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { RuedaComponent } from './components/rueda/rueda.component';
     Header2Component,
     PreloaderComponent,
     RuedaComponent,
+    CardComponentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,47 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-link {
+  position: absolute;
+  bottom: -40px; /* Inicialmente oculto */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0 0 10px 10px;
+  transition: bottom 0.3s ease;
+}
+
+.card:hover .card-link {
+  bottom: 0; /* Aparece con animación hacia arriba */
+}
+
+.link-text {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.title-excelencia {
+  color: #7a0a7c !important;
+}
+
+.title-cooperacion {
+  color: #009cb1;
+}

@@ -19,7 +19,7 @@
   --h5-font-size: 24px;
   --h6-font-size: 16px;
   --p-font-size: 21px;
-  --btn-font-size: 18px;
+  --btn-font-size: 16px;
 
   --border-radius-large: 100px;
   --border-radius-medium: 20px;
@@ -188,8 +188,8 @@ CUSTOM BUTTON
   cursor: pointer;
   font-weight: 700;
   transition: all 0.4s;
-  padding: 20px 20px;
-  border-radius: 50px;
+  padding: 20px;
+  border-radius: 70px;
   background: var(--white-color);
   border: 1px solid transparent;
   filter: drop-shadow(0px 2px 2px rgba(0.512499988079071, 0.512499988079071, 0.512499988079071, 0.25));
