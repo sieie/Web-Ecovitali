@@ -1,12 +1,24 @@
+header {
+  color: white;
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+header.colored-background {
+  color: black;
+}
+
 .navbar {
   position: fixed;
   background-color: transparent;
-  /* backdrop-filter: blur( 15px ); */
   transition: background-color 0.5s ease;
   z-index: 99999;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+.navbar.colored-background {
+  color: white;
 }
 
 .glassmorphism {
@@ -14,7 +26,6 @@
 }
 
 .navbar-brand {
-  color: var(--bkg-color);
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-bold);
 }
@@ -40,7 +51,6 @@
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--bkg-color);
   font-size: var(--h6-font-size);
   font-weight: var(--font-weight-medium);
   position: relative;
