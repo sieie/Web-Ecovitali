@@ -2,4 +2,9 @@
   margin: auto;
   width: 130px;
   height: 130px;
+  transition: transform 0.4s ease;
+}
+
+.logos-certf:hover {
+  transform: scale(1.1); /* Escala el elemento al 110% en hover */
 }

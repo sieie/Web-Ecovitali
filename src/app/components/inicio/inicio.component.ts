@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { gsap } from 'gsap';
-
+import { Component, OnInit, ElementRef, Renderer2, ViewChild, AfterViewInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-inicio',
@@ -9,29 +7,24 @@ import { gsap } from 'gsap';
   styleUrls: ['./inicio.component.css'],
 })
 
-export class InicioComponent {
+export class InicioComponent implements OnInit, AfterViewInit {
+  @ViewChild('sectionId', { static: false }) sectionIdRef: ElementRef | undefined;
 
-  constructor(private router: Router) { }
+  constructor(private renderer: Renderer2) {}
 
-  // ngOnInit(): void {
-  //     gsap.registerPlugin(ScrollTrigger);
-
-  //     gsap.from('.animate', {
-  //       x: -100,
-  //       opacity: 0,
-  //       duration: 1,
-  //       scrollTrigger: {
-  //         trigger: '.animate',
-  //         start: 'top center',
-  //         end: 'bottom center',
-  //         markers: true,
-  //       },
-  //     });
-  //   }
+  ngOnInit() {
+    AOS.init();
+    window.addEventListener('load', () => AOS.refresh());
   }
-  // // REDIRECION AL COMPONENTE SERVICIO
-  // redirectToContacto() {
-  //   this.router.navigate(['/servicios']);
-  // }
 
+  ngAfterViewInit() {
+    this.scrollToSection();
+  }
 
+  scrollToSection() {
+    if (this.sectionIdRef) {
+      const sectionIdElement = this.sectionIdRef.nativeElement;
+      sectionIdElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}

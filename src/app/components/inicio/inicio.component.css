@@ -1,3 +1,13 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+  background-position: center center; /* Centra la imagen en el elemento */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  object-fit: cover;
+}
+
 .video-background {
   position: relative;
   width: 100%;
@@ -31,7 +41,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -64,7 +74,7 @@
   width: 100%;
   height: 20%;
   background-color: rgba(112, 182, 46, 0.60);
-  color: white;
+  color: var(--text-color);
   padding: 15px;
   transition: height 0.5s;
   font-size: 20px;
@@ -82,7 +92,7 @@
   width: 100%;
   height: 20%;
   background-color:rgba(100, 65, 147, 0.60);
-  color: white;
+  color: var(--text-color);
   padding: 15px;
   transition: height 0.5s;
   font-size: 20px;
@@ -100,7 +110,7 @@
   width: 100%;
   height: 20%;
   background-color: rgba(239, 121, 18, 0.60);
-  color: white;
+  color: var(--text-color);
   padding: 15px;
   transition: height 0.5s;
   font-size: 20px;
@@ -118,13 +128,98 @@
   width: 100%;
   height: 20%;
   background-color: rgba(255, 199, 0, 0.60);
-  color: white;
+  color: var(--text-color);
   padding: 15px;
   transition: height 0.5s;
   font-size: 20px;
 }
 
 .division-container:hover .division-overlay-seguridad {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-incendios {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 0, 35, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-incendios {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-m-climatizacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 178, 255, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-m-climatizacion {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-m-reparacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(151, 161, 175, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-m-reparacion {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-servicios-aux {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 224, 197, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-servicios-aux {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-administracion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 71, 178, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-administracion {
   height: 100%;
   bottom: 0;
 }
@@ -137,12 +232,12 @@
 .division-intro {
   margin: 0;
   padding: 10px;
-  display: none;
+  display: inline-block;
   font-size: 16px;
 }
 
 .division-container:hover .division-intro {
-  display: block;
+  display: inline-block;
 }
 
 .garantia {

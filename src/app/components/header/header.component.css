@@ -1,33 +1,36 @@
 header {
-  color: white;
   background-color: transparent;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-header.colored-background {
-  color: black;
+.colored-text {
+  color: black !important;
 }
 
+/* .negative-img {
+  filter: invert(100%) !important;
+} */
+
 .navbar {
-  position: fixed;
+  position: absolute;
   background-color: transparent;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
   z-index: 99999;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-.navbar.colored-background {
+.colored-background {
   color: white;
 }
 
 .glassmorphism {
-  background-color: rgba( 255, 255, 255, 0.5 );;
+  background-color: rgba( 255, 255, 255, 0.5 );
 }
 
 .navbar-brand {
   font-size: var(--h6-font-size);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-normal);
 }
 
 .navbar-brand small {
@@ -39,20 +42,22 @@ header.colored-background {
 }
 
 .logo {
-  width: 260px;
+  width: 250px;
   height: auto;
+  margin: auto;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
   margin-right: 0;
   margin-left: 0;
   padding: 16px;
+  color: var(--white-color);
 }
 
 .navbar-nav .nav-link {
   display: inline-block;
   font-size: var(--h6-font-size);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
   position: relative;
 }
 

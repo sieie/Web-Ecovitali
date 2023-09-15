@@ -1,22 +1,20 @@
-import { AfterViewInit, Component } from '@angular/core';
-import { gsap } from 'gsap';
-
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
+
+export class AppComponent implements OnInit {
+
   title = 'Ecovitali';
 
-
-  ngAfterViewInit() {
-    gsap.from('.section', {
-      duration: 1,
-      opacity: 0,
-      y: 50,
-      stagger: 0.3
+  ngOnInit() {
+    AOS.init({
+      duration : 1300
     });
   }
+
 }

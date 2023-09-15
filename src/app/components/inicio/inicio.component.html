@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<section class="video-background">
+<!-- <section class="video-background">
   <div class="video-background_inner">
     <video autoplay loop muted class="video-background__video">
       <source src="assets/img/website/empleados.mp4" type="video/mp4">
@@ -12,10 +12,21 @@
     <h5 class="text-center text-light fw-normal">Grupo Empresarial Ecovitali te ayuda a que las personas se sientan <br>más seguras y productivas en sus espacios de trabajo.</h5>
     <span class="custom-btn-section mt-4 px-5"><img src="assets/img/website/flecha.svg">Explora Nuestros Procesos</span>
   </div>
+</section> -->
+
+<section class="video-background">
+  <img src="assets/img/website/portada.png" class="hero" alt="">
+  <div class="video-background__content">
+    <span class="text-light">Soluciones Integrales</span>
+    <h1 class="text-center text-light">Creamos espacios que generan <br>bienestar</h1>
+    <h5 class="text-center text-light fw-normal">Grupo Empresarial Ecovitali te ayuda a que las personas se sientan <br>más seguras y productivas en sus espacios de trabajo.</h5>
+    <div (click)="scrollToSection()" class="custom-btn-section mt-4 px-5"><img src="assets/img/website/flecha.svg">Explora Nuestros Procesos</div>
+  </div>
 </section>
 
-<section class="section-padding container">
-  <div class="row">
+<section class="section-padding container" id="sectionId">
+  <div class="row" data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom">
     <div class="d-flex col-lg-6 col-md-6 col-sm-12">
       <img src="assets/img/website/propuesta.png" alt="Propuesta Ecovitali" class="img-fluid w-auto">
     </div>
@@ -30,11 +41,11 @@
   </div>
 </section>
 
-<section class="section-padding">
+<section class="section-padding" data-aos="fade-right">
  <app-certificaciones></app-certificaciones>
 </section>
 
-<section class="section-padding container">
+<section class="section-padding container" data-aos="fade-up">
   <div class="row">
     <div class="col-12 text-center">
       <h2 class="fw-bold">Nuestras Divisiones Empresariales</h2>
@@ -45,9 +56,8 @@
       <div class="division-container">
         <img src="assets/img/website/control-plagas.png" class="division-img" alt="Control de Plagas">
         <div class="division-overlay-plagas">
-          <span class="fw-semibold">Control de Plagas</span>
-          <p class="division-intro">Introducción ...
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum reiciendis. Vel, non alias repudiandae quidem nisi
+          <span class="fw-bold">Control de Plagas</span>
+          <p class="division-intro fw-semibold">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas. Regresa a un hogar o negocio sin preocupaciones
           </p>
           <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
         </div>
@@ -57,9 +67,8 @@
       <div class="division-container">
         <img src="assets/img/website/limpieza.png" class="division-img" alt="Control de Plagas">
         <div class="division-overlay-limpieza">
-          <span class="fw-semibold">Limpieza y Desinfección</span>
-          <p class="division-intro">Introducción ...
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum reiciendis. Vel, non alias repudiandae quidem nisi
+          <span class="fw-bold">Limpieza y Desinfección</span>
+          <p class="division-intro fw-semibold">Deja que nos encarguemos de los detalles sucios. Con nuestra limpieza y desinfección, puedes relajarte y vivir sin preocupaciones.
           </p>
           <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
         </div>
@@ -69,9 +78,8 @@
       <div class="division-container">
         <img src="assets/img/website/prados.png" class="division-img" alt="Control de Plagas">
         <div class="division-overlay-prados">
-          <span class="fw-semibold">Prados y Jardines</span>
-          <p class="division-intro">Introducción ...
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum reiciendis. Vel, non alias repudiandae quidem nisi
+          <span class="fw-bold">Prados y Jardines</span>
+          <p class="division-intro fw-semibold">Nuestros expertos en prados y jardinería hacen que tu paisaje sea el orgullo de la comunidad. Tu jardín, nuestro compromiso.
           </p>
           <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
         </div>
@@ -81,9 +89,63 @@
       <div class="division-container">
         <img src="assets/img/website/seguridad.png" class="division-img" alt="Control de Plagas">
         <div class="division-overlay-seguridad">
-          <span class="fw-semibold">Seguridad</span>
-          <p class="division-intro">Introducción ...
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptatum reiciendis. Vel, non alias repudiandae quidem nisi
+          <span class="fw-bold">Seguridad</span>
+          <p class="division-intro fw-semibold">Nuestro equipo de seguridad altamente capacitado está listo para mantener a salvo tu hogar o negocio. Siéntete seguro, siempre.
+          </p>
+          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <div class="division-container">
+        <img src="assets/img/website/equipos-incendios.png" class="division-img" alt="Control de Plagas">
+        <div class="division-overlay-incendios">
+          <span class="fw-bold">Equipos contra incendios</span>
+          <p class="division-intro fw-semibold">Nuestros equipos contra incendios de calidad te brindan la tranquilidad de saber que estás listo para cualquier emergencia.
+          </p>
+          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <div class="division-container">
+        <img src="assets/img/website/mantenimiento.png" class="division-img" alt="Control de Plagas">
+        <div class="division-overlay-m-climatizacion">
+          <span class="fw-bold">Mantenimiento y Climatización</span>
+          <p class="division-intro fw-semibold">Nuestros servicios de mantenimiento garantizan que tu inversión en climatización rinda al máximo. Eficiencia energética y comodidad.
+          </p>
+          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <div class="division-container">
+        <img src="assets/img/website/mantenimiento-reparacion.png" class="division-img" alt="Control de Plagas">
+        <div class="division-overlay-m-reparacion">
+          <span class="fw-bold">Mantenimiento y Reparación</span>
+          <p class="division-intro fw-semibold">Nuestro equipo de expertos en mantenimiento y reparación se encarga de todos los detalles. Tu propiedad, en manos confiables.
+          </p>
+          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <div class="division-container">
+        <img src="assets/img/website/servicios.png" class="division-img" alt="Control de Plagas">
+        <div class="division-overlay-servicios-aux">
+          <span class="fw-bold">Servicios Auxiliares</span>
+          <p class="division-intro fw-semibold">Nuestro conjunto de servicios auxiliares se adapta a tus necesidades individuales. Calidad y confianza en cada tarea.
+          </p>
+          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <div class="division-container">
+        <img src="assets/img/website/administracion.png" class="division-img" alt="Control de Plagas">
+        <div class="division-overlay-administracion">
+          <span class="fw-bold">Administración de bienes y servicios</span>
+          <p class="division-intro fw-semibold">Nuestra experiencia en administración de propiedades garantiza un retorno sólido de tu inversión. Estamos comprometidos con tu éxito.
           </p>
           <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
         </div>
@@ -92,7 +154,7 @@
   </div>
 </section>
 
-<section class="container section-padding">
+<section class="container section-padding" data-aos="fade-up">
   <div class="row col-12 p-3">
     <h2 class="text-center mt-5">CONSTRUIMOS BIENESTAR A TRAVÉS DE LA ESPECIALIZACIÓN EN CADA SECTOR</h2>
     <p class="mt-3">En ECOVITALI trabajamos por el éxito de nuestros clientes, mientras generamos bienestar laboral social. Nuestros servicios integrales o especializados constituyen una ventaja competitiva y contribuyen a la eficiencia e incremento de tu rentabilidad, enfocándote en tu verdadero negocio; sea cual sea tu sector, trabajamos por el éxito de tu organización.</p>
@@ -157,7 +219,7 @@
   </div>
 </section>
 
-<section class="container section-padding">
+<section class="container section-padding" data-aos="fade-right">
   <div class="row p-3">
     <div class="col-xl-6 col-lg-6 col-md-12 col-12 mt-5">
       <h2 class="text-xl-start text-sm-center">Construimos espacios a través de personas</h2>
