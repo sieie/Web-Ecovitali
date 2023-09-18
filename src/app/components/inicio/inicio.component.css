@@ -326,7 +326,8 @@
 }
 
 .pasion-ciencia{
-  background:linear-gradient(90deg, rgba(213, 212, 208, 1.00) 0%,rgba(213, 212, 208, 1.00) 0.9999999776482582%,rgba(238, 238, 236, 1.00) 31.00000023841858%);
+  background-image: url('../../../assets/img/website/supervisor.jpg');
+  /* background:linear-gradient(90deg, rgba(213, 212, 208, 1.00) 0%,rgba(213, 212, 208, 1.00) 0.9999999776482582%,rgba(238, 238, 236, 1.00) 31.00000023841858%); */
 }
 
 .icon-sector {
@@ -353,4 +354,34 @@
 .icon-sector span {
   display: inline-block;
   font-size: 11px;
+}
+
+/* Estilo del contenedor principal */
+.tecnologia {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('../../../assets/img/website/supervisor.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+/* Capa oscura */
+.tecnologia::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del contenido encima de la imagen de fondo */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 5px;
 }

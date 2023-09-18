@@ -5,6 +5,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente para el contenido */
 }
 
 .card:hover {
@@ -14,34 +15,32 @@
 
 .card-content {
   padding: 20px;
+  margin-bottom: 20px; /* Eliminamos el margen inferior por defecto */
+  transition: margin-bottom 0.3s ease; /* Agregamos una transición */
 }
 
 .card-link {
   position: absolute;
-  bottom: -40px; /* Inicialmente oculto */
-  left: 0;
+  bottom: -60px; /* Inicialmente oculto */
   width: 100%;
   text-align: center;
-  background-color: #007bff;
-  color: #fff;
+  color: rgba(0, 123, 255, 0.7);
   text-decoration: none;
   border-radius: 0 0 10px 10px;
   transition: bottom 0.3s ease;
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 20px;
+  box-shadow: 0px 18px 36px -18px rgba(0,0,0,0.1),0px 30px 45px -30px rgba(50,50,93,0.25);
 }
 
 .card:hover .card-link {
-  bottom: 0; /* Aparece con animación hacia arriba */
+  bottom: 0;
 }
 
 .link-text {
   display: inline-block;
   margin-right: 10px;
-}
-
-.title-excelencia {
-  color: #7a0a7c !important;
-}
-
-.title-cooperacion {
-  color: #009cb1;
+  font-size: var(--p-font-size);
+  font-weight: 600;
 }

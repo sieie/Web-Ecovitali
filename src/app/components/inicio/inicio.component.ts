@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Renderer2, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
 @Component({
@@ -7,24 +7,19 @@ import * as AOS from 'aos';
   styleUrls: ['./inicio.component.css'],
 })
 
-export class InicioComponent implements OnInit, AfterViewInit {
-  @ViewChild('sectionId', { static: false }) sectionIdRef: ElementRef | undefined;
+export class InicioComponent implements OnInit  {
 
-  constructor(private renderer: Renderer2) {}
+  constructor() {}
 
   ngOnInit() {
     AOS.init();
     window.addEventListener('load', () => AOS.refresh());
   }
 
-  ngAfterViewInit() {
-    this.scrollToSection();
-  }
-
-  scrollToSection() {
-    if (this.sectionIdRef) {
-      const sectionIdElement = this.sectionIdRef.nativeElement;
-      sectionIdElement.scrollIntoView({ behavior: 'smooth' });
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   }
 }

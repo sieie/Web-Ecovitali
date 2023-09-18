@@ -16,27 +16,30 @@ import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 import { InicioComponent } from './components/inicio/inicio.component';
-
+import { RuedaComponent } from './components/rueda/rueda.component';
+import { JardineriaComponent } from './pages/jardineria/jardineria.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch:'full' },
-  { path: 'inicio', component: InicioComponent },
+  { path: 'inicio', component: InicioComponent, data: { animation: 'inicio' } },
   { path: 'home', component: HomeComponent },
-  { path: 'header', component: HeaderComponent},
+  { path: 'header', component: HeaderComponent },
   { path: 'tratamientos', component: TratamientosComponent},
   { path: 'sectores', component: SectoresComponent},
   { path: 'procesos', component: ProcesosComponent},
   { path: 'plagas', component: PlagasComponent},
   { path: 'noticias', component: NoticiasComponent},
-  { path: 'nosotros', component: NosotrosComponent},
-  { path: 'contacto', component: ContactoComponent},
-  { path: 'servicios', component: ServiciosComponent},
+  { path: 'nosotros', component: NosotrosComponent, data: { animation: 'nosotros' }},
+  { path: 'contacto', component: ContactoComponent, data: { animation: 'contacto' }},
+  { path: 'servicios', component: ServiciosComponent, data: { animation: 'servicios' }},
   { path: 'empresarial', component: EmpresarialComponent},
   { path: 'residencial', component: ResidencialComponent},
-  { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent},
+  { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent, data: { animation: 'preguntas-frecuentes' }},
   { path: 'base-fundamental', component: BaseFundamentalComponent},
   { path: 'certificaciones', component: CertificacionesComponent},
+  { path: 'rueda', component: RuedaComponent, data: { animation: 'rueda' }},
+  { path: 'jardines', component: JardineriaComponent, data: { animation: 'rueda' }},
   { path: '**', component: HomeComponent}
   // { path: '**', component: PagenotfoundComponent}
 

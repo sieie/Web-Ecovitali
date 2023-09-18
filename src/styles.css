@@ -11,14 +11,13 @@
 
   --body-font-family: 'Montserrat', sans-serif;
 
-
   --h1-font-size: 56px;
   --h2-font-size: 44px;
   --h3-font-size: 36px;
   --h4-font-size: 28px;
   --h5-font-size: 24px;
   --h6-font-size: 16px;
-  --p-font-size: 21px;
+  --p-font-size: 20px;
   --btn-font-size: 16px;
 
   --border-radius-large: 100px;
@@ -39,16 +38,11 @@ html, body {
   background-color: var(--bkg-color);
 }
 
-
-
-
 /* MODO OSCURO */
 body.dark-mode {
   --text-color: #000000;
   background-color: #333;
 }
-
-
 /*---------------------------------------
 TYPOGRAPHY
 -----------------------------------------*/
@@ -151,8 +145,6 @@ CUSTOM LIST
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-
 /*---------------------------------------
 CUSTOM TEXT BOX
 -----------------------------------------*/
@@ -190,7 +182,7 @@ CUSTOM BUTTON
   cursor: pointer;
   font-weight: 700;
   transition: all 0.4s;
-  padding: 20px;
+  padding: 15px;
   border-radius: 70px;
   background: var(--white-color);
   border: 1px solid transparent;
@@ -214,7 +206,9 @@ CUSTOM BUTTON
   border: 1px solid transparent;
   filter: drop-shadow(0px 2px 2px rgba(0.512499988079071, 0.512499988079071, 0.512499988079071, 0.25));
 }
-
+.card-space {
+  margin-top: 180px;
+}
 .darkMode .custom-btn-section:hover {
   background: #8c9eab;
   transform: translateY(10px);
@@ -245,6 +239,43 @@ CONTACT
   padding-bottom: 30px;
   width: 100%;
 }
+
+.featured-block {
+  text-align: center;
+  transition: all 0.5s ease;
+  min-height: 256px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.featured-block:hover {
+  background: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+.featured-block:hover .featured-block-image {
+  transform: scale(0.75);
+}
+
+.featured-block-image {
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.featured-block:hover .featured-block-text {
+  margin-top: 0;
+}
+
+.featured-block-text {
+  color: var(--dark-color);
+  font-size: var(--h5-font-size);
+  margin-top: 20px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
 
 
 /*---------------------------------------
