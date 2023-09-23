@@ -147,12 +147,10 @@
 }
 
 .garantia-card {
-  min-height: 250px;
   border-radius: 20px;
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.7);
   position: relative;
-  padding: 1.8rem;
-  border: 2px solid #c3c6ce;
+  border: 2px solid rgba(255, 255, 255, 0.7);
   transition: 0.5s ease-out;
   overflow: visible;
 }
@@ -160,14 +158,11 @@
 .garantia-card-details {
   color: black;
   height: 100%;
-  gap: .5em;
-  display: grid;
   place-content: center;
 }
 
 .garantia-card-button {
   transform: translate(-50%, 125%);
-  width: 60%;
   border-radius: 1rem;
   border: none;
   background-color: #028537;
@@ -180,6 +175,7 @@
   opacity: 0;
   transition: 0.3s ease-out;
 }
+
 /*Hover*/
 .garantia-card:hover {
   border-color: #028537;
@@ -191,30 +187,34 @@
   opacity: 1;
 }
 
+/* Línea debajo del título */
+.text-title {
+  position: relative;
+}
+
 .text-title::after {
   content: "";
   position: absolute;
-  bottom: 50px;
+  bottom: -5px;
   left: 0;
-  width: 20%;
+  width: 50%;
   height: 4px;
   background-color: #000000;
-  transform: scaleX(1);
-  /* Inicialmente la línea está oculta */
+  transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
 }
 
 .garantia-card:hover .text-title::after {
-  transform: scaleX(2);
-  /* Cuando se hace hover en el título, la línea se estira */
+  transform: scaleX(1);
   background-color: #00ab55;
-  /* Cambia el color a verde */
 }
+
 
 .sect-industriales {
   display: flex;
   max-width: auto;
+  min-height: auto;
   padding: 60px 120px;
   align-items: center;
   justify-content: center;
@@ -225,8 +225,8 @@
 
 .card-industrias {
   position: relative;
-  width: 280px;
-  height: 400px;
+  width: 100%;
+  max-height: auto;
   background: #fff;
   border-radius: 15px;
   align-items: start;
