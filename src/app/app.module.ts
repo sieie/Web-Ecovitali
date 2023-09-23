@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectoresComponent } from './components/sectores/sectores.component';
-import { PlagasComponent } from './components/plagas/plagas.component';
+import { PlagasComponent } from './pages/plagas/plagas.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TratamientosComponent } from './components/tratamientos/tratamientos.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';

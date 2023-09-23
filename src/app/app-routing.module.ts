@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TratamientosComponent } from './components/tratamientos/tratamientos.component';
 import { SectoresComponent } from './components/sectores/sectores.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
-import { PlagasComponent } from './components/plagas/plagas.component';
+import { PlagasComponent } from './pages/plagas/plagas.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { ContactoComponent } from './components/contacto/contacto.component';

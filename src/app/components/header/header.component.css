@@ -1,6 +1,7 @@
 header {
   background-color: transparent;
   transition: color 0.3s ease, background-color 0.3s ease;
+
 }
 
 .colored-text {
@@ -18,7 +19,7 @@ header {
   z-index: 99999;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 65px;
 }
 .colored-background {
   color: white;

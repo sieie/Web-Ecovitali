@@ -1,4 +1,14 @@
-.header2-navbar img{
-  min-width: 100%;
+.icons-divisiones img{
+  margin-top: 65px;
   height: 100px;
+  min-width: 100px;
+}
+
+.header2-navbar {
+  transition: transform 0.4s ease;
+  padding: 0;
+}
+
+.header2-navbar:hover {
+  transform: scale(1.1); /* Escala el elemento al 110% en hover */
 }

@@ -23,7 +23,7 @@
     <div (click)="scrollToSection('propuesta')" class="custom-btn-section mt-4 px-5"><img src="assets/img/website/flecha.svg">Explora Nuestros Procesos</div>
   </div>
 </section>
-
+<!--=========================================== PROPUESTA ===========================================-->
 <section class="section-padding container" id="propuesta">
   <div class="row" data-aos="fade-up"
   data-aos-anchor-placement="center-bottom">
@@ -40,11 +40,25 @@
     </div>
   </div>
 </section>
-
+<!--=========================================== CERTIFICACIONES ===========================================-->
 <section class="section-padding" data-aos="fade-right" id="certificaciones">
  <app-certificaciones></app-certificaciones>
+ <div class="container">
+  <div class="row p-3">
+    <div class="col-xl-6 col-lg-5 col-md-12 mt-5">
+      <h3 class="fw-bold text-xl-center text-lg-center text-center mt-3">RESULTADOS EXITOSOS CON ESTRATEGIAS TÉCNICAS Y
+        PROFESIONALES</h3>
+    </div>
+    <div class="col-xl-6 col-lg-7 col-md-12 mt-5">
+      <p class="mt-2">Ecovitali es una de las pocas organizaciones con la capacidad de brindar un servicio variado, pero
+        es la única que contempla los altos estándares de calidad y seguridad que han caracterizado a nuestra marca,
+        desde el inicio hasta la entrega de servicios de excelencia.</p>
+    </div>
+  </div>
+ </div>
 </section>
 
+<!--=========================================== DIVISIONES EMPRESARIALES ===========================================-->
 <section class="section-padding container" data-aos="fade-up" id="construimos-personas">
   <div class="row">
     <div class="col-12 text-center">
@@ -59,7 +73,7 @@
           <span class="fw-bold">Control de Plagas</span>
           <p class="division-intro fw-semibold">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas. Regresa a un hogar o negocio sin preocupaciones
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <a routerLink="plagas" class="btn btn-dark division-intro">Conoce acerca de nuestra división</a>
         </div>
       </div>
     </div>
@@ -153,7 +167,7 @@
     </div>
   </div>
 </section>
-
+<!--=========================================== SECTORES DE TRABAJO ===========================================-->
 <section class="container section-padding" data-aos="fade-up" id="bienestar">
   <div class="row col-12 p-3">
     <h2 class="text-center mt-5">CONSTRUIMOS BIENESTAR A TRAVÉS DE LA ESPECIALIZACIÓN EN CADA SECTOR</h2>
@@ -218,7 +232,6 @@
     </div>
   </div>
 </section>
-
 <section class="container section-padding" data-aos="fade-right">
   <div class="row p-3">
     <div class="col-xl-6 col-lg-6 col-md-12 col-12 mt-5">
@@ -233,7 +246,7 @@
     </div>
   </div>
 </section>
-
+<!--=========================================== GARANTIA ===========================================-->
 <section class="section-padding container">
   <div class="row">
     <div class="garantia">
@@ -247,7 +260,7 @@
     </div>
   </div>
 </section>
-
+<!--=========================================== CIENCIA Y CONOCIMIENTO ===========================================-->
 <section class="section-padding tecnologia">
   <div class="container">
     <div class="row justify-content-around">
@@ -283,6 +296,7 @@
     </div>
   </div>
 </section>
+<!--=========================================== CARDS RANDOM ===========================================-->
 <section class="section-padding">
   <div class="container">
     <div class="row mt-5 space-bot">
@@ -294,7 +308,6 @@
           </a>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
         <div class="featured-block d-flex justify-content-center align-items-center">
           <a href="home.html" class="featured-block-text">
@@ -303,7 +316,6 @@
           </a>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
         <div class="featured-block d-flex justify-content-center align-items-center">
           <a href="home.html" class="featured-block-text">
@@ -312,7 +324,6 @@
           </a>
         </div>
       </div>
-
       <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
         <div class="featured-block d-flex justify-content-center align-items-center">
           <a href="home.html" class="featured-block-text">
@@ -324,5 +335,4 @@
     </div>
   </div>
 </section>
-
 <app-footer></app-footer>
