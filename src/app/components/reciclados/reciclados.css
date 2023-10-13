@@ -19,33 +19,6 @@
   z-index: 1;
 }
 
-.img-propuesta {
-  border-radius: 0 0 20px 20px;
-  width: 95%;
-  position: relative;
-  z-index: 2;
-  height: 95%;
-}
-
-.rounded-rectangle-izq {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background: #ffe8db;
-  border-radius: 0px 0px 23px 0px;
-  z-index: 1;
-}
-
-.img-construir {
-  border-radius: 20px;
-  width: 90%;
-  position: relative;
-  z-index: 2;
-  height: 98%;
-}
-
 .resultados-container {
   background: #ECF3FE;
   border-radius: 20px;
@@ -76,64 +49,201 @@
   font: 600 22px/150% 'Montserrat', sans-serif;
 }
 
+.img-propuesta {
+  border-radius: 0 0 20px 20px;
+  width: 95%;
+  position: relative;
+  z-index: 2;
+  height: 95%;
+}
 
 
 /* Estilos para el contenedor de divisiones */
 .division-container {
   position: relative;
+  text-align: center;
   margin-bottom: 20px;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: var(--shadow-box-shadow, 0px 20px 30px 0px rgba(0, 0, 0, 0.10));
 }
 
 .division-img {
-  border-radius: 10px 10px 0px 0px;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+/* Estilos para el fondo simulando un botón */
+.division-overlay-plagas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  position: relative;
+  height: 20%;
+  background-color: rgba(112, 182, 46, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
 }
 
-.division-text {
+.division-container:hover .division-overlay-plagas {
+  height: 100%;
+  bottom: 0;
+}
+
+.division-overlay-limpieza {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color:rgba(100, 65, 147, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-limpieza {
+  height: 100%;
+  bottom: 0;
+}
+
+.division-overlay-prados {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(239, 121, 18, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-prados {
+  height: 100%;
+  bottom: 0;
+}
+
+.division-overlay-seguridad {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 199, 0, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-seguridad {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-incendios {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(255, 0, 35, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-incendios {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-m-climatizacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 178, 255, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-m-climatizacion {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-m-reparacion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(151, 161, 175, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-m-reparacion {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-servicios-aux {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 224, 197, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-servicios-aux {
+  height: 100%;
+  bottom: 0;
+}
+.division-overlay-administracion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 71, 178, 0.60);
+  color: var(--text-color);
+  padding: 15px;
+  transition: height 0.5s;
+  font-size: 20px;
+}
+
+.division-container:hover .division-overlay-administracion {
+  height: 100%;
+  bottom: 0;
+}
+
+.division-container:hover .division-img {
+  transform: scale(1.1);
+}
+
+/* Estilos para el párrafo de introducción */
+.division-intro {
   margin: 0;
-  font-size: 0.92rem;
-  color: #1e1e1e;
+  padding: 10px;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.titulo-plagas {
-  color: #028537;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-limpieza {
-  color: #542f88;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-jardines {
-  color: #c14b17;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-desinfeccion {
-  color: #1e81ad;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-seguridad {
-  color: #e7b400;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-equipos_contraincendios {
-  color: #bc181a;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-climatizacion {
-  color: #00dbe9;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-reparacion {
-  color: #757575;
-  font: 800 1.02rem 'Montserrat', sans-serif;
-}
-.titulo-administracion_bienes {
-  color: #012dc9;
-  font: 800 1.02rem 'Montserrat', sans-serif;
+.division-container:hover .division-intro {
+  display: inline-block;
 }
 
 .garantia {
@@ -229,7 +339,8 @@
 
 .icon-sector {
   box-sizing: border-box;
-  width: 170px;
+  display: block;
+  width: 175px;
   height: auto;
   cursor: pointer;
   text-align: center;
@@ -238,15 +349,14 @@
   color: black;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
-  justify-items: center;
 }
 
 .icon-sector:hover {
   transform: scale(1.1); /* Escala el elemento al 110% en hover */
 }
 .icon-sector img {
-  width: 80px !important;
-  height: 80px;
+  width: 130px !important;
+  height: 130px;
 }
 .icon-sector span {
   display: inline-block;

@@ -3,10 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TratamientosComponent } from './components/tratamientos/tratamientos.component';
 import { SectoresComponent } from './components/sectores/sectores.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
-import { PlagasComponent } from './pages/plagas/plagas.component';
+import { PlagasComponent } from './pages/plagas/index/plagas.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
-import { NosotrosComponent } from './components/nosotros/nosotros.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
@@ -18,7 +16,7 @@ import { CertificacionesComponent } from './components/certificaciones/certifica
 import { InicioComponent } from './components/inicio/inicio.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
 import { JardineriaComponent } from './pages/jardineria/jardineria.component';
-
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch:'full' },
@@ -27,11 +25,10 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'tratamientos', component: TratamientosComponent},
   { path: 'sectores', component: SectoresComponent},
-  { path: 'procesos', component: ProcesosComponent},
-  { path: 'plagas', component: PlagasComponent},
+  { path: 'procesos', component: ProcesosComponent },
+  { path: 'plagas', component: PlagasComponent },
+  { path: 'plagas/nosotros', component: NosotrosComponent },
   { path: 'noticias', component: NoticiasComponent},
-  { path: 'nosotros', component: NosotrosComponent, data: { animation: 'nosotros' }},
-  { path: 'contacto', component: ContactoComponent, data: { animation: 'contacto' }},
   { path: 'servicios', component: ServiciosComponent, data: { animation: 'servicios' }},
   { path: 'empresarial', component: EmpresarialComponent},
   { path: 'residencial', component: ResidencialComponent},
@@ -40,7 +37,7 @@ const routes: Routes = [
   { path: 'certificaciones', component: CertificacionesComponent},
   { path: 'rueda', component: RuedaComponent, data: { animation: 'rueda' }},
   { path: 'jardines', component: JardineriaComponent, data: { animation: 'rueda' }},
-  { path: '**', component: HomeComponent}
+  { path: '**', component: InicioComponent}
   // { path: '**', component: PagenotfoundComponent}
 
 ];
@@ -49,4 +46,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

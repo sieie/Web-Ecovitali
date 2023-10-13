@@ -1,7 +1,8 @@
 .icons-divisiones img{
-  margin-top: 65px;
-  height: 100px;
-  min-width: 100px;
+  margin-top: 60px;
+  height: 80px;
+  min-width: 80px;
+  position: relative;
 }
 
 .header2-navbar {
@@ -10,5 +11,5 @@
 }
 
 .header2-navbar:hover {
-  transform: scale(1.1); /* Escala el elemento al 110% en hover */
+  transform: scale(1.1);
 }

@@ -1,0 +1,237 @@
+<app-header></app-header>
+<section class="plagas">
+  <div class="container py-5 text-center">
+    <div class="d-flex justify-content-center row">
+      <div class="col-12">
+        <app-header2></app-header2>
+        <h1 class="h1-cp mt-2">Nuestra división de control de plagas asegura <br> la eliminación de las plagas.
+          <br>¡DESDE LA RAÍZ!</h1>
+      </div>
+      <div>
+        <h2 class="h2-cp d-none d-md-block">¡Disfruta de entornos sin invasores con nuestros servicios de control de
+          plagas de confianza!</h2>
+        <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4 justify-content-center">Conoce más
+          acerca de esta división <img src="assets/img/website/south-arrow-dark.svg" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-padding" data-aos="fade-right" id="certificaciones">
+  <app-certificaciones></app-certificaciones>
+  <div id="sectores"></div>
+</section>
+<!--=========================================== PUNTOS CLAVE ===========================================-->
+<section class="section-padding p-3">
+  <div class="container container-p-claves">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="btn-servicios">Puntos claves de</div>
+        <h2 class="fw-semibold">Nuestro Servicio</h2>
+        <p class="mb-3 text-center">Comprometidos con la calidad y excelencia</p>
+      </div>
+    </div>
+    <div class="container-services row text-center text-sm-center text-lg-start text-xl-start">
+      <div class="col-12 col-md-12 col-lg-4 col-xl-5">
+        <ul class="list-unstyled list-points mt-4">
+          <div class="p-3" data-aos="fade-up">
+            <img src="assets/img/website/inspeccion.svg" class="svg-icon">
+            <li class="mt-2 mb-5"><b>Inspección y Prevención</b>
+              <br>Inspeccionamos los puntos críticos y sus riesgos, permitiéndonos tomar acciones preventivas o
+              correctivas, eficaces y eficientes.
+            </li>
+          </div>
+          <div class="p-3" data-aos="fade-up">
+            <img src="assets/img/website/estructura.svg" class="svg-icon">
+            <li class="mb-5 "><b>Estructura y Conocimiento</b> <br>Diseñamos el plan de acción en conjunto con la
+              mejor
+              tecnología disponible y el respaldo científico actualizado.
+            </li>
+          </div>
+          <div class="p-3" data-aos="fade-up">
+            <img src="assets/img/website/equipo.svg" class="svg-icon">
+            <li class="mb-5"><b>Equipo y tecnología</b> <br>Con el uso de herramientas digitales y un equipo altamente
+              capacitado, garantizamos el seguimiento del servicio y resultados.</li>
+          </div>
+        </ul>
+      </div>
+      <div class="col-12 col-md-12 col-lg-8 col-xl-7 d-flex justify-content-center">
+        <div class="container-services img-fluid text-center float-xl-end">
+          <div class="serv-colum-1">
+            <div data-aos="fade-up"><img src="assets/img/website/andres.webp" class="serv-1 img-fluid transition"
+                alt="Inspección"></div>
+            <div data-aos="fade-up"><img src="assets/img/website/andres.webp" class="serv-2 img-fluid transition"
+                alt="Inspección"></div>
+          </div>
+          <div class="serv-colum-2">
+            <div data-aos="fade-up"><img src="assets/img/website/andres.webp" class="serv-3 img-fluid transition"
+                alt="Inspección"></div>
+            <div data-aos="fade-up"><img src="assets/img/website/andres.webp" class="serv-4 img-fluid transition"
+                alt="Inspección"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=========================================== RESULTADOS ESPERADOS ===========================================-->
+<section class="container section-padding" data-aos="fade-right">
+  <div class="row p-3">
+    <div class="col-xl-6 col-lg-5 col-md-12 mt-5">
+      <h3 class="fw-bold text-xl-center text-lg-center text-center mt-3">RESULTADOS EXITOSOS CON ESTRATEGIAS TÉCNICAS Y
+        PROFESIONALES</h3>
+    </div>
+    <div class="col-xl-6 col-lg-7 col-md-12 mt-5">
+      <p class="mt-2">Ecovitali es una de las pocas organizaciones con la capacidad de brindar un servicio variado, pero
+        es la única que contempla los altos estándares de calidad y seguridad que han caracterizado a nuestra marca,
+        desde el inicio hasta la entrega de servicios de excelencia.</p>
+    </div>
+  </div>
+</section>
+<!--=========================================== TRABAJAMOS POR SU BIENESTAR ===========================================-->
+<section class="section-padding garantia-banner p-3"> <!--data-aos="fade-up" -->
+  <div class="container content" data-aos="zoom-in-down">
+    <div class="row d-flex align-items-center justify-content-center col-12 m-3">
+      <h2 class="fw-bold text-center text-white">Trabajamos para su bienestar</h2>
+      <p class="mb-3 text-white fw-normal col-9">Nos especializamos en erradicar las plagas en todos los sectores profesionales,
+        pero erradicar las plagas en su hogar también es nuestra prioridad.</p>
+    </div>
+    <div class="row d-flex align-items-center justify-content-center">
+      <a routerLink="/empresas" class="card col-md-4 col-12 m-5">
+        <span class="icon text-center m-2 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-buildings"
+            viewBox="0 0 16 16">
+            <path
+              d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z" />
+            <path
+              d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z" />
+          </svg>
+        </span>
+        <h4 class="text-center">SECTOR EMPRESARIAL</h4>
+        <p class="text-center">Talento humano profesional altamente capacitado y certificado</p>
+      </a>
+      <a routerLink="/residencias" class="card col-md-4 col-12 m-5">
+        <span class="icon bi-house text-center m-2"></span>
+        <h4 class="text-center">SECTOR RESIDENCIAL</h4>
+        <p class="text-center">Su hogar y su familia protegidos en un entorno libre de plagas garantizado.</p>
+      </a>
+      <!--=========================================== GARANTIA ===========================================-->
+      <div class="col-md-9 col-12 p-2 m-3">
+        <div class="garantia-card p-5">
+          <div class="garantia-card-details">
+            <h4 class="text-title">NUESTRA GARANTÍA</h4>
+            <p>Como parte de nuestro plan de mejora continua, incrementar nuestro conocimiento es un factor
+              clave en la búsqueda del éxito.</p>
+          </div>
+          <button class="garantia-card-button justify-content-center">Conoce más sobre nuestra garantía</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=========================================== CAROUSEL EXPERTOS EN CONTROL DE PLAGAS =============================-->
+<section class="section-padding container">
+  <div class="row d-flex align-items-center justify-content-center col-xl-12 col-lg-12 col-md-12 col-12 p-3">
+    <h2 class="text-center mb-5 fw-bold">Somos Expertos en Control de Plagas</h2>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <!-- Controles del Carrusel -->
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></li>
+      </ol>
+      <!-- Contenido del Carrusel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- Contenido del primer elemento del carrusel -->
+          <img src="assets/img/icono-entrenamiento-certificado.webp" width="60px" height="60px" alt="">
+          <span class="text-title"><b>Entrenamiento Certificado</b></span>
+          <p class="text-justify">Nuestros técnicos con certificación no son solo un argumento comercial,
+            estamos realmente comprometidos con la excelencia, es por eso que nuestros técnicos son entrenados y
+            certificados con el respaldo de agencias de control nacional competente, contamos con el respaldo de
+            profesionales que junto a sistemas de gestión certificados por firmas nacionales e internacionales
+            como asociados de negocios, impulsamos de forma conjunta nuestro esfuerzo empresarial a la excelencia,
+            con conciencia ambiental y social.</p>
+        </div>
+        <div class="carousel-item">
+          <!-- Contenido del segundo elemento del carrusel -->
+          <img src="assets/img/icono-entrenamiento-continuo.webp" width="60px" height="60px" alt="">
+          <span class="text-title"><b>Entrenamiento Continuo</b></span>
+          <p class="text-justify">Somos los mejores porque jamás dejamos de aprender, como parte de nuestro plan
+            de mejora continua, aumentar nuestro conocimiento es un paso clave en la búsqueda del éxito, con
+            herramientas digitales avanzadas hasta la técnica presencial más simple con todos los cuidados de
+            distanciamiento exigidos en nuestra nueva normalidad, seguimos trabajando hasta que nuestro cliente esté
+            satisfecho.
+          </p>
+        </div>
+        <div class="carousel-item">
+          <!-- Contenido del tercer elemento del carrusel -->
+          <img src="assets/img/icono-entornos-controlados.webp" width="60px" height="60px" alt="">
+          <span class="text-title"><b>Entrenamiento en Entornos Controlados</b></span>
+          <p>Nuestro sistema de entrenamiento no se trata solo de clases sustentadas en textos; nuestros técnicos
+            son entrenados en ambientes controlados que simulan un entorno específico, donde aprenden desde el
+            protocolo más básico hasta las técnicas de tratamiento más complejas. Esto nos permite detectar
+            deficiencias de manera oportuna y fortalecer criterios que garanticen un servicio profesional y
+            resultados exitosos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--=========================================== TRATAMIENTOS ===========================================-->
+<section class="section-padding justify-content-center">
+  <div class="container sect-industriales">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-light text-center fw-bold">TRATAMIENTOS EN <br>SECTORES INDUSTRIALES</h2>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up">
+        <div class="card-industrias p-4">
+          <img src="assets/img/website/granos.svg" alt="Tratamiento de Granos y Almacenados">
+          <h5 class="fw-bold mt-3 mb-3">Tratamiento de Granos y Almacenados</h5>
+          <p>En ECOVITALI, entendemos el valor nutricional y económico de los granos y estructuras de almacenaje en la industria. Por eso, nos hemos equipado para protegerlos de todo, desde diminutos artrópodos hasta notorios roedores.</p>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Conoce más</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-industrias p-4">
+          <img src="assets/img/website/termitas.svg" alt="Tratamiento de Granos y Almacenados">
+          <h5 class="fw-bold mt-3 mb-3">Tratamiento de Termitas</h5>
+          <p>Las termitas son una gran amenaza para nuestras propiedades. Aunque son especialmente dañinas para la madera, también pueden acelerar el deterioro de estructuras de cemento y acero. En ECOVITALI, estamos equipados para combatir esta amenaza con tratamientos correctivos y preventivos de alta tecnología.
+          </p>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Conoce más</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-industrias p-4">
+          <img src="assets/img/website/ratas.svg" alt="Tratamiento de Granos y Almacenados">
+          <h5 class="fw-bold mt-3 mb-3">Tratamientos Especializados</h5>
+          <p>Existe ciertos animales que no pueden ser contemplados dentro del servicio de control de plagas estándar y por ello son especiales, en ECOVITALI diseñamos un servicio para tratar a estos vectores en particular, ajustados a cada necesidad pero siempre con nuestra calidad y garantía certificada.
+          </p>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Conoce más</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <!--=========================================== CONTACTO ===========================================-->
+<section data-aos="fade-up" data-aos-delay="300">
+  <app-contacto-plagas></app-contacto-plagas>
+</section>
+
+<app-footer></app-footer>

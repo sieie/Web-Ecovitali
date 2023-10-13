@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule}  from "@angular/common/http";
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SectoresComponent } from './components/sectores/sectores.component';
-import { PlagasComponent } from './pages/plagas/plagas.component';
+import { PlagasComponent } from './pages/plagas/index/plagas.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TratamientosComponent } from './components/tratamientos/tratamientos.component';
 import { ProcesosComponent } from './components/procesos/procesos.component';
-import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { NoticiasComponent } from './components/noticias/noticias.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 import { ServiciosComponent } from './components/servicios/servicios.component';
@@ -28,6 +28,10 @@ import { PreloaderComponent } from './components/preloader/preloader.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
 import { CardComponentComponent } from './components/card-component/card-component.component';
 import { JardineriaComponent } from './pages/jardineria/jardineria.component';
+import { ContactoPlagasComponent } from './components/contacto-plagas/contacto-plagas.component';
+import { HeaderBlackComponent } from './components/header-black/header-black.component';
+
+
 
 @NgModule({
   declarations: [
@@ -38,9 +42,7 @@ import { JardineriaComponent } from './pages/jardineria/jardineria.component';
     FooterComponent,
     TratamientosComponent,
     ProcesosComponent,
-    NosotrosComponent,
     NoticiasComponent,
-    ContactoComponent,
     HomeComponent,
     CertificacionesComponent,
     ServiciosComponent,
@@ -54,6 +56,9 @@ import { JardineriaComponent } from './pages/jardineria/jardineria.component';
     RuedaComponent,
     CardComponentComponent,
     JardineriaComponent,
+    ContactoPlagasComponent,
+    NosotrosComponent,
+    HeaderBlackComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +66,7 @@ import { JardineriaComponent } from './pages/jardineria/jardineria.component';
     NgbModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

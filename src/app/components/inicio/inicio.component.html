@@ -1,19 +1,4 @@
 <app-header></app-header>
-
-<!-- <section class="video-background">
-  <div class="video-background_inner">
-    <video autoplay loop muted class="video-background__video">
-      <source src="assets/img/website/empleados.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="video-background__content">
-    <span class="text-light">Soluciones Integrales</span>
-    <h1 class="text-center text-light">Creamos espacios que generan <br>bienestar</h1>
-    <h5 class="text-center text-light fw-normal">Grupo Empresarial Ecovitali te ayuda a que las personas se sientan <br>más seguras y productivas en sus espacios de trabajo.</h5>
-    <span class="custom-btn-section mt-4 px-5"><img src="assets/img/website/flecha.svg">Explora Nuestros Procesos</span>
-  </div>
-</section> -->
-
 <section class="video-background" id="portada">
   <img src="assets/img/website/portada.png" class="hero" alt="Portada-Ecovitali">
   <div class="video-background__content">
@@ -24,19 +9,16 @@
   </div>
 </section>
 <!--=========================================== PROPUESTA ===========================================-->
-<section class="section-padding container" id="propuesta">
-  <div class="row" data-aos="fade-up"
-  data-aos-anchor-placement="center-bottom">
-    <div class="d-flex col-lg-5 col-md-6 col-sm-12">
-      <img src="assets/img/website/propuesta.png" alt="Propuesta Ecovitali" class="img-fluid w-100">
+<section class="container" id="propuesta">
+  <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+    <div class="d-flex col-lg-5 col-md-6 col-sm-12 position-relative">
+      <img src="assets/img/website/propuesta.png" alt="Propuesta Ecovitali" class="img-fluid img-propuesta">
+      <div class="rounded-rectangle"></div>
     </div>
-    <div class="col-lg-7 col-md-6 col-sm-12 mt-5 p-4">
-      <h2 class="text-center fw-bold">Una propuesta de valor agregado</h2>
-      <p class="text-center p-3 fst-italic fw-bold">Tu bienestar siempre será nuestra prioridad</p>
-      <p class="d-flex justify-content-center p-2">Contribuimos a la sociedad creando espacios que promueva el bienestar de las personas y aporte a las empresas a
-        alcanzar su máximo potencial, con soluciones inteligentes y talento humano comprometido con la excelencia, seguimos
-        y establecemos los máximos estándares de calidad y seguridad del servicio, con soluciones integrales fluidas, en
-        cumplimiento e incluso superando el marco legal, normativas, reglamentos y demás afines </p>
+    <div class="col-lg-7 col-md-6 col-sm-12 mt-5 p-lg-5 p-2 align-items-center">
+      <h2 class="text-center fw-bold p-2">Una propuesta de valor agregado</h2>
+      <p class="text-center fst-italic fw-bold p-3">Tu bienestar siempre será nuestra prioridad</p>
+      <p class="d-flex justify-content-center text-justify p-3">Contribuimos a la sociedad creando espacios que promuevan el bienestar de las personas y aportan a las empresas a alcanzar su máximo potencial, con soluciones inteligentes y talento humano comprometido con la excelencia, seguimos y establecemos los máximos estándares de calidad y seguridad del servicio, con soluciones integrales fluidas, en cumplimiento e incluso superando el marco legal, normativas, reglamentos y demás afines.</p>
     </div>
   </div>
 </section>
@@ -45,19 +27,19 @@
  <app-certificaciones></app-certificaciones>
  <div class="container">
   <div class="row p-3">
-    <div class="col-xl-6 col-lg-5 col-md-12 mt-5">
-      <h3 class="fw-bold text-xl-center text-lg-center text-center mt-3">RESULTADOS EXITOSOS CON ESTRATEGIAS TÉCNICAS Y
-        PROFESIONALES</h3>
+    <div class="col-xl-6 col-lg-5 col-md-12 mt-2">
+      <div class="mt-3 p-5 mx resultados-container">
+        <span class="resultados-title">RESULTADOS EXITOSOS <br></span>
+        <span class="resultados-text">con estrategias técnicas <br> y profesionales.</span>
+        <img src="assets/img/website/iconos/exito.svg" class="img-exito" alt="Resultados de éxito">
+      </div>
     </div>
     <div class="col-xl-6 col-lg-7 col-md-12 mt-5">
-      <p class="mt-2">Ecovitali es una de las pocas organizaciones con la capacidad de brindar un servicio variado, pero
-        es la única que contempla los altos estándares de calidad y seguridad que han caracterizado a nuestra marca,
-        desde el inicio hasta la entrega de servicios de excelencia.</p>
+      <p class="mt-2"><b>Ecovitali</b> es una de las pocas organizaciones con la capacidad de brindar un <b>servicio integral</b>, pero es la única que contempla los altos estándares de calidad y seguridad que han caracterizado a nuestra marca, desde el inicio hasta la entrega de servicios de excelencia.</p>
     </div>
   </div>
  </div>
 </section>
-
 <!--=========================================== DIVISIONES EMPRESARIALES ===========================================-->
 <section class="section-padding container" data-aos="fade-up" id="construimos-personas">
   <div class="row">
@@ -66,110 +48,193 @@
     </div>
   </div>
   <div class="row mt-5">
-    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-      <div class="division-container">
-        <img src="assets/img/website/control-plagas.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-plagas">
-          <span class="fw-bold">Control de Plagas</span>
-          <p class="division-intro fw-semibold">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas. Regresa a un hogar o negocio sin preocupaciones
-          </p>
-          <a routerLink="plagas" class="btn btn-dark division-intro">Conoce acerca de nuestra división</a>
+    <!--================= CONTROL DE PLAGAS =================-->
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12 atropos my-atropos">
+      <div class="division-container atropos-scale">
+        <div class="atropos-rotate">
+          <div class="atropos-inner">
+            <img src="assets/img/website/control-plagas.png" class="division-img" alt="Control de Plagas">
+            <div class="p-4">
+              <div class="mb-2 titulo-plagas">CONTROL DE PLAGAS</div>
+              <p class="division-text">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas. Regresa a un hogar o negocio sin preocupaciones
+              </p>
+              <div class="d-flex justify-content-between align-content-center mt-3">
+                <a routerLink="plagas">
+                  <img src="assets/img/website/iconos/arrow-narrow-right-plagas.svg" alt="">
+                </a>
+                <a routerLink="plagas">
+                  <img src="assets/img/website/iconos/ECOVITALI_Division_Plagas.svg" width="70px" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!--================= LIMPIEZA =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
       <div class="division-container">
-        <img src="assets/img/website/limpieza.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-limpieza">
-          <span class="fw-bold">Limpieza y Desinfección</span>
-          <p class="division-intro fw-semibold">Deja que nos encarguemos de los detalles sucios. Con nuestra limpieza y desinfección, puedes relajarte y vivir sin preocupaciones.
+        <img src="assets/img/website/limpieza.png" class="division-img" alt="Limpieza y Sanitización">
+        <div class="p-4">
+          <div class="mb-2 titulo-limpieza">LIMPIEZA Y SANITIZACIÓN</div>
+          <p class="division-text text-">Deja que nos encarguemos de los detalles sucios. Con nuestra limpieza y desinfección, puedes relajarte y vivir sin preocupaciones.
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-limpieza.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Limpieza.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <!--================= PRADOS Y JARDINES =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
       <div class="division-container">
-        <img src="assets/img/website/prados.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-prados">
-          <span class="fw-bold">Prados y Jardines</span>
-          <p class="division-intro fw-semibold">Nuestros expertos en prados y jardinería hacen que tu paisaje sea el orgullo de la comunidad. Tu jardín, nuestro compromiso.
+        <img src="assets/img/website/prados.png" class="division-img" alt="Prados y Jardines">
+        <div class="p-4">
+          <div class="mb-2 titulo-jardines">PRADOS Y JARDINES</div>
+          <p class="division-text">Nuestros expertos en prados y jardinería hacen que tu paisaje sea el orgullo de la comunidad. Tu jardín, nuestro compromiso.
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-prados.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Prados_Jardines.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <!--================= DESINFECCION =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
       <div class="division-container">
-        <img src="assets/img/website/seguridad.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-seguridad">
-          <span class="fw-bold">Seguridad</span>
-          <p class="division-intro fw-semibold">Nuestro equipo de seguridad altamente capacitado está listo para mantener a salvo tu hogar o negocio. Siéntete seguro, siempre.
+        <img src="assets/img/website/desinfeccion.png" class="division-img" alt="Desinfección">
+        <div class="p-4">
+          <div class="mb-2 titulo-desinfeccion">DESINFECCION</div>
+          <p class="division-text">Nuestro equipo de seguridad altamente capacitado está listo para mantener a salvo tu hogar o negocio. Siéntete seguro, siempre.
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-desinfeccion.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Desinfeccion.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <!--================= SEGURIDAD Y CONTROL =================-->
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+      <div class="division-container">
+        <img src="assets/img/website/seguridad.png" class="division-img" alt="Seguridad y Control">
+        <div class="p-4">
+          <div class="mb-2 titulo-seguridad">SEGURIDAD Y CONTROL</div>
+          <p class="division-text">Nuestros equipos contra incendios de calidad te brindan la tranquilidad de saber que estás listo para cualquier emergencia.
+          </p>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-seguridad.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Seguridad.svg" width="70px" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================= EQUIPOS CONTRA INCENDIOS =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12">
       <div class="division-container">
         <img src="assets/img/website/equipos-incendios.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-incendios">
-          <span class="fw-bold">Equipos contra incendios</span>
-          <p class="division-intro fw-semibold">Nuestros equipos contra incendios de calidad te brindan la tranquilidad de saber que estás listo para cualquier emergencia.
+        <div class="p-4">
+          <div class="mb-2 titulo-equipos_contraincendios">EQUIPOS CONTRA INCENDIOS</div>
+          <p class="division-text">Nuestros servicios de mantenimiento garantizan que tu inversión en climatización rinda al máximo. Eficiencia energética y comodidad.
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-equipos-incendios.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Equipos_contraincendios.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+    <div class="d-flex justify-content-center mb-5 mt-5">
+      <div class="custom-btn-section" (click)="verMas = !verMas">
+        <img src="assets/img/website/flecha.svg" class="rotate-arrow" [style.transform]="verMas ? 'rotate(180deg)' : ''">
+        Ver más Divisiones
+      </div>
+    </div>
+    <!--================= CLIMATIZACION =================-->
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="100" *ngIf="verMas" [ngClass]="{'fadeIn': verMas, 'show': verMas}">
       <div class="division-container">
-        <img src="assets/img/website/mantenimiento.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-m-climatizacion">
-          <span class="fw-bold">Mantenimiento y Climatización</span>
-          <p class="division-intro fw-semibold">Nuestros servicios de mantenimiento garantizan que tu inversión en climatización rinda al máximo. Eficiencia energética y comodidad.
+        <img src="assets/img/website/climatizacion.png" class="division-img" alt="Control de Plagas">
+        <div class="p-4">
+          <div class="mb-2 titulo-climatizacion">CLIMATIZACIÓN</div>
+          <p class="division-text">Nuestro equipo de expertos en mantenimiento y reparación se encarga de todos los detalles. Tu propiedad, en manos confiables.
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-climatizacion.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Climatizacion.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+    <!--================= REPARACION Y MANTENIMIENTO =================-->
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300" *ngIf="verMas" [ngClass]="{'fadeIn': verMas, 'show': verMas}">
       <div class="division-container">
         <img src="assets/img/website/mantenimiento-reparacion.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-m-reparacion">
-          <span class="fw-bold">Mantenimiento y Reparación</span>
-          <p class="division-intro fw-semibold">Nuestro equipo de expertos en mantenimiento y reparación se encarga de todos los detalles. Tu propiedad, en manos confiables.
+        <div class="p-4">
+          <div class="mb-2 titulo-reparacion">REPARACIÓN Y MANTENIMIENTO</div>
+          <p class="division-text">Nuestro conjunto de servicios auxiliares se adapta a tus necesidades individuales. Calidad y confianza en cada tarea.
           </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-reparacion.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Reparacion.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-      <div class="division-container">
-        <img src="assets/img/website/servicios.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-servicios-aux">
-          <span class="fw-bold">Servicios Auxiliares</span>
-          <p class="division-intro fw-semibold">Nuestro conjunto de servicios auxiliares se adapta a tus necesidades individuales. Calidad y confianza en cada tarea.
-          </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+    <!--================= ADMINISTRACION DE BIENES Y SERVICIOS =================-->
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-delay="600" *ngIf="verMas" [ngClass]="{'fadeIn': verMas, 'show': verMas}">
       <div class="division-container">
         <img src="assets/img/website/administracion.png" class="division-img" alt="Control de Plagas">
-        <div class="division-overlay-administracion">
-          <span class="fw-bold">Administración de bienes y servicios</span>
-          <p class="division-intro fw-semibold">Nuestra experiencia en administración de propiedades garantiza un retorno sólido de tu inversión. Estamos comprometidos con tu éxito.
-          </p>
-          <span class="btn btn-dark division-intro">Conoce acerca de nuestra división</span>
+        <div class="p-4">
+          <div class="mb-2 titulo-administracion_bienes">ADMINISTRACION DE BIENES Y SERVICIOS</div>
+          <p class="division-text">Nuestra experiencia en administración de propiedades garantiza un retorno sólido de tu inversión. Estamos comprometidos con tu éxito.</p>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/arrow-narrow-right-administracion.svg" alt="">
+            </a>
+            <a routerLink="#">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Administracion.svg" width="70px" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </section>
 <!--=========================================== SECTORES DE TRABAJO ===========================================-->
-<section class="container section-padding" data-aos="fade-up" id="bienestar">
-  <div class="row col-12 p-3">
+<section class="container mb-5" data-aos="fade-up" id="bienestar">
+  <div class="row p-lg-3 p-md-3 p-0">
+    <div class="d-flex col-lg-12 col-12 p-3"></div>
     <h2 class="text-center mt-5">CONSTRUIMOS BIENESTAR A TRAVÉS DE LA ESPECIALIZACIÓN EN CADA SECTOR</h2>
     <p class="mt-3">En ECOVITALI trabajamos por el éxito de nuestros clientes, mientras generamos bienestar laboral social. Nuestros servicios integrales o especializados constituyen una ventaja competitiva y contribuyen a la eficiencia e incremento de tu rentabilidad, enfocándote en tu verdadero negocio; sea cual sea tu sector, trabajamos por el éxito de tu organización.</p>
     <div class="row d-flex justify-content-around col-12">
@@ -234,28 +299,29 @@
 </section>
 <section class="container section-padding" data-aos="fade-right">
   <div class="row p-3">
-    <div class="col-xl-6 col-lg-6 col-md-12 col-12 mt-5">
-      <h2 class="text-xl-start text-sm-center">Construimos espacios a través de personas</h2>
+    <div class="col-xl-6 col-lg-6 col-md-12 col-12 mt-5 pe-lg-5">
+      <h2 class="text-lg-center text-sm-center fw-bold">Construimos espacios a través de personas</h2>
       <p class="mt-3">Son las personas quienes definen los espacios, por ello, trabajamos de la mano con nuestros y la comunidad de forma general, con un enfoque de alto nivel estratégico, técnico y operativo, con talento humano de alto nivel capacitado y preparado para brindar soluciones que se traducen en la entrega de espacios que contribuyen hoy a la sociedad del mañana; nuestros valores nos impulsan y dan forma a quiénes somos y lo que hacemos, refuerzan nuestro compromiso con los clientes, las personas y los lugares a los que servimos</p>
       <div class="d-flex justify-content-center">
         <span class="custom-btn-section mt-3 mb-5">Conoce más de Ecovitali en la sociedad <img src="assets/img/website/arrow-left.svg"></span>
       </div>
     </div>
-    <div class="col-xl-6 col-lg-6 col-md-12 col-12">
-      <img src="assets/img/website/espacios.png" class="img-fluid" alt="Ejecutivos Ecovitali reunidos">
+    <div class="col-xl-6 col-lg-6 col-md-12 col-12 p-4 position-relative">
+      <img src="assets/img/website/espacios.png" class="img-fluid img-construir" alt="Ejecutivos Ecovitali reunidos">
+      <div class="rounded-rectangle-izq"></div>
     </div>
   </div>
 </section>
 <!--=========================================== GARANTIA ===========================================-->
-<section class="section-padding container">
+<section class="section-padding container mb-5">
   <div class="row">
     <div class="garantia">
-      <div class="garantia-card m-5">
+      <div class="garantia-card m-4">
         <div class="garantia-card-details">
           <h4 class="text-title">NUESTRA GARANTÍA</h4>
           <span class="text-body">Como parte de nuestro plan de mejora continua, incrementar nuestro conocimiento es un <b>factor clave en la búsqueda del éxito.</b></span>
         </div>
-        <button class="garantia-card-button">Conoce más sobre nuestra garantía</button>
+        <span class="garantia-card-button p-2">Conoce más sobre nuestra garantía</span>
       </div>
     </div>
   </div>
@@ -296,43 +362,12 @@
     </div>
   </div>
 </section>
-<!--=========================================== CARDS RANDOM ===========================================-->
-<section class="section-padding">
-  <div class="container">
-    <div class="row mt-5 space-bot">
-      <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-        <div class="featured-block d-flex justify-content-center align-items-center">
-          <a href="home.html" class="featured-block-text">
-            <img src="./assets/img/icono-fumigacion.webp" class="featured-block-image img-fluid" alt="">
-            <p class="featured-block-text"><strong>Fumigación y Control 24/7</strong></p>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-        <div class="featured-block d-flex justify-content-center align-items-center">
-          <a href="home.html" class="featured-block-text">
-            <img src="./assets/img/icono-asistencia.webp" class="featured-block-image img-fluid" alt="">
-            <p class="featured-block-text"><strong>Asistencia <br>Inmediata</strong></p>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
-        <div class="featured-block d-flex justify-content-center align-items-center">
-          <a href="home.html" class="featured-block-text">
-            <img src="./assets/img/icono-ecuador.webp" class="featured-block-image img-fluid" alt="">
-            <p class="featured-block-text"><strong>Cobertura a Nivel Nacional</strong></p>
-          </a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-        <div class="featured-block d-flex justify-content-center align-items-center">
-          <a href="home.html" class="featured-block-text">
-            <img src="./assets/img/icono-tratamientos.webp" class="featured-block-image img-fluid" alt="">
-            <p class="featured-block-text"><strong>Tratamiento ideal para el cliente</strong></p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+
+<script src="atropos.min.js"></script>
+<script>
+  const myAtropos = Atropos({
+    el: '.my-atropos',
+  });
+</script>
 <app-footer></app-footer>
