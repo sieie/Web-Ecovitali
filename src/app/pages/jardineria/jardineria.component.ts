@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import '../../components/inicio/inicio.component.css';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-jardineria',
@@ -10,7 +10,15 @@ export class JardineriaComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    AOS.init();
+    window.addEventListener('load', () => AOS.refresh());
   }
 
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

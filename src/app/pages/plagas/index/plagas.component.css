@@ -5,11 +5,22 @@
   height: 100vh;
 }
 
+.container-plagas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.icon-plagas {
+  width: 100px;
+  height: 100px;
+}
+
 .h1-cp {
-  font-family: Anton;
   color: var(--white-color);
-  font-weight: normal;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
 }
 
 .h2-cp {

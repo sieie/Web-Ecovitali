@@ -1,11 +1,12 @@
 .site-footer {
-  background-color: var(--bkg-color);
+  background-color: #282828;
   padding: 0;
+  color: var(--white-color);
 }
 
 .site-footer-bottom {
   position: relative;
-  background-color: var(--secondary-color);
+  background-color: var(--text-color);
   margin-top: 30px;
   margin-bottom: 0;
   padding-top: 25px;
@@ -17,7 +18,7 @@
 }
 
 .site-footer-bottom a:hover {
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .site-footer-link {
@@ -25,17 +26,34 @@
   text-decoration: none;
 }
 
+.site-footer-title {
+  color: var(--white-color);
+  letter-spacing: 0px;
+  transition: color 0.3s;
+}
+
+.site-footer-title:hover {
+  color: #B7B6B6;
+}
+
+
 .copyright-text {
-  color: var(--section-bg-color);
-  font-size: var(--copyright-font-size);
+  color: var(--white-color);
+  font-size: 0.8em;
   margin-bottom: 30px;
 }
 
 .site-footer .custom-btn {
-  font-size: var(--copyright-font-size);
+  font-size: 0.8em;
   text-decoration: none;
 }
 
+.text-hover {
+  transition: color 0.3s;
+}
+.text-hover:hover {
+  color: #B7B6B6;
+}
 
 /*---------------------------------------
   FOOTER MENU
@@ -47,22 +65,31 @@
 
 .footer-menu-item {
   list-style: none;
-  display: block;
-  font-size: var(--h6-font-size);
+  font-size: 0.8em;
+  color: var(--white-color);
 }
 
 .footer-menu-link {
-  color: var(--text-color);
-  display: inline-block;
-  vertical-align: middle;
-  text-decoration: none;
+  color: var(--white-color);
+  text-align: start;
 }
+.col-custom {
+  flex-basis: auto; /* Ancho de contenido */
+  flex-grow: 0; /* No se expande para llenar el espacio disponible */
+  max-width: 100%; /* Máximo ancho es el 100% del contenedor */
+  margin-right: -40px; /* Puedes ajustar el valor del margen según tus necesidades */
+}
+
 /*---------------------------------------
 SOCIAL ICON
 -----------------------------------------*/
 .icon-img {
   width: 87%;
   margin-bottom: 20px;
+}
+
+p {
+  color: var(--white-color);
 }
 
 .social-icon {
@@ -78,7 +105,7 @@ SOCIAL ICON
 }
 
 .social-icon-link {
-  color: var(--site-footer-bg-color);
+  color: var(--white-color);
   font-size: var(--h4-font-size);
   display: block;
   text-align: center;

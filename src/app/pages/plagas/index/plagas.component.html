@@ -1,17 +1,17 @@
 <app-header></app-header>
 <section class="plagas">
   <div class="container py-5 text-center">
-    <div class="d-flex justify-content-center row">
-      <div class="col-12">
-        <app-header2></app-header2>
-        <h1 class="h1-cp mt-2">Nuestra división de control de plagas asegura <br> la eliminación de las plagas.
-          <br>¡DESDE LA RAÍZ!</h1>
-      </div>
-      <div>
-        <h2 class="h2-cp d-none d-md-block">¡Disfruta de entornos sin invasores con nuestros servicios de control de
-          plagas de confianza!</h2>
-        <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4 justify-content-center">Conoce más
-          acerca de esta división <img src="assets/img/website/south-arrow-dark.svg" alt=""></div>
+    <div class="d-block justify-content-center row mx-lg-5 mx-5">
+      <div class="col-12 container-plagas">
+        <div class="mx-lg-5 mx-0 mt-5">
+          <div class="d-block text-center">
+            <img src="assets/img/website/SVG-Icono-Division-11.svg" class="icon-plagas" alt="Control de Plagas">
+            <p class="text-white fw-semibold text-center">Control de Plagas</p>
+          </div>
+          <h1 class="h1-cp">Eliminamos las plagas desde la raíz, garantizando una solución efectiva.</h1>
+          <h2 class="h2-cp d-none d-md-block mt-3">¡Disfruta de entornos sin invasores con nuestros servicios de control de plagas de confianza!</h2>
+          <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg" class="align-content-center"><span class="px-2">Conoce más sobre nuestra división</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -70,20 +70,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!--=========================================== RESULTADOS ESPERADOS ===========================================-->
-<section class="container section-padding" data-aos="fade-right">
-  <div class="row p-3">
-    <div class="col-xl-6 col-lg-5 col-md-12 mt-5">
-      <h3 class="fw-bold text-xl-center text-lg-center text-center mt-3">RESULTADOS EXITOSOS CON ESTRATEGIAS TÉCNICAS Y
-        PROFESIONALES</h3>
-    </div>
-    <div class="col-xl-6 col-lg-7 col-md-12 mt-5">
-      <p class="mt-2">Ecovitali es una de las pocas organizaciones con la capacidad de brindar un servicio variado, pero
-        es la única que contempla los altos estándares de calidad y seguridad que han caracterizado a nuestra marca,
-        desde el inicio hasta la entrega de servicios de excelencia.</p>
     </div>
   </div>
 </section>
@@ -231,7 +217,7 @@
 </section>
       <!--=========================================== CONTACTO ===========================================-->
 <section data-aos="fade-up" data-aos-delay="300">
-  <app-contacto-plagas></app-contacto-plagas>
+  <app-contactform botonColor="#9bc31e"></app-contactform>
 </section>
 
 <app-footer></app-footer>

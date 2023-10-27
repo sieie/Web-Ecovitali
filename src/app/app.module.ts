@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule}  from "@angular/common/http";
 import { ReactiveFormsModule } from '@angular/forms';
 
@@ -30,6 +29,9 @@ import { CardComponentComponent } from './components/card-component/card-compone
 import { JardineriaComponent } from './pages/jardineria/jardineria.component';
 import { ContactoPlagasComponent } from './components/contacto-plagas/contacto-plagas.component';
 import { HeaderBlackComponent } from './components/header-black/header-black.component';
+import { LimpiezaComponent } from './pages/limpieza/index/limpieza.component';
+import { GarantiaComponent } from './components/garantia/garantia.component';
+import { ContactformComponent } from './components/contactform/contactform.component';
 
 
 
@@ -59,12 +61,14 @@ import { HeaderBlackComponent } from './components/header-black/header-black.com
     ContactoPlagasComponent,
     NosotrosComponent,
     HeaderBlackComponent,
+    LimpiezaComponent,
+    GarantiaComponent,
+    ContactformComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule,
     HttpClientModule,
     ReactiveFormsModule,
   ],

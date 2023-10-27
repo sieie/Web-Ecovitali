@@ -17,10 +17,12 @@ import { InicioComponent } from './components/inicio/inicio.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
 import { JardineriaComponent } from './pages/jardineria/jardineria.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { LimpiezaComponent } from './pages/limpieza/index/limpieza.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch:'full' },
-  { path: 'inicio', component: InicioComponent, data: { animation: 'inicio' } },
+  { path: 'inicio', component: InicioComponent},
   { path: 'home', component: HomeComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'tratamientos', component: TratamientosComponent},
@@ -28,15 +30,16 @@ const routes: Routes = [
   { path: 'procesos', component: ProcesosComponent },
   { path: 'plagas', component: PlagasComponent },
   { path: 'plagas/nosotros', component: NosotrosComponent },
+  { path: 'limpieza', component: LimpiezaComponent },
   { path: 'noticias', component: NoticiasComponent},
-  { path: 'servicios', component: ServiciosComponent, data: { animation: 'servicios' }},
+  { path: 'servicios', component: ServiciosComponent },
   { path: 'empresarial', component: EmpresarialComponent},
   { path: 'residencial', component: ResidencialComponent},
-  { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent, data: { animation: 'preguntas-frecuentes' }},
+  { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent},
   { path: 'base-fundamental', component: BaseFundamentalComponent},
   { path: 'certificaciones', component: CertificacionesComponent},
-  { path: 'rueda', component: RuedaComponent, data: { animation: 'rueda' }},
-  { path: 'jardines', component: JardineriaComponent, data: { animation: 'rueda' }},
+  { path: 'rueda', component: RuedaComponent},
+  { path: 'jardines', component: JardineriaComponent},
   { path: '**', component: InicioComponent}
   // { path: '**', component: PagenotfoundComponent}
 

@@ -7,20 +7,25 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   isNavbarColored = false;
-  isTextColored = false; // Agregamos esta variable
+  isTextColored = false;
+  isMegaMenuOpen: boolean = false;
+
+  toggleMegaMenu() {
+    this.isMegaMenuOpen = !this.isMegaMenuOpen;
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const scrollPosition =
-      window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    const windowHeight = window.innerHeight;
+      const scrollPosition =
+          window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      const windowHeight = window.innerHeight;
 
-    if (scrollPosition >= windowHeight * 0.2) {
-      this.isNavbarColored = true;
-      this.isTextColored = true; // Cambiamos la variable cuando hacemos scroll
-    } else {
-      this.isNavbarColored = false;
-      this.isTextColored = false; // Cambiamos la variable cuando hacemos scroll hacia arriba
-    }
+      if (scrollPosition >= windowHeight * 0.2) {
+          this.isNavbarColored = true;
+          this.isTextColored = true;
+      } else {
+          this.isNavbarColored = false;
+          this.isTextColored = false;
+      }
   }
 }

@@ -35,12 +35,11 @@
                 data-bs-toggle="dropdown" aria-expanded="false" href="#section_2">Nuestras Divisiones</a>
               <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
                 <li><a routerLink="/plagas" class="dropdown-item">División Control de Plagas</a></li>
-                <li><a class="dropdown-item">División Limpieza y Desinfección</a></li>
-                <li><a class="dropdown-item">División Prados y Jardines</a></li>
-                <li><a class="dropdown-item">División Sanitización</a></li>
+                <li><a routerLink="/limpieza" class="dropdown-item">División Limpieza y Desinfección</a></li>
+                <li><a routerLink="/jardines" class="dropdown-item">División Prados y Jardines</a></li>
+                <li><a routerLink="/sanitizacion" class="dropdown-item">División Sanitización</a></li>
               </ul>
             </li>
-
             <li class="nav-item">
               <a [ngClass]="{'colored-text': isTextColored}" class="nav-link click-scroll">Certificaciones</a>
             </li>

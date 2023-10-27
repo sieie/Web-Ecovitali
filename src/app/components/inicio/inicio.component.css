@@ -52,31 +52,28 @@
   position: relative;
   color: #000000;
   text-align: left;
-  position: relative;
-  width: 90%;
+  width: 100%;
   padding-right: 2rem;
 }
 
 .img-exito {
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  bottom: 23%;
-  right: 10%;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  bottom: 60%;
+  left: 30%;
   z-index: 1;
 }
 
 .resultados-title {
   color: #000000;
-  font: 700 32px/150% 'Montserrat', sans-serif;
+  font: 700 30px/100% 'Montserrat', sans-serif;
 }
 
 .resultados-text {
   color: #000000;
-  font: 600 22px/150% 'Montserrat', sans-serif;
+  font: 600 20px/100% 'Montserrat', sans-serif;
 }
-
-
 
 /* Estilos para el contenedor de divisiones */
 .division-container {
@@ -136,92 +133,6 @@
   font: 800 1.02rem 'Montserrat', sans-serif;
 }
 
-.garantia {
-  border-radius: 20px;
-  max-width: 100%;
-  min-height: 350px;
-  background: url(src/assets/img/website/garantia.png)center/cover no-repeat;
-}
-
-.garantia-card {
-  max-width: 550px;
-  min-height: 200px;
-  border-radius: 20px;
-  background: #f5f5f5;
-  position: relative;
-  padding: 2rem;
-  border: 2px solid #c3c6ce;
-  transition: 0.5s ease-out;
-  overflow: visible;
-}
-
-.garantia-card-details {
-  color: black;
-  height: 100%;
-  gap: .5em;
-  display: grid;
-  place-content: center;
-}
-
-.garantia-card-button {
-  transform: translate(-50%, 125%);
-  width: 55%;
-  border-radius: 1rem;
-  cursor: pointer;
-  border: none;
-  background-color: #9E9E9E ;
-  color: #fff;
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  position: absolute;
-  left: 50%;
-  bottom: -5%;
-  opacity: 0;
-  transition: 0.3s ease-out;
-}
-.text-body {
-  color: rgb(134, 134, 134);
-}
-
-/*Text*/
-.text-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  position: relative;
-}
-
-/*Hover*/
-.garantia-card:hover {
-  border-color: #9E9E9E;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.garantia-card:hover .garantia-card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
-}
-
-.text-title::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 20%;
-  height: 4px;
-  background-color: #000000;
-  transform: scaleX(1);
-  /* Inicialmente la línea está oculta */
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.garantia-card:hover .text-title::after {
-  transform: scaleX(2);
-  /* Cuando se hace hover en el título, la línea se estira */
-  background-color: #9E9E9E;
-  /* Cambia el color a gris */
-}
-
 .pasion-ciencia{
   background-image: url('../../../assets/img/website/supervisor.jpg');
   /* background:linear-gradient(90deg, rgba(213, 212, 208, 1.00) 0%,rgba(213, 212, 208, 1.00) 0.9999999776482582%,rgba(238, 238, 236, 1.00) 31.00000023841858%); */
@@ -229,7 +140,9 @@
 
 .icon-sector {
   box-sizing: border-box;
-  width: 170px;
+  display: flex;
+  width: auto;
+  padding: 20px;
   height: auto;
   cursor: pointer;
   text-align: center;
@@ -237,20 +150,53 @@
   font-weight: 600;
   color: black;
   transition: transform 0.3s ease;
-  margin-bottom: 20px;
+  margin: 15px;
   justify-items: center;
+  border-radius: 10px;
 }
+.serv-alimentos { background: #ECF3FE;}
+.serv-bebidas { background: #FEF8E6;}
+.comercio { background: #fdf4f0;}
+.hoteles { background: #e7faf3 ;}
+.procesadores { background: #f1f1fb;}
+.farmacias { background: #ecf3fe;}
+.centro-comercial { background: #fef8e6;}
+.inst-gubernamentales { background: #fdf4f0;}
+.centros-salud { background: #e7faf3;}
+.centro-educacion { background: #f1f1fb;}
+.bodegas { background: #ecf3fe;}
+.logistica { background: #fef8e6;}
+.banca { background: #fdf4f0;}
+.sectores { background: #e7faf3;}
 
 .icon-sector:hover {
   transform: scale(1.1); /* Escala el elemento al 110% en hover */
 }
 .icon-sector img {
-  width: 80px !important;
-  height: 80px;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
 }
 .icon-sector span {
-  display: inline-block;
-  font-size: 11px;
+  display: flex;
+  font-size: 0.75em;
+}
+
+.img-supervisor {
+  width: 80%;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.rectangle-background {
+  position: absolute;
+  background: #DAFFF6;
+  border-radius: 30px;
+  bottom: 0;
+  right: 10%;
+  width: 200%;
+  height: 300px;
 }
 
 /* Estilo del contenedor principal */
@@ -281,4 +227,66 @@
   z-index: 1;
   padding: 20px;
   border-radius: 5px;
+}
+
+.container-ofr-servicios {
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  background: #f3f3f3;
+  position: relative;
+  text-align: justify;
+}
+.container-pasion-ciencia {
+  width: auto;
+  height: auto;
+  border-radius: 30px;
+  background: #DAFFF6;
+  position: relative;
+  text-align: justify;
+}
+
+.container-innovacion {
+  background: #ecf3fe;
+  border-radius: 20px;
+}
+
+.innovacion {
+  color: #0029ff;
+  font: 700 1em 'Montserrat', sans-serif;
+}
+
+.title-tecnologia {
+  color: #282828;
+  font: 800 3em 'Montserrat', sans-serif;
+}
+
+.cards-container {
+  background: #ffffff;
+  border-radius: 30px;
+  width: auto;
+}
+
+.cards-container > div > img {
+  max-width: 30%;
+}
+
+
+/* CSS para reorganizar elementos en pantallas pequeñas */
+@media (max-width: 768px) {
+  .container-pasion-ciencia,
+  .container-ofr-servicios {
+    flex-direction: column; /* Cambia la dirección de los elementos */
+    text-align: left;
+  }
+
+  .container-pasion-ciencia img,
+  .container-ofr-servicios img {
+    margin: auto; /* Centra la imagen */
+  }
+
+  .container-pasion-ciencia span,
+  .container-ofr-servicios span {
+    padding: 20px;
+  }
 }

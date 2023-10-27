@@ -11,14 +11,14 @@
 
   --body-font-family: 'Montserrat', sans-serif;
 
-  --h1-font-size: 56px;
-  --h2-font-size: 40px;
-  --h3-font-size: 34px;
-  --h4-font-size: 28px;
-  --h5-font-size: 24px;
-  --h6-font-size: 16px;
-  --p-font-size: 20px;
-  --btn-font-size: 16px;
+  --h1-font-size: 3em;
+  --h2-font-size: 2.3em;
+  --h3-font-size: 2em;
+  --h4-font-size: 1.55em;
+  --h5-font-size: 1.3em;
+  --h6-font-size: 0.9em;
+  --p-font-size: 1.1em;
+  --btn-font-size: 1em;
 
   --border-radius-large: 100px;
   --border-radius-medium: 20px;
@@ -186,13 +186,14 @@ CUSTOM BUTTON
 .custom-btn-section {
   cursor: pointer;
   font-weight: 700;
-  transition: all 0.4s;
-  padding: 15px;
+  transition: all 0.3s;
+  padding: 10px;
   border-radius: 70px;
   background: var(--white-color);
   border: 1px solid transparent;
   filter: drop-shadow(0px 2px 2px rgba(0.512499988079071, 0.512499988079071, 0.512499988079071, 0.25));
   display: inline-block;
+  font-size: 0.9em;
 }
 
 .custom-btn-section:hover {
