@@ -1,69 +1,63 @@
-.custom-btn-section-plagas {
-  cursor: pointer;
-  font-weight: 700;
-  transition: all 0.4s;
-  padding: 15px;
-  border-radius: 70px;
-  background: #9bc31e;
-  border: 1px solid transparent;
-  filter: drop-shadow(0px 2px 2px rgba(0.512499988079071, 0.512499988079071, 0.512499988079071, 0.25));
-  display: inline-block;
+h2 {
+  color:white;
 }
-.custom-btn-section-plagas:hover {
-  background: #6eb32d;
-  transform: translateY(10px);
+h5 {
+  color:#70B62E;
 }
 
-.serv-colum1,
-.serv-colum2 {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  flex-shrink: 0;
-  flex-grow: 0;
+.mision {
+  width: 97%;
+  height: 93%;
+  position: relative;
+  z-index: 2;
+}
+.rounded-rectangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(112, 182, 46, 0.46);
+  border-radius: 0px 0px 0px 23px;
+  z-index: 1;
 }
 
-.serv-colum2 {
-  align-items: flex-end;
+.vision {
+  width: 97%;
+  height: 93%;
+  position: relative;
+  z-index: 2;
+}
+.rounded-rectangle1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: rgba(112, 182, 46, 0.46);
+  border-radius: 0px 0px 23px 0px;
+  z-index: 1;
 }
 
-.serv-1,
-.serv-2,
-.serv-3,
-.serv-4 {
+.line {
+  width: 70%;
+  height: 3px;
+  background-color: #18191F;
+}
+
+[data-cantidad-total] {
+  font-size: 2rem;
+}
+
+.bannerMisionPlagas{
   width: 100%;
-  max-width: 280px;
-  border-radius: 15px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  overflow: hidden;
-  margin: 16px;
+  height: 40em;
+  background: url(src/assets/img/website/Banner-mision-plagas.png) center/cover no-repeat;
+  position: relative;
 }
 
-.serv-1,
-.serv-4 {
-  height: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+@media screen and (max-width: 768px) {
+  .line {
+    width: 50%;
+  }
 }
-
-.serv-2,
-.serv-3 {
-  height: 198px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.container-services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  background-size: contain;
-}
-
-

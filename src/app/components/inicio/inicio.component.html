@@ -5,20 +5,22 @@
     <span class="text-light">Soluciones Integrales</span>
     <h1 class="text-center text-light">Creamos espacios que generan <br>bienestar</h1>
     <h5 class="text-center text-light fw-normal">Grupo Empresarial Ecovitali te ayuda a que las personas se sientan <br>más seguras y productivas en sus espacios de trabajo.</h5>
-    <div (click)="scrollToSection('propuesta')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg" class="p-1">Explora Nuestros Procesos</div>
+    <div (click)="scrollToSection('propuesta')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Explora Nuestros Procesos</div>
   </div>
 </section>
 <!--=========================================== PROPUESTA ===========================================-->
-<section class="container" id="propuesta">
-  <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-    <div class="d-flex col-lg-5 col-md-6 col-sm-12 position-relative">
-      <img src="assets/img/website/propuesta.png" alt="Propuesta Ecovitali" class="img-fluid img-propuesta">
-      <div class="rounded-rectangle"></div>
-    </div>
-    <div class="col-lg-7 col-md-6 col-sm-12 mt-5 p-lg-5 p-2 align-items-center">
-      <h2 class="text-center fw-bold p-2">Una propuesta de valor agregado</h2>
-      <p class="text-center fst-italic fw-bold p-3">Tu bienestar siempre será nuestra prioridad</p>
-      <p class="d-flex justify-content-center text-justify p-3">Contribuimos a la sociedad creando espacios que promuevan el bienestar de las personas y aportan a las empresas a alcanzar su máximo potencial, con soluciones inteligentes y talento humano comprometido con la excelencia, seguimos y establecemos los máximos estándares de calidad y seguridad del servicio, con soluciones integrales fluidas, en cumplimiento e incluso superando el marco legal, normativas, reglamentos y demás afines.</p>
+<section id="propuesta">
+  <div class="container">
+    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="d-flex col-lg-5 col-md-6 col-sm-12 position-relative">
+        <img src="assets/img/website/propuesta.png" alt="Propuesta Ecovitali" class="img-fluid img-propuesta">
+        <div class="rounded-rectangle"></div>
+      </div>
+      <div class="col-lg-7 col-md-6 col-sm-12 mt-5 p-lg-5 p-2 align-items-center">
+        <h2 class="text-center fw-bold p-2">Una propuesta de valor agregado</h2>
+        <p class="text-center fst-italic fw-bold p-3">Tu bienestar siempre será nuestra prioridad</p>
+        <p class="d-flex justify-content-center text-justify p-3">Contribuimos a la sociedad creando espacios que promuevan el bienestar de las personas y aportan a las empresas a alcanzar su máximo potencial, con soluciones inteligentes y talento humano comprometido con la excelencia, seguimos y establecemos los máximos estándares de calidad y seguridad del servicio, con soluciones integrales fluidas, en cumplimiento e incluso superando el marco legal, normativas, reglamentos y demás afines.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -61,10 +63,10 @@
               <p class="division-text">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas. Regresa a un hogar o negocio sin preocupaciones
               </p>
               <div class="d-flex justify-content-between align-content-center mt-3">
-                <a routerLink="plagas">
+                <a routerLink="/plagas">
                   <img src="assets/img/website/iconos/arrow-narrow-right-plagas.svg" alt="">
                 </a>
-                <a routerLink="plagas">
+                <a routerLink="/plagas">
                   <img src="assets/img/website/iconos/ECOVITALI_Division_Plagas.svg" width="70px" alt="">
                 </a>
               </div>
@@ -369,42 +371,6 @@
 
 <!--=========================================== GARANTIA ===========================================-->
 <app-garantia></app-garantia>
-<!-- <section class="section-padding tecnologia">
-  <div class="container">
-    <div class="row justify-content-around">
-      <h2 class="text-center fw-semibold mb-3 position-relative">Nuestra pasión por la Ciencia y el Conocimiento</h2>
-      <div class="d-block row col-lg-5 col-md-12 col-sm-12">
-        <div class="mt-5" data-aos="flip-left">
-          <app-card-component
-            title="La cooperación e investigación"
-            content="Nuestra pasión por el desarrollo científico enfocado a contribuir a un mundo mejor, nos ha llevado a trabajar conjuntamente con expertos nacionales e internacionales en la búsqueda, desarrollo e implementación de nuevas tecnologías, ya sea que se trate de equipos, insumos, procesos o cualquier otro que nos aporte a un servicio de calidad y seguridad, sin dejar nada al azar, logramos construir espacios sostenibles en beneficio a la sociedad y medio ambiente"
-          ></app-card-component>
-        </div>
-        <div class="card-space" data-aos="flip-right">
-          <app-card-component
-            title="Tecnología que aporta bienestar y presición"
-            content="Nuestra tecnología de avanzada aporta a nuestras operaciones, ofreciendo transparencia en el manejo de la información planificando, con precisión y honestidad, con una eficiente línea de comunicación y refleja nuestro compromiso con el medio ambiente y el planeta, pues logramos reducir nuestra huella de carbono. En ECOVITALI trabajamos por un mundo mejor."
-          ></app-card-component>
-        </div>
-      </div>
-      <div class="d-block row col-lg-5 col-md-12 col-sm-12">
-        <div class="card-space" data-aos="flip-left">
-          <app-card-component
-            title="La excelencia del aprendizaje"
-            content="Nos enorgullece brindar un servicio de excelencia que garantice la calidad y la seguridad, pero no es una coincidencia, es el resultado de una inversión permanente en nuestro talento humano y asociados de negocios, que desde el entrenamiento continuo hasta la motivación, promovemos que valores que nos definen y nos permite como organización, cumplir a cabalidad nuestra filosofía de contribuir a un mundo mejor, con una sociedad justa, inclusiva y respetuosa con el planeta."
-          ></app-card-component>
-        </div>
-        <div class="card-space" data-aos="flip-right">
-          <app-card-component
-            title="Sistema CSM"
-            content="ECOVITALI se compromete con la calidad, seguridad y transparencia en el acceso a la información. En asociación con PRESTTO, brindamos un servicio que guía a nuestros clientes y proveedores hacia la excelencia. Nuestro sistema de control, seguimiento y monitoreo (CSM) cumple rigurosamente con nuestros protocolos de seguridad. Esto permite a nuestros clientes validar nuestros servicios y evaluar los resultados por estrategia y zona, en registros a corto y largo plazo. Proporcionamos documentación técnica, cronogramas de trabajo y registros de datos críticos, liderando esta dinámica en el mercado nacional e internacional."
-          ></app-card-component>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section class="section-padding">
   <div class="container container-innovacion p-lg-3 p-3">
     <div class="row p-lg-5 p-2">

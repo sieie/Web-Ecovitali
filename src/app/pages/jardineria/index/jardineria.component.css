@@ -1,0 +1,154 @@
+.jardineria {
+  background: url(src/assets/img/website/banner-jardineria.png) center/cover no-repeat;
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+
+.container-jardineria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.icon-plagas {
+  width: 100px;
+  height: 100px;
+}
+
+.h1-cp {
+  color: var(--white-color);
+  letter-spacing: -1px;
+}
+
+.h2-cp {
+  color: var(--white-color);
+  line-height: 40px;
+}
+
+.sectores {
+  height: 100vh;
+}
+
+.logos {
+  width: 120px;
+  height: 120px;
+}
+
+.btn-servicios {
+  background-color: #dce0e7;
+  color: var(--dark-color);
+  font-weight: var(--font-weight-bold);
+  display: inline-block;
+  border-radius: 20px;
+  border: 10px solid transparent;
+}
+
+/* Estilo del contenido encima de la imagen de fondo */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+
+.card-sectores:hover {
+  transform: translate(1.1);
+  border-color: #EF7912;
+  box-shadow: 0 4px 18px 0 rgb(242, 138, 49);
+}
+
+.img-card {
+  max-width: 400px;
+  background-size: contain;
+}
+
+.card-title {
+  color: #337A5B;
+}
+
+.btn-primary {
+  background: #337A5B;
+  border-color: #337A5B;
+  justify-items: end;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+}
+
+.flex-item {
+  flex: 1; /* Hace que todos los elementos ocupen el mismo espacio vertical */
+  display: grid;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  height: auto;
+}
+
+.card-jardineria {
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  display: grid;
+  gap: 10px;
+  width: auto;
+  height: 30vh;
+  box-shadow: none;
+  border-radius: 0;
+  border: 0;
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+
+.color-card {
+  background: #ebebeb;
+}
+
+.card-jardineria:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icon-card {
+  width: 5em;
+  display: grid;
+}
+
+.card-text {
+  color: #000000;
+  font-size: 0.8em;
+}
+.card-title {
+  font-size: 1em;
+  margin-top: -0.5rem;
+  font-weight: 600;
+}
+.banner-jardineria2 {
+  width: 100%;
+  height: 30em;
+  background: url(src/assets/img/website/banner-jardineria2.png) center/cover no-repeat;
+  position: relative;
+}
+
+.form-control {
+  background-color: transparent;
+  backdrop-filter: blur(1.11px);
+}
+
+.img-jardines {
+  max-width: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+}
