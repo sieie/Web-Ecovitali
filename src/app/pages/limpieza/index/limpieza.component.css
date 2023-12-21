@@ -1,8 +1,11 @@
 .limpieza {
   background: url(src/assets/img/website/banner-limpieza.png) center/cover no-repeat;
-  position: relative;
   width: auto;
   height: 100vh;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+  background-position: center center; /* Centra la imagen en el elemento */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  object-fit: cover;
 }
 
 .text-celeste {
@@ -12,6 +15,7 @@
 .container-limpieza {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 2rem;
@@ -86,7 +90,7 @@
   align-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 1em;
   width: auto;
   height: auto;
 }

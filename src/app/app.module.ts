@@ -27,13 +27,15 @@ import { Header2Component } from './components/header2/header2.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
 import { CardComponentComponent } from './components/card-component/card-component.component';
-import { JardineriaComponent } from './pages/jardineria/jardineria.component';
+import { JardineriaComponent } from './pages/jardineria/index/jardineria.component';
 import { ContactoPlagasComponent } from './components/contacto-plagas/contacto-plagas.component';
 import { HeaderBlackComponent } from './components/header-black/header-black.component';
 import { LimpiezaComponent } from './pages/limpieza/index/limpieza.component';
 import { GarantiaComponent } from './components/garantia/garantia.component';
 import { ContactformComponent } from './components/contactform/contactform.component';
-
+import { DesinfeccionComponent } from './pages/desinfeccion/index/desinfeccion.component';
+import { CertificadosComponent } from './pages/certificados/index/certificados.component';
+import { BaseFundamentalPlagas } from './pages/plagas/base-fundamental/base-fundamental.component';
 
 
 @NgModule({
@@ -65,6 +67,9 @@ import { ContactformComponent } from './components/contactform/contactform.compo
     LimpiezaComponent,
     GarantiaComponent,
     ContactformComponent,
+    DesinfeccionComponent,
+    CertificadosComponent,
+    BaseFundamentalPlagas,
   ],
   imports: [
     BrowserModule,

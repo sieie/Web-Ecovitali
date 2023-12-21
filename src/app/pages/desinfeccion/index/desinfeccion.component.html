@@ -3,14 +3,14 @@
   <div class="container py-5 text-center">
     <div class="d-block justify-content-center row mx-lg-5 mx-5">
       <div class="col-12 container-desinfeccion">
-        <div class="mx-lg-5 mx-0 mt-5">
+        <div class="mx-lg-5 mx-0 mt-2">
           <div class="d-block text-center">
             <img src="assets/img/website/SVG-Icono-Division-14.svg" class="icon-desinfeccion" alt="Desinfección y Sanitización">
             <p class="text-white fw-semibold text-center">Desinfección</p>
           </div>
           <h1 class="h1-cp">Desinfección de espacios, un mundo libre de virus.</h1>
           <h2 class="h2-cp d-none d-md-block mt-3">Tu salud es nuestra prioridad. Protegemos tus espacios de Covid-19 y otros virus</h2>
-          <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img
+          <div (click)="scrollToSection('index')" class="custom-btn-section mt-4"><img
               src="assets/img/website/flecha.svg" class="align-content-center"><span class="px-2">Conoce más sobre
               nuestra división</span></div>
         </div>
@@ -18,11 +18,11 @@
     </div>
   </div>
 </section>
-<section class="section-padding">
+<section class="section-padding" id="index">
   <div class="container-fluid">
     <div class="row">
       <div class="col-1"></div>
-      <div class="col-lg-5 col-12 pe-5 mt-5">
+      <div class="col-lg-5 col-12 pe-5 mt-4" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <div class="d-flex align-items-center"><img src="assets/img/website/iconos/check-celeste.svg"><span class="p-2 text-celeste">Confiabilidad en tu hogar y tu empresa</span></div>
         <h1 class="mt-5">Desinfección Profesional a tu Alcance</h1>
         <p class="mt-2 text-start">Protegemos tu Bienestar lugar por lugar garantizando espacios limpios y seguros.</p><br>
@@ -30,7 +30,7 @@
           <button class="btn btn-dark mt-3 p-3">Conoce más sobre nosotros</button>
         </div>
       </div>
-      <div class="col-lg-6 col-12 d-flex align-items-end mt-lg-0 mt-4 px-0">
+      <div class="col-lg-6 col-12 d-flex align-items-end mt-lg-0 mt-4 px-0" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
         <img src="assets/img/website/desinfeccion-hero.png" class="img-fluid" alt="">
       </div>
     </div>
@@ -56,7 +56,7 @@
     </div>
   </div>
 </section>
-<section class="mt-5"><app-certificaciones></app-certificaciones></section>
+<section class="mt-5"><app-certificados></app-certificados></section>
 <section class="section-padding">
   <div class="container">
     <div class="row">

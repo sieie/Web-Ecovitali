@@ -15,7 +15,7 @@
   --h2-font-size: 2.3em;
   --h3-font-size: 2em;
   --h4-font-size: 1.55em;
-  --h5-font-size: 1.3em;
+  --h5-font-size: 1.2em;
   --h6-font-size: 0.78em;
   --p-font-size: 1.1em;
   --btn-font-size: 1em;
@@ -112,7 +112,6 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-
 /*---------------------------------------
 SECTION
 -----------------------------------------*/
@@ -193,11 +192,14 @@ CUSTOM BUTTON
   filter: drop-shadow(0px 2px 2px rgba(0.512499988079071, 0.512499988079071, 0.512499988079071, 0.25));
   display: inline-block;
   font-size: var(--h6-font-size);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .custom-btn-section:hover {
   background: #e6e9eb;
   transform: translateY(10px);
+  color: var(--text-color);
 }
 
 
@@ -378,7 +380,7 @@ CONTACT
 }
 
 /* Estilo para el texto y el título de cada elemento del carrusel */
-.carousel-inner span, .carousel-inner p {
+.carousel-inner span {
   font-weight: bold;
 }
 

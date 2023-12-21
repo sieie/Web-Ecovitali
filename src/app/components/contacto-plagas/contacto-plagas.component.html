@@ -9,18 +9,18 @@
         <div class="contact-form">
           <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
+              <label for="nombre" class="form-label">Nombre:</label>
               <input type="text" class="form-control" id="nombre" formControlName="nombre">
               <div *ngIf="contactForm.get('nombre')?.invalid && (contactForm.get('nombre')?.dirty || contactForm.get('nombre')?.touched)" class="error-message">
                 <div *ngIf="contactForm.get('nombre')?.hasError('required')">Nombre es obligatorio.</div>
               </div>
             </div>
             <div class="mb-3">
-              <label for="telefono" class="form-label">Teléfono</label>
+              <label for="telefono" class="form-label">Teléfono:</label>
               <input type="tel" class="form-control" id="telefono" formControlName="telefono">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Correo Electrónico</label>
+              <label for="email" class="form-label">Correo Electrónico:</label>
               <input type="email" class="form-control" id="email" formControlName="email">
               <div *ngIf="contactForm.get('email')?.invalid && (contactForm.get('email')?.dirty || contactForm.get('email')?.touched)" class="error-message">
                 <div *ngIf="contactForm.get('email')?.hasError('required')">Correo electrónico es obligatorio.</div>
@@ -28,7 +28,7 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="comentario" class="form-label">Comentario</label>
+              <label for="comentario" class="form-label">Comentario:</label>
               <textarea class="form-control" id="comentario" formControlName="comentario"></textarea>
               <div *ngIf="contactForm.get('comentario')?.invalid && (contactForm.get('comentario')?.dirty || contactForm.get('comentario')?.touched)" class="error-message">
                 <div *ngIf="contactForm.get('comentario')?.hasError('required')">Comentario es obligatorio.</div>
@@ -41,21 +41,18 @@
           </form>
         </div>
       </div>
-      <div class="d-flex col-2 align-items-center justify-content-center">
-        <div class="text-start">
-          <p class="mb-2">Correo de Contacto</p>
-          <p>info@ecovitali.net</p>
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-instagram"></a>
-          </li>
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-twitter"></a>
-          </li>
-          <li class="social-icon-item">
-            <a href="#" class="social-icon-link bi-facebook"></a>
-          </li>
-
-        </div>
+      <div class="col-lg-4 align-items-center">
+        <p class="mb-2 text-start">Correo de Contacto</p>
+        <p>info@ecovitali.net</p>
+        <li class="social-icon-item">
+          <a href="#" class="social-icon-link bi-instagram"></a>
+        </li>
+        <li class="social-icon-item">
+          <a href="#" class="social-icon-link bi-twitter"></a>
+        </li>
+        <li class="social-icon-item">
+          <a href="#" class="social-icon-link bi-facebook"></a>
+        </li>
       </div>
     </div>
   </div>

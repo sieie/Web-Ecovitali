@@ -15,10 +15,12 @@ import { BaseFundamentalComponent } from './components/base-fundamental/base-fun
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { RuedaComponent } from './components/rueda/rueda.component';
-import { JardineriaComponent } from './pages/jardineria/jardineria.component';
+import { JardineriaComponent } from './pages/jardineria/index/jardineria.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { LimpiezaComponent } from './pages/limpieza/index/limpieza.component';
-
+import { DesinfeccionComponent } from './pages/desinfeccion/index/desinfeccion.component';
+import { CertificadosComponent } from './pages/certificados/index/certificados.component';
+import { BaseFundamentalPlagas } from './pages/plagas/base-fundamental/base-fundamental.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch:'full' },
@@ -30,6 +32,7 @@ const routes: Routes = [
   { path: 'procesos', component: ProcesosComponent },
   { path: 'plagas', component: PlagasComponent },
   { path: 'plagas/nosotros', component: NosotrosComponent },
+  { path: 'plagas/base-fundamental', component: BaseFundamentalPlagas },
   { path: 'limpieza', component: LimpiezaComponent },
   { path: 'noticias', component: NoticiasComponent},
   { path: 'servicios', component: ServiciosComponent },
@@ -40,6 +43,9 @@ const routes: Routes = [
   { path: 'certificaciones', component: CertificacionesComponent},
   { path: 'rueda', component: RuedaComponent},
   { path: 'jardines', component: JardineriaComponent},
+  { path: 'desinfeccion', component: DesinfeccionComponent},
+  { path: 'certificados', component: CertificadosComponent},
+
   { path: '**', component: InicioComponent}
   // { path: '**', component: PagenotfoundComponent}
 

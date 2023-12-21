@@ -1,7 +1,6 @@
 .desinfeccion {
   background: url(src/assets/img/website/banner-desinfeccion.png) center/cover no-repeat;
   position: relative;
-  width: auto;
   width: 100%;
   height: 100vh;
 }

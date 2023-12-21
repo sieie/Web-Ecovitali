@@ -50,6 +50,7 @@
 
 .text-hover {
   transition: color 0.3s;
+  /* cursor: pointer; */
 }
 .text-hover:hover {
   color: #B7B6B6;
@@ -73,12 +74,7 @@
   color: var(--white-color);
   text-align: start;
 }
-.col-custom {
-  flex-basis: auto; /* Ancho de contenido */
-  flex-grow: 0; /* No se expande para llenar el espacio disponible */
-  max-width: 100%; /* Máximo ancho es el 100% del contenedor */
-  margin-right: -40px; /* Puedes ajustar el valor del margen según tus necesidades */
-}
+
 
 /*---------------------------------------
 SOCIAL ICON

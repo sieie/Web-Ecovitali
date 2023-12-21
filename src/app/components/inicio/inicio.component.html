@@ -26,7 +26,7 @@
 </section>
 <!--=========================================== CERTIFICACIONES ===========================================-->
 <section class="section-padding" data-aos="fade-right" id="certificaciones">
- <app-certificaciones></app-certificaciones>
+ <app-certificados></app-certificados>
  <div class="container d-flex justify-content-center">
   <div class="row p-3 ">
     <div class="col-xl-5 col-lg-5 col-md-12 mt-2 p-3">
@@ -54,23 +54,20 @@
   <div class="row mt-5">
     <!--================= CONTROL DE PLAGAS =================-->
     <div class="col-xl-4 col-lg-4 col-md-6 col-12 atropos my-atropos">
-      <div class="division-container atropos-scale">
-        <div class="atropos-rotate">
-          <div class="atropos-inner">
-            <img src="assets/img/website/control-plagas.png" class="division-img" alt="Control de Plagas">
-            <div class="p-4">
-              <div class="mb-2 titulo-plagas">CONTROL DE PLAGAS</div>
-              <p class="division-text">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas. Regresa a un hogar o negocio sin preocupaciones
-              </p>
-              <div class="d-flex justify-content-between align-content-center mt-3">
-                <a routerLink="/plagas">
-                  <img src="assets/img/website/iconos/arrow-narrow-right-plagas.svg" alt="">
-                </a>
-                <a routerLink="/plagas">
-                  <img src="assets/img/website/iconos/ECOVITALI_Division_Plagas.svg" width="70px" alt="">
-                </a>
-              </div>
-            </div>
+      <div class="division-container">
+        <img src="assets/img/website/control-plagas.png" class="division-img" alt="Control de Plagas">
+        <div class="p-4">
+          <div class="mb-2 titulo-plagas">CONTROL DE PLAGAS</div>
+          <p class="division-text">Libérate de las plagas de una vez por todas con nuestra experiencia en control de plagas.
+            Regresa a un hogar o negocio sin preocupaciones
+          </p>
+          <div class="d-flex justify-content-between align-content-center mt-3">
+            <a routerLink="/plagas">
+              <img src="assets/img/website/iconos/arrow-narrow-right-plagas.svg" alt="">
+            </a>
+            <a routerLink="/plagas">
+              <img src="assets/img/website/iconos/ECOVITALI_Division_Plagas.svg" width="70px" alt="">
+            </a>
           </div>
         </div>
       </div>
@@ -84,10 +81,10 @@
           <p class="division-text text-">Deja que nos encarguemos de los detalles sucios. Con nuestra limpieza y desinfección, puedes relajarte y vivir sin preocupaciones.
           </p>
           <div class="d-flex justify-content-between align-content-center mt-3">
-            <a routerLink="#">
+            <a routerLink="/limpieza">
               <img src="assets/img/website/iconos/arrow-narrow-right-limpieza.svg" alt="">
             </a>
-            <a routerLink="#">
+            <a routerLink="/limpieza">
               <img src="assets/img/website/iconos/ECOVITALI_Division_Limpieza.svg" width="70px" alt="">
             </a>
           </div>
@@ -334,7 +331,7 @@
       <h2 class="text-lg-center text-sm-center fw-bold">Construimos espacios a través de personas</h2>
       <p class="mt-3">Son las personas quienes definen los espacios, por ello, trabajamos de la mano con nuestros y la comunidad de forma general, con un enfoque de alto nivel estratégico, técnico y operativo, con talento humano de alto nivel capacitado y preparado para brindar soluciones que se traducen en la entrega de espacios que contribuyen hoy a la sociedad del mañana; nuestros valores nos impulsan y dan forma a quiénes somos y lo que hacemos, refuerzan nuestro compromiso con los clientes, las personas y los lugares a los que servimos</p>
       <div class="d-flex justify-content-center">
-        <span class="custom-btn-section mt-3 mb-5">Conoce más de Ecovitali en la sociedad <img src="assets/img/website/arrow-left.svg"></span>
+        <a routerLink="/plagas/nosotros" class="custom-btn-section mt-3 mb-5">Conoce más sobre nosotros <img src="assets/img/website/arrow-left.svg"></a>
       </div>
     </div>
     <div class="col-xl-6 col-lg-6 col-md-12 col-12 p-4 position-relative">
@@ -366,17 +363,16 @@
       </div>
     </div>
   </div>
-  <div class="section-padding"></div>
 </section>
 
 <!--=========================================== GARANTIA ===========================================-->
 <app-garantia></app-garantia>
 <section class="section-padding">
-  <div class="container container-innovacion p-lg-3 p-3">
-    <div class="row p-lg-5 p-2">
-      <div class="col-lg-5 col-12">
+  <div class="container">
+    <div class="row container-innovacion p-lg-4 p-3">
+      <div class="col-lg-5 col-12 mt-3">
         <span class="innovacion">INNOVACIÓN Y</span> <br>
-        <span class="title-tecnologia">Tecnología que aporta bienestar y precisión</span><br>
+        <h1 class="title-tecnologia fw-bold">Tecnología que aporta bienestar y precisión</h1>
         <p class="mt-4 text-start"><b>ECOVITALI</b> utiliza tecnología avanzada para operaciones transparentes, precisas y en su compromiso por un mundo mejor.</p>
         <div class="d-flex align-items-center">
           <img src="assets/img/website/iconos/Check-verde.svg" class="img-fluid d-flex">
@@ -388,7 +384,7 @@
         </div>
         <div class="mt-5 mb-5 p-3 px-5 btn btn-dark">Conoce más</div>
       </div>
-      <div class="col-lg-3 col-md-6 col-12 mx-lg-4 m-0">
+      <div class="col-lg-3 col-md-5 col-12 mx-lg-3 m-0">
         <div class="cards-container p-4" data-aos="fade-right" data-aos-delay="100">
           <div>
             <img src="assets/img/website/iconos/Icon-trasparencia.svg" class="img-fluid">
@@ -404,7 +400,7 @@
           <span>Permite una comunicación fluida y coordinación efectiva tanto internamente como con socios y clientes.</span>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-12 mt-5 m-lg-4 m-0">
+      <div class="col-lg-3 col-md-5 col-12 mx-lg-3 m-0">
         <div class="cards-container mt-4 p-4" data-aos="fade-right" data-aos-delay="100">
           <div>
             <img src="assets/img/website/iconos/Icon-calendario.svg" class="img-fluid">

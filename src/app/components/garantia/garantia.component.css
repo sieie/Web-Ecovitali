@@ -1,8 +1,8 @@
 .garantia {
   position: relative;
-  min-height: 600px;
+  min-height: 500px;
   background: url(src/assets/img/website/garantia.png) center/cover no-repeat;
-  border-radius: 20px;
+  border-radius: 10px;
   z-index: 1;
   display: flex;
   align-items: flex-end; /* Alinea la tarjeta en la parte inferior de la imagen de fondo */
@@ -10,8 +10,8 @@
 }
 
 .garantia-card {
-  max-width: 80%; /* Ajusta el ancho máximo para que sea más responsivo */
-  border-radius: 20px;
+  max-width: 95%; /* Ajusta el ancho máximo para que sea más responsivo */
+  border-radius: 10px;
   background: rgba(236, 243, 254, 0.87);
   padding: 2rem;
   border: 2px solid #c3c6ce;

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12">
+      <h2 class="fw-semibold text-center">Certificados y Avalados</h2>
+    </div>
+  </div>
+  <div class="row mt-4 mb-5">
+    <div class="col-md-12 d-flex flex-wrap justify-content-xl-around">
+      <a href="#" class="col-xl-1 col-lg-2 col-md-6 col-sm-6 col-6" *ngFor="let certificacion of certificaciones">
+        <img [src]="baseUrl + certificacion.src" class="logos-certf d-flex justify-content-center"
+          [alt]="certificacion.alt">
+      </a>
+    </div>
+  </div>
+</div>

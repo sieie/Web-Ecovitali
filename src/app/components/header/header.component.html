@@ -20,9 +20,9 @@
               <a [ngClass]="{'colored-text': isTextColored}" class="nav-link click-scroll dropdown-toggle" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Servicios</a>
               <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                <li><a routerLink="/plagas/base-fundamental" class="dropdown-item">Base Fundamental</a></li>
                 <li><a class="dropdown-item">Residencial</a></li>
                 <li><a class="dropdown-item">Empresarial</a></li>
-                <li><a class="dropdown-item">Base Fundamental</a></li>
               </ul>
             </li>
 
@@ -37,11 +37,11 @@
                 <li><a routerLink="/plagas" class="dropdown-item">División Control de Plagas</a></li>
                 <li><a routerLink="/limpieza" class="dropdown-item">División Limpieza y Desinfección</a></li>
                 <li><a routerLink="/jardines" class="dropdown-item">División Prados y Jardines</a></li>
-                <li><a routerLink="/sanitizacion" class="dropdown-item">División Sanitización</a></li>
+                <li><a routerLink="/desinfeccion" class="dropdown-item">División Desinfección</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a [ngClass]="{'colored-text': isTextColored}" class="nav-link click-scroll">Certificaciones</a>
+              <a  routerLink="/certificaciones" [ngClass]="{'colored-text': isTextColored}" class="nav-link click-scroll">Certificaciones</a>
             </li>
 
             <li class="nav-item">

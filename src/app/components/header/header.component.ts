@@ -8,11 +8,6 @@ import { Component, HostListener } from '@angular/core';
 export class HeaderComponent {
   isNavbarColored = false;
   isTextColored = false;
-  isMegaMenuOpen: boolean = false;
-
-  toggleMegaMenu() {
-    this.isMegaMenuOpen = !this.isMegaMenuOpen;
-  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

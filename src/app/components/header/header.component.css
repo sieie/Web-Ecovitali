@@ -10,7 +10,7 @@ header {
 
 .navbar {
   position: absolute;
-  background-color: transparent;
+  background-color: transparent !important;
   transition: background-color 0.3s ease;
   z-index: 99999;
   width: 100%;
@@ -256,7 +256,8 @@ header {
 
 /* Styles for colored navbar */
 .navbar-colored {
-  background-color: white !important;
+  background-color: transparent !important;
+  backdrop-filter: blur(50px); /* Agregar el efecto de desenfoque */
 }
 
 /* Styles for black menu links */
