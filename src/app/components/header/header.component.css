@@ -1,5 +1,5 @@
 header {
-  background-color: transparent;
+  background-color: white;
   transition: color 0.3s ease, background-color 0.3s ease;
 
 }
@@ -249,15 +249,13 @@ header {
   top: 8px;
 }
 
-
 .navbar {
   transition: background-color 0.3s ease;
 }
 
 /* Styles for colored navbar */
 .navbar-colored {
-  background-color: transparent !important;
-  backdrop-filter: blur(50px); /* Agregar el efecto de desenfoque */
+  background-color: white !important;
 }
 
 /* Styles for black menu links */

@@ -148,7 +148,8 @@
   border-radius: 0;
   /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
 }
-.form-control:hover {
-  border-color: none;
+
+.form-control:focus {
   box-shadow: none;
+  border-color: #ced4da; /* Puedes ajustar el color del borde al hacer clic si es necesario */
 }

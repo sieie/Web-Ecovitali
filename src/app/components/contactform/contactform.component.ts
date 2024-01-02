@@ -1,10 +1,12 @@
 import { Component, Input, HostListener } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import Swal from 'sweetalert2';
+import { CorreoService } from '../../services/mails/correo.service';
 
 @Component({
   selector: 'app-contactform',
   templateUrl: './contactform.component.html',
-  styleUrls: ['./contactform.component.css']
+  styleUrls: ['./contactform.component.css'],
 })
 export class ContactformComponent {
   @Input() imagenContacto = 'assets/img/website/contacto-plagas.png';
@@ -19,12 +21,12 @@ export class ContactformComponent {
   mostrarImagen = true;
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
-    this.contactForm = this.formBuilder.group({
-      nombre: [null, Validators.required],
-      telefono: [null, [Validators.required, this.phoneValidator(), Validators.minLength(10)]], // Aquí aplicamos el validador personalizado
-      email: [null, [Validators.required, Validators.email]],
-      comentario: [null, [Validators.required, Validators.minLength(10)]]
+  constructor(private fb: FormBuilder, private httpService: CorreoService) {
+    this.contactForm = this.fb.group({
+      nombre: ['', Validators.required],
+      telefono: ['', [Validators.required, this.phoneValidator(), Validators.minLength(10)]],
+      email: ['', [Validators.required, Validators.email]],
+      comentario: ['', [Validators.required, Validators.minLength(10)]],
     });
 
     // Oculta la imagen en el breackpoint sm
@@ -33,8 +35,26 @@ export class ContactformComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
-      console.log('Formulario válido:', this.contactForm.value);
+      this.httpService.enviarCorreo(this.contactForm.value).subscribe(
+        (resp) => {
+          console.log('Correo Enviado con Éxito:', resp);
+        },
+        (error) => {
+          console.error('Error al Enviar el correo:', error);
+        }
+      );
+      this.showSuccessAlert();
     }
+  }
+
+  //Alert de confirmación del formulario.
+  private showSuccessAlert() {
+    Swal.fire({
+      title: 'Correo Enviado',
+      text: 'Gracias por ponerte en contacto! Nos pondremos en contacto contigo a la brevedad posible.',
+      icon: 'success',
+      confirmButtonText: 'Aceptar',
+    })
   }
 
   phoneValidator() {
@@ -51,6 +71,6 @@ export class ContactformComponent {
       }
 
       return null;
-    }
-  };
+    };
+  }
 }
