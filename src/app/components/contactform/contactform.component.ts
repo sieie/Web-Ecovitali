@@ -51,7 +51,7 @@ export class ContactformComponent {
   private showSuccessAlert() {
     Swal.fire({
       title: 'Correo Enviado',
-      text: 'Gracias por ponerte en contacto! Nos pondremos en contacto contigo a la brevedad posible.',
+      text: 'Gracias por ponerte en contacto con nosotros! Nos comunicaremos contigo a la brevedad posible.',
       icon: 'success',
       confirmButtonText: 'Aceptar',
     })
