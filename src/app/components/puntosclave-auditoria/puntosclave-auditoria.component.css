@@ -1,0 +1,8 @@
+.container-ofr-servicios {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  background: rgba(95, 255, 51, 0.2);
+  position: relative;
+  text-align: justify;
+}
