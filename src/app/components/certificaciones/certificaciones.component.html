@@ -1,7 +1,7 @@
 <app-header-black></app-header-black>
-<div class="container">
+<div class="container my-3" data-aos="fade-right" data-aos-delay="100">
   <div class="row d-flex justify-content-between">
-    <div class="d-flex align-items-center col-lg-8 col-12 p-lg-0 p-3">
+    <div class="d-flex align-items-center col-lg-7 col-12 p-lg-0 p-3">
       <div class="d-flex flex-column align-items-center nuestros-certificados p-3">
         <h1 class="text-center">Nuestras Certificaciones</h1>
         <p class="">Es muy sencillo presumir ser el mejor pero en ECOVITALI no nos basta con decirlo sino que lo certificamos, con ello somos la primera empresa de nuestro sector en el Ecuador en contar una combinación de profesionalismo, calidad y seguridad certificada, de forma ininterrumpida y desde el año 2012 <b>ECOVITALI</b> ha sustentado su prestigio y sus valores en sistemas de gestión empresarial que pueden ser validados, auditados y evidenciados de forma continua y permanente. En <b>ECOVITALI</b> no solo lo garantizamos sino que lo certificamos.
@@ -9,17 +9,17 @@
       </div>
     </div>
     <div class="d-none d-sm-flex col-lg-4 col-5 justify-content-end">
-      <img src="assets/img/website/12años-certificados.png" class="img-fluid w-75" alt="">
+      <img src="assets/img/website/12años-certificados.png" class="img-fluid" alt="">
     </div>
   </div>
 </div>
-<div class="section-padding">
-  <div class="container">
-    <div class="row">
+<div class="mt-5">
+  <div class="container" data-aos="fade-left" data-aos-delay="100">
+    <div class="row justify-content-between">
       <div class="d-none d-sm-flex col-3">
         <img src="assets/img/website/garantia-img.png" class="img-fluid" alt="">
       </div>
-      <div class="col-md-9 col-12 align-items-center d-flex">
+      <div class="col-md-8 col-12 align-items-center d-flex">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <ol class="carousel-indicators">
             <li data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></li>
@@ -74,12 +74,47 @@
     </div>
   </div>
 </div>
-<section class="container justify-content-end d-flex">
-  <div class="row d-flex align-items-center col-lg-7 col-md-7 col-12 p-3">
-    <h2 class="text-center fw-bold">Cobertura a Nivel Nacional</h2>
-    <p>Sin importar donde se ubiquen sus instalaciones, dentro o fuera del casco urbano de cualquier ciudad del país, ECOVITALI es su mejor opción.</p>
-    <div class="d-flex justify-content-center">
-      <button class="btn btn-dark">Contáctenos</button>
+
+<section class="container mt-5">
+  <div class="row">
+    <div class="text-center col-12 mb-3 mt-5">
+      <span class="text-center fw-bold btn-servicios">Datos extrapolados de última auditoría 2023</span>
+    </div>
+    <div class="col-lg-4 col-12 mt-3 d-flex align-items-center justify-content-center my-3">
+      <img src="assets/img/website/iconos/Aplicaciones_Exitosas.svg" class="img-fluid">
+      <div class="details text-center">
+        <span class="fw-bold">Más de...</span> <br>
+        <h2 class="fw-bold">
+          <span class="fw-bold" data-cantidad-total="324"></span>.000
+        </h2>
+        <span class="fw-bold">Aplicaciones Existosas</span>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12 mt-3 d-flex align-items-center justify-content-center my-3">
+      <img src="assets/img/website/iconos/Clientes_Satisfechos.svg" class="img-fluid">
+      <div class="details text-center">
+        <span class="fw-bold">Más de...</span><br>
+        <h2 class="fw-bold">
+          <span class="fw-bold" data-cantidad-total="700"></span>
+        </h2>
+        <span class="fw-bold">Clientes Satisfechos</span>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12 mt-3 d-flex align-items-center justify-content-center my-3">
+      <img src="assets/img/website/iconos/Retencion_calidad.svg" class="img-fluid">
+      <div class="details text-center">
+        <span class="fw-bold">Más de...</span><br>
+        <h2 class="fw-bold">
+          <span class="fw-bold" data-cantidad-total="90">%</span>
+        </h2>
+        <span class="fw-bold">Colaboradores</span>
+      </div>
     </div>
   </div>
 </section>
+
+<app-cobertura-nacional></app-cobertura-nacional>
+
+<div class="my-5"></div>
+
+<app-footer></app-footer>

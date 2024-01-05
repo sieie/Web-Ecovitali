@@ -33,8 +33,12 @@ import { LimpiezaComponent } from './pages/limpieza/index/limpieza.component';
 import { GarantiaComponent } from './components/garantia/garantia.component';
 import { ContactformComponent } from './components/contactform/contactform.component';
 import { DesinfeccionComponent } from './pages/desinfeccion/index/desinfeccion.component';
-import { CertificadosComponent } from './pages/certificados/index/certificados.component';
-import { BaseFundamentalPlagas } from './pages/plagas/base-fundamental/base-fundamental.component';
+import { CertificadosComponent } from './components/certificados/certificados.component';
+import { CoberturaNacionalComponent } from './components/cobertura-nacional/cobertura-nacional.component';
+import { PasosSistemaEcovitaliComponent } from './components/pasos-sistema-ecovitali/pasos-sistema-ecovitali.component';
+import { PuntosclaveAuditoriaComponent } from './components/puntosclave-auditoria/puntosclave-auditoria.component';
+import { ProcesadoresAlimentosComponent } from './pages/sectores/procesadores-alimentos/procesadores-alimentos.component';
+import { FarmaciasComponent } from './pages/sectores/farmacias/farmacias.component';
 
 
 @NgModule({
@@ -67,7 +71,11 @@ import { BaseFundamentalPlagas } from './pages/plagas/base-fundamental/base-fund
     ContactformComponent,
     DesinfeccionComponent,
     CertificadosComponent,
-    BaseFundamentalPlagas,
+    CoberturaNacionalComponent,
+    PasosSistemaEcovitaliComponent,
+    PuntosclaveAuditoriaComponent,
+    ProcesadoresAlimentosComponent,
+    FarmaciasComponent,
   ],
   imports: [
     BrowserModule,

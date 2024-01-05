@@ -30,11 +30,11 @@
 .rounded-rectangle-izq {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 7%;
   width: 100px;
   height: 100px;
   background: #ffe8db;
-  border-radius: 0px 0px 23px 0px;
+  border-radius: 0px 0px 0px 23px;
   z-index: 1;
 }
 
@@ -57,12 +57,11 @@
 }
 
 .img-exito {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  bottom: 60%;
-  left: 30%;
-  z-index: 1;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  right: 7%;
+  z-index: 3;
 }
 
 .resultados-title {
@@ -183,10 +182,10 @@
 }
 
 .img-supervisor {
-  width: 80%;
-  height: 100%;
+  width: 70%;
   z-index: 2;
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
 .rectangle-background {
