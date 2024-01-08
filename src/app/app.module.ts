@@ -39,6 +39,20 @@ import { PasosSistemaEcovitaliComponent } from './components/pasos-sistema-ecovi
 import { PuntosclaveAuditoriaComponent } from './components/puntosclave-auditoria/puntosclave-auditoria.component';
 import { ProcesadoresAlimentosComponent } from './pages/sectores/procesadores-alimentos/procesadores-alimentos.component';
 import { FarmaciasComponent } from './pages/sectores/farmacias/farmacias.component';
+import { ServicioAlimentosComponent } from './pages/sectores/servicio-alimentos/servicio-alimentos.component';
+import { ComercioComponent } from './pages/sectores/comercio/comercio.component';
+import { HotelesComponent } from './pages/sectores/hoteles/hoteles.component';
+import { MaterialEmpaqueComponent } from './pages/sectores/material-empaque/material-empaque.component';
+import { PlagasUrbanizacionesComponent } from './pages/sectores/plagas-urbanizaciones/plagas-urbanizaciones.component';
+import { PlagasInstGubernamentalesComponent } from './pages/sectores/plagas-inst-gubernamentales/plagas-inst-gubernamentales.component';
+import { PlagasHospitalesComponent } from './pages/sectores/plagas-hospitales/plagas-hospitales.component';
+import { PlagasEscuelasComponent } from './pages/sectores/plagas-escuelas/plagas-escuelas.component';
+import { BodegasComponent } from './pages/sectores/bodegas/bodegas.component';
+import { LogisticaComponent } from './pages/sectores/logistica/logistica.component';
+import { InstFinancierasComponent } from './pages/sectores/inst-financieras/inst-financieras.component';
+import { OtrosSectoresComponent } from './pages/sectores/otros-sectores/otros-sectores.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
+
 
 
 @NgModule({
@@ -76,6 +90,19 @@ import { FarmaciasComponent } from './pages/sectores/farmacias/farmacias.compone
     PuntosclaveAuditoriaComponent,
     ProcesadoresAlimentosComponent,
     FarmaciasComponent,
+    ServicioAlimentosComponent,
+    ComercioComponent,
+    HotelesComponent,
+    MaterialEmpaqueComponent,
+    PlagasUrbanizacionesComponent,
+    PlagasInstGubernamentalesComponent,
+    PlagasHospitalesComponent,
+    PlagasEscuelasComponent,
+    BodegasComponent,
+    LogisticaComponent,
+    InstFinancierasComponent,
+    OtrosSectoresComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

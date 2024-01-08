@@ -112,6 +112,10 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
+a{
+  text-decoration: none;
+}
+
 /*---------------------------------------
 SECTION
 -----------------------------------------*/
@@ -303,6 +307,23 @@ CONTACT
   left: 0;
   min-width: 100%;
   min-height: 100vh;
+}
+
+.check-verde {
+  width: 22px;
+  position: absolute;
+  left: 2%;
+}
+
+.bienestar-btn {
+  color: #000000;
+  font-style: italic;
+  background: rgba(130, 171, 76, 0.80);
+  padding: 5px 10px;
+  border-radius: 21px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 0.8em;
 }
 
 .video-background__inner {

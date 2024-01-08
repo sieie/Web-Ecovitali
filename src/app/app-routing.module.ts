@@ -62,18 +62,18 @@ const routes: Routes = [
   { path: 'sectores/procesadores-alimentos', component: ProcesadoresAlimentosComponent },
   { path: 'sectores/servicios-alimentos-bebidas', component: ServicioAlimentosComponent },
   { path: 'sectores/comercio', component: ComercioComponent },
+  { path: 'sectores/hospitales', component: PlagasHospitalesComponent },
   { path: 'sectores/hoteles', component: HotelesComponent },
   { path: 'sectores/material-empaque', component: MaterialEmpaqueComponent },
   { path: 'sectores/urbanizaciones', component: PlagasUrbanizacionesComponent },
   { path: 'sectores/instalaciones-gubernamentales', component: PlagasInstGubernamentalesComponent },
-  { path: 'sectores/hospitales', component: PlagasHospitalesComponent },
   { path: 'sectores/farmaceutico', component: FarmaciasComponent },
   { path: 'sectores/centros-educativos', component: PlagasEscuelasComponent },
   { path: 'sectores/bodegas', component: BodegasComponent },
   { path: 'sectores/logistica', component: LogisticaComponent },
   { path: 'sectores/instituciones-financieras', component: InstFinancierasComponent },
-  { path: 'sectores/otros', component: OtrosSectoresComponent },
-  { path: 'sectores/contacto', component: ContactoComponent },
+  { path: 'sectores/otros-sectores', component: OtrosSectoresComponent },
+  { path: 'contacto', component: ContactoComponent },
 
   { path: '**', component: InicioComponent}
   // { path: '**', component: PagenotfoundComponent}
