@@ -52,6 +52,9 @@ import { LogisticaComponent } from './pages/sectores/logistica/logistica.compone
 import { InstFinancierasComponent } from './pages/sectores/inst-financieras/inst-financieras.component';
 import { OtrosSectoresComponent } from './pages/sectores/otros-sectores/otros-sectores.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { TratamientoGranosComponent } from './pages/plagas/tratamiento-granos/tratamiento-granos.component';
+import { TratamientoTermitasComponent } from './pages/plagas/tratamiento-termitas/tratamiento-termitas.component';
+import { TratamientoEspecialComponent } from './pages/plagas/tratamiento-especial/tratamiento-especial.component';
 
 
 
@@ -102,7 +105,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     LogisticaComponent,
     InstFinancierasComponent,
     OtrosSectoresComponent,
-    ContactoComponent
+    ContactoComponent,
+    TratamientoGranosComponent,
+    TratamientoTermitasComponent,
+    TratamientoEspecialComponent
   ],
   imports: [
     BrowserModule,

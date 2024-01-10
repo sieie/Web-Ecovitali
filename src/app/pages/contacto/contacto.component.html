@@ -5,16 +5,15 @@
     <div class="col-lg-7 col-12 pe-md-5 mt-5">
       <h2 class="text-center fw-bold">Contáctenos</h2>
       <p>En <b>ECOVITALI</b> nos interesan las personas y estamos listos para asistir en todos los temas que se
-        encuentren al alcance de nuestro servicio y capacidades empresariales, para ello hemos destinado varias ofertas
-        y canales de contacto y hacer que nuestra comunicación con usted sea lo más versátil posible, con eficiencia y
-        eficacia en cada paso. <br><b>En ECOVITALI es un placer atenderlo.</b>
-      </p>
-      <div class="d-flex justify-content-center">
+        encuentren al alcance de nuestro servicio y capacidades empresariales. Hemos destinado varias ofertas y canales
+        de contacto para hacer que nuestra comunicación con usted sea lo más versátil posible, con eficiencia y eficacia
+        en cada paso. <br><b>En ECOVITALI es un placer atenderlo.</b></p>
+      <div class="d-flex justify-content-center mt-4">
         <span class="bienestar-btn">Su bienestar es nuestra prioridad</span>
       </div>
     </div>
-    <div class="col-lg-5 col-12">
-      <img src="assets/img/website/contacto.png" class="img-fluid">
+    <div class="col-lg-5 col-12 d-flex justify-content-center">
+      <img src="assets/img/website/contacto.png" class="img-fluid img-contacto" alt="Imagen de contacto">
     </div>
   </div>
 </div>
@@ -22,81 +21,176 @@
 <div class="container py-5">
   <div class="row justify-content-center">
     <div class="card p-3">
-      <img src="assets/img/website/iconos/Telefono.svg" class="img-fluid img-icon" alt="Linea Directa Ecovitali">
+      <img src="assets/img/website/iconos/Telefono.svg" class="img-fluid img-icon" alt="Línea Directa Ecovitali">
       <div class="ms-3 d-flex flex-column justify-content-center">
         <p class="fw-bold">Línea Directa</p>
         <p class="fw-semibold">(04)-6005464</p>
       </div>
     </div>
-    <div class="card p-3">
-      <img src="assets/img/website/iconos/Mails.svg" class="img-fluid img-icon" alt="Linea Directa Ecovitali">
+    <a href="mailto:info@ecovitali.net" target="_blank" class="card p-3">
+      <img src="assets/img/website/iconos/Mails.svg" class="img-fluid img-icon" alt="Correo Electrónico Ecovitali">
       <div class="ms-3 d-flex flex-column justify-content-center">
         <p class="fw-bold">Correo Electrónico</p>
         <p class="fw-semibold">info@ecovitali.net</p>
       </div>
-    </div>
-    <div class="card p-3">
-      <img src="assets/img/website/iconos/Whatsapp.svg" class="img-fluid img-icon" alt="Linea Directa Ecovitali">
+    </a>
+    <a href="https://wa.me/+593992852299" target="_blank" class="card p-3">
+      <img src="assets/img/website/iconos/Whatsapp.svg" class="img-fluid img-icon" alt="WhatsApp Ecovitali">
       <div class="ms-3 d-flex flex-column justify-content-center">
         <p class="fw-bold">WhatsApp</p>
         <p class="fw-semibold">0992852299</p>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 
-<section class="section-padding">
-  <div class="container">
-    <!-- TABS TITULOS -->
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" id="tab1" data-toggle="tab" href="#formulario1">Atención al Cliente</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="tab2" data-toggle="tab" href="#formulario2">Atención a Proveedores</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="tab3" data-toggle="tab" href="#formulario3">Responsabilidad Social Empresarial</a>
-      </li>
-    </ul>
-    <!-- CONTENIDO DE LAS TABS -->
-    <div class="tab-content pt-2">
-      <div class="tab-pane fade show active" id="formulario1" aria-labelledby="tab1">
-        <!-- Formulario Personalizado -->
-        <div class="row mt-3 justify-content-between">
-          <div class="col-md-5">
-            <p class="text-center py-3 fw-semibold">En ECOVITALI queremos atender sus necesidades de la mejor forma posible, por ello ponemos para vuestra consideración nuestra plataforma de servicio en línea.
+<section class="my-5 pb-5">
+  <div class="container" data-aos="fade-right">
+    <div class="row justify-content-center">
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary" (click)="seleccionarFormulario('1')" [class.active]="formularioSeleccionado === '1'">Atención al Cliente</button>
+        <button type="button" class="btn btn-secondary" (click)="seleccionarFormulario('2')" [class.active]="formularioSeleccionado === '2'">Atención Proveedores</button>
+        <button type="button" class="btn btn-secondary" (click)="seleccionarFormulario('3')" [class.active]="formularioSeleccionado === '3'">Responsabilidad Social y Empresarial</button>
+      </div>
+
+      <!-- FORMULARIO 1 -->
+      <div *ngIf="formularioSeleccionado === '1'" data-aos="fade-right">
+        <div class="row justify-content-between">
+          <div class="col-md-6 mt-4">
+            <p class="text-center fw-semibold mb-3">En ECOVITALI queremos atender tus necesidades de la mejor forma
+              posible. Ponemos a tu consideración nuestra plataforma de servicio en línea.
             </p>
-            <img src="assets/img/website/atencion-al-cliente.png" class="img-fluid" alt="Imagen de formulario">
+            <div class="d-flex justify-content-center">
+              <img src="assets/img/website/atencion-al-cliente.webp" class="img-fluid p-3" alt="Imagen de formulario">
+            </div>
             <div class="d-flex justify-content-center mt-4">
-              <p class="bienestar-btn">SU BIENESTAR ES NUESTRA PRIORIDAD</p>
+              <p class="bienestar-btn">Su bienestar es nuestra prioridad</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <!-- Formulario -->
+          <div class="col-md-5">
             <form>
               <div class="form-group">
-                <label for="nombre">Nombre y Apellido</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre y Apellido" required />
+                <label for="nombreCompleto" class="fw-bold"></label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="*Nombre y Apellido:"
+                  required>
               </div>
-              <!-- Agrega otros campos según tus necesidades -->
               <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                <label for="temaConsultar" class="fw-bold"></label>
+                <input type="text" class="form-control" id="tema" name="tema" placeholder="*Tema a Consultar:" required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <input type="text" class="form-control" id="mail" name="mail" placeholder="*Correo Electrónico:"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="*Teléfono:" required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <textarea type="text" class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje:"
+                  required></textarea>
               </div>
               <div class="d-flex justify-content-end mt-3">
-                <button type="submit" class="btn btn-dark">Enviar Mensaje</button>
+                <div class="btn btn-dark px-5">Enviar</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- FORMULARIO 2 -->
+      <div *ngIf="formularioSeleccionado === '2'" data-aos="fade-right">
+        <div class="row justify-content-between">
+          <div class="col-md-6 mt-4">
+            <p class="text-center fw-semibold mb-3">Si representa a una empresa y gusta ofrecer a <b>Ecovitali</b> sus
+              productos, insumos, servicios, tecnología, equipos, o similar, por favor detállenos su oferta de la mejor manera
+              posible.
+            </p>
+            <div class="d-flex justify-content-center">
+              <img src="assets/img/website/Proveedores.webp" class="img-fluid p-3" alt="Imagen de formulario">
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+              <p class="bienestar-btn">Nuestros asociados de negocios son parte de nuestra fortaleza</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <form>
+              <div class="form-group">
+                <label for="nombreCompleto" class="fw-bold"></label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="*Nombre y Apellido:" required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <input type="text" class="form-control" id="tema" name="tipo" placeholder="*Tipo o categoría del producto:" required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <input type="text" class="form-control" id="mail" name="mail" placeholder="*Correo Electrónico:" required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="*Teléfono:" required>
+              </div>
+              <div class="form-group">
+                <label for="temaConsultar" class="fw-bold"></label>
+                <textarea type="text" class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje:"
+                  required></textarea>
+              </div>
+              <div class="d-flex justify-content-end mt-3">
+                <div class="btn btn-dark px-5">Enviar</div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+    <!-- FORMULARIO 3 -->
+    <div *ngIf="formularioSeleccionado === '3'" data-aos="fade-right">
+      <div class="row justify-content-between">
+        <div class="col-md-6 mt-4">
+          <p class="text-center fw-semibold mb-3">Si usted representa a una fundación u organización social y gustaría contar con nuestros planes de responsabilidad social empresarial, le agradecemos nos envíe su información.
+          </p>
+          <div class="d-flex justify-content-center">
+            <img src="assets/img/website/ResponsabilidadSocial.webp" class="img-fluid p-3" alt="Imagen de formulario">
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <p class="bienestar-btn">Una información precisa nos permite asistirlo</p>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <form>
+            <div class="form-group">
+              <label for="nombreCompleto" class="fw-bold"></label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="*Nombre de la Institución:" required>
+            </div>
+            <!-- <div class="form-group">
+              <label for="temaConsultar" class="fw-bold"></label>
+              <input type="text" class="form-control" id="tema" name="tema" placeholder="*Nombre Cc:" required>
+            </div> -->
+            <div class="form-group">
+              <label for="temaConsultar" class="fw-bold"></label>
+              <input type="text" class="form-control" id="mail" name="mail" placeholder="*Correo Electrónico:" required>
+            </div>
+            <div class="form-group">
+              <label for="temaConsultar" class="fw-bold"></label>
+              <input type="text" class="form-control" id="telefono" name="telefono" placeholder="*Teléfono:" required>
+            </div>
+            <div class="form-group">
+              <label for="temaConsultar" class="fw-bold"></label>
+              <textarea type="text" class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Mensaje:"
+                required></textarea>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+              <div class="btn btn-dark px-5">Enviar</div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="mt-5">
-  <app-puntosclave-auditoria></app-puntosclave-auditoria>
-</section>
+<app-puntosclave-auditoria></app-puntosclave-auditoria>
 
 <app-footer></app-footer>
