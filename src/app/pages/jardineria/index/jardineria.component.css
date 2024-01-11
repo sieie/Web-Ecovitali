@@ -148,7 +148,8 @@
 
 .form-control {
   background-color: transparent;
-  backdrop-filter: blur(1.11px);
+  border: 1px solid #ced4da; /* Color del borde */
+  color: #ffffff; /* Color del texto */
 }
 
 .img-jardines {
