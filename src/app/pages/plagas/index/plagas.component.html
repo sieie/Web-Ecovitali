@@ -1,28 +1,23 @@
 <app-header></app-header>
-<section class="plagas">
-  <div class="container py-5" data-aos="fade-up">
-    <div class="d-block justify-content-center row mx-lg-5 mx-5">
-      <div class="col-12 container-plagas">
-        <div class="mx-lg-5 mx-0 mt-2">
-          <div class="d-block text-center">
-            <img src="assets/img/website/SVG-Icono-Division-11.svg" class="icon-plagas" alt="Control de Plagas">
-            <p class="text-white fw-semibold text-center">Control de Plagas</p>
-          </div>
-          <h1 class="h1-cp">Controlamos las plagas desde la raíz, garantizando una solución efectiva.</h1>
-          <h2 class="h2-cp d-none d-md-block mt-3">¡Disfruta de entornos sin invasores!</h2>
-          <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg" class="align-content-center"><span class="px-2">Conoce más sobre nuestra división</span></div>
-        </div>
-      </div>
+<section class="video-background" id="portada">
+  <div class="container-fluid px-0">
+    <img src="assets/img/website/banner-plagas.png" class="hero" alt="Portada-Ecovitali">
+    <div class="video-background__content" data-aos="fade-up">
+      <img src="assets/img/website/SVG-Icono-Division-11.svg" class="icon-plagas img-fluid" alt="Control de Plagas"><span class="text-light fw-semibold m-0 mb-3">Control de Plagas</span>
+      <h1 class="text-center text-light">Controlamos las plagas desde la raíz, <br> garantizando una solución efectiva.</h1>
+      <h5 class="text-center text-light fw-normal">¡Disfruta de entornos sin invasores!</h5>
+      <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
     </div>
   </div>
 </section>
+
 <section class="section-padding" data-aos="fade-right" id="certificaciones">
   <app-certificados></app-certificados>
   <div id="sectores"></div>
 </section>
 <!--=========================================== PUNTOS CLAVE ===========================================-->
 <section class="section-padding p-3">
-  <div class="container container-p-claves">
+  <div class="container container-p-claves py-3">
     <div class="row">
       <div class="col-12 text-center">
         <div class="btn-servicios">Puntos claves de</div>

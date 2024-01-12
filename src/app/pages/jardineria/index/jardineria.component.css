@@ -1,25 +1,6 @@
-.jardineria {
-  background: url(src/assets/img/website/banner-jardineria.png) center/cover no-repeat;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
-  background-position: center center; /* Centra la imagen en el elemento */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  object-fit: cover;
-}
-
-.container-jardineria {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.icon-plagas {
-  width: 100px;
-  height: 100px;
+.icon-jardineria {
+  width: 6em;
+  height: 6em;
 }
 
 .h1-cp {

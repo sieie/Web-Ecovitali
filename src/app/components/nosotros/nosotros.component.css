@@ -72,7 +72,6 @@ h5 {
 .banner-valores {
   position: relative;
   width: 100%;
-  height: 80vh;
   background-image: url(src/assets/img/website/Banner-mision-plagas.png);
   background-size: cover;
   background-position: center;

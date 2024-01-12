@@ -14,7 +14,7 @@
   --h1-font-size: 3em;
   --h2-font-size: 2.3em;
   --h3-font-size: 2em;
-  --h4-font-size: 1.55em;
+  --h4-font-size: 1.5em;
   --h5-font-size: 1.2em;
   --h6-font-size: 0.78em;
   --p-font-size: 1em;
@@ -156,6 +156,10 @@ CUSTOM LIST
 /*---------------------------------------
 CUSTOM TEXT BOX
 -----------------------------------------*/
+.text-justify {
+  text-align: justify !important;
+}
+
 .custom-text-box {
   background: var(--white-color);
   border-radius: var(--border-radius-medium);
@@ -347,6 +351,16 @@ CONTACT
   align-items: center;
   text-align: center;
   z-index: 1;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
+  background-position: center center; /* Centra la imagen en el elemento */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  object-fit: cover;
 }
 
 /* Estilo para el carrusel */

@@ -1,29 +1,10 @@
-.limpieza {
-  background: url(src/assets/img/website/banner-limpieza.png) center/cover no-repeat;
-  width: auto;
-  height: 100vh;
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
-  background-position: center center; /* Centra la imagen en el elemento */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  object-fit: cover;
-}
-
 .text-celeste {
   color: #118AC5;
 }
 
-.container-limpieza {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-}
-
 .icon-limpieza {
-  width: 100px;
-  height: 100px;
+  width: 6em;
+  height: 6em;
 }
 
 .h1-cp {

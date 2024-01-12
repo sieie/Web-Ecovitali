@@ -1,23 +1,18 @@
 <app-header></app-header>
-<section class="desinfeccion">
-  <div class="container py-5 text-center" data-aos="fade-up">
-    <div class="d-block justify-content-center row mx-lg-5 mx-5">
-      <div class="col-12 container-desinfeccion">
-        <div class="mx-lg-5 mx-0 mt-2">
-          <div class="d-block text-center">
-            <img src="assets/img/website/SVG-Icono-Division-14.svg" class="icon-desinfeccion" alt="Desinfección y Sanitización">
-            <p class="text-white fw-semibold text-center">Desinfección</p>
-          </div>
-          <h1 class="h1-cp">Desinfección de espacios, un mundo libre de virus.</h1>
-          <h2 class="h2-cp d-none d-md-block mt-3">Tu salud es nuestra prioridad. <br>Protegemos tus espacios de virus y bacterias</h2>
-          <div (click)="scrollToSection('index')" class="custom-btn-section mt-4"><img
-              src="assets/img/website/flecha.svg" class="align-content-center"><span class="px-2">Conoce más sobre
-              nuestra división</span></div>
-        </div>
-      </div>
+
+<app-header></app-header>
+<section class="video-background" id="portada">
+  <div class="container-fluid px-0">
+    <img src="assets/img/website/banner-desinfeccion.png" class="hero" alt="Portada-Ecovitali">
+    <div class="video-background__content" data-aos="fade-up">
+      <img src="assets/img/website/SVG-Icono-Division-14.svg" class="icon-desinfeccion" alt="Desinfección"><span class="text-light fw-semibold m-0 mb-3">Desinfección y Sanitización</span>
+      <h1 class="text-center text-light">Desifección de espacios,<br> un mundo libre de virus.</h1>
+      <h5 class="text-center text-light fw-normal">Tu salud es nuestra prioridad. <br>Protegemos tus espacios de virus y bacterias</h5>
+      <div (click)="scrollToSection('index')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
     </div>
   </div>
 </section>
+
 <section class="section-padding" id="index">
   <div class="container-fluid">
     <div class="row">
@@ -31,7 +26,7 @@
         </div>
       </div>
       <div class="col-lg-6 col-12 d-flex align-items-end mt-lg-0 mt-4 px-0" data-aos="fade-up">
-        <img src="assets/img/website/desinfeccion-hero.png" class="img-fluid" alt="">
+        <img src="assets/img/website/desinfeccion-hero.png" class="img-fluid d-none d-md-block" alt="">
       </div>
     </div>
   </div>
@@ -42,7 +37,7 @@
       <div class="col-lg-6 col-md-12 col-12">
         <img src="assets/img/website/desinfeccion-section.png" class="img-fluid" alt="Limpieza de Interiores">
       </div>
-      <div class="col-lg-6 col-md-12 col-12 px-5">
+      <div class="col-lg-6 col-md-12 col-12 px-md-5 px-3">
         <h2 class="fw-semibold my-3 mt-5">Tu Bienestar es Nuestra Prioridad</h2>
         <p class="mb-5">Priorizamos tu salud y calidad de vida garantizando entornos limpios y seguros en cada
           servicio, con personal capacitado que garantizan resultados.</p>
@@ -61,11 +56,11 @@
   <div class="container">
     <div class="row">
       <!-- Imagen 1 -->
-      <div class="col-lg-6 col-12 order-lg-2 order-1 mb-3 mt-2" data-aos="fade-left">
+      <div class="col-lg-6 col-12 order-lg-2 order-1 mb-3 mt-2" data-aos="fade-up">
         <img src="assets/img/website/desinfeccion-profesional.png" class="img-fluid" alt="Desinfección Profesional">
       </div>
       <!-- Tarjeta 1 -->
-      <div class="col-lg-6 col-12 order-lg-1 order-2 mb-3 mt-2" data-aos="fade-right">
+      <div class="col-lg-6 col-12 order-lg-1 order-2 mb-3 mt-2" data-aos="fade-up">
         <div class="card-limpieza p-4 p-md-5">
           <h2 class="fw-bold title-desinfeccion">Desinfección Profesional</h2>
           <span class="text-start">Entendemos la importancia de mantener espacios seguros y libres de gérmenes. Nuestros servicios de desinfección profesional son la respuesta a tus necesidades de higiene. Utilizamos técnicas avanzadas y productos de calidad para eliminar de manera efectiva virus y bacterias, creando un ambiente saludable y seguro para ti, tu familia o tu equipo.
@@ -73,11 +68,11 @@
         </div>
       </div>
       <!-- Imagen 2 -->
-      <div class="col-lg-6 col-12 order-lg-3 order-3 mt-2" data-aos="fade-right" data-aos-delay="300">
+      <div class="col-lg-6 col-12 order-lg-3 order-3 mt-2" data-aos="fade-up" data-aos-delay="300">
         <img src="assets/img/website/LimpiezaProfunda.png" class="img-fluid" alt="Limpieza Profunda">
       </div>
       <!-- Tarjeta 2 -->
-      <div class="col-lg-6 col-12 order-lg-4 order-4 mt-2" data-aos="fade-left" data-aos-delay="300">
+      <div class="col-lg-6 col-12 order-lg-4 order-4 mt-2" data-aos="fade-up" data-aos-delay="300">
         <div class="card-limpieza p-4 p-md-5">
           <h2 class="fw-bold title-desinfeccion">Desinfección Residencial</h2>
           <span class="text-start">Tu hogar es tu refugio, y su seguridad es nuestra prioridad. Nuestros servicios de desinfección residencial están diseñados para proteger a tu familia. Con enfoque en las áreas de mayor contacto, eliminamos gérmenes y virus, proporcionándote la tranquilidad que necesitas en tu espacio personal.
@@ -92,11 +87,11 @@
   <div class="container">
     <div class="row">
       <!-- Imagen 1 -->
-      <div class="col-lg-6 col-12 order-lg-2 order-1 mb-3 mt-2" data-aos="fade-left">
+      <div class="col-lg-6 col-12 order-lg-2 order-1 mb-3 mt-2" data-aos="fade-up">
         <img src="assets/img/website/LimpiezaFinalObra.png" class="img-fluid" alt="Limpieza de Oficinas">
       </div>
       <!-- Tarjeta 1 -->
-      <div class="col-lg-6 col-12 order-lg-1 order-2 mb-3 mt-2" data-aos="fade-right">
+      <div class="col-lg-6 col-12 order-lg-1 order-2 mb-3 mt-2" data-aos="fade-up">
         <div class="card-limpieza p-3 p-md-5">
           <h2 class="fw-bold title-desinfeccion">Desinfección Comercial</h2>
           <span class="text-start">Para las empresas, la higiene es fundamental, tanto para empleados como para clientes. Ofrecemos soluciones de desinfección comercial que se adaptan a tu horario y necesidades específicas. Mantén tu entorno de trabajo seguro y evita interrupciones con nuestros servicios confiables de desinfección.
@@ -104,11 +99,11 @@
         </div>
       </div>
       <!-- Imagen 2 -->
-      <div class="col-lg-6 col-12 order-lg-3 order-3 mt-2" data-aos="fade-right" data-aos-delay="300">
+      <div class="col-lg-6 col-12 order-lg-3 order-3 mt-2" data-aos="fade-up" data-aos-delay="300">
         <img src="assets/img/website/LimpiezaIndustrial.png" class="img-fluid" alt="Limpieza Profunda">
       </div>
       <!-- Tarjeta 2 -->
-      <div class="col-lg-6 col-12 order-lg-4 order-4 mt-2" data-aos="fade-left" data-aos-delay="300">
+      <div class="col-lg-6 col-12 order-lg-4 order-4 mt-2" data-aos="fade-up" data-aos-delay="300">
         <div class="card-limpieza p-3 p-md-5">
           <h2 class="fw-bold title-desinfeccion">Calidad y Cumplimiento</h2>
           <span class="text-start">La calidad es nuestro sello distintivo. Todos nuestros servicios de desinfección cumplen con los estándares más altos de calidad y seguridad. Nuestros equipos altamente capacitados siguen rigurosos protocolos para garantizar la eficacia y el cumplimiento de las normativas vigentes.

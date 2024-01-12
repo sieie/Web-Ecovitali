@@ -1,54 +1,49 @@
 <app-header></app-header>
-<section class="jardineria">
-  <div class="container py-5 text-center" data-aos="fade-up">
-    <div class="d-block justify-content-center row mx-lg-5 mx-5">
-      <div class="col-12 container-plagas">
-        <div class="mx-lg-5 mx-0 mt-5">
-          <div class="d-block text-center">
-            <img src="assets/img/website/SVG-Icono-Division-13.svg" class="icon-plagas" alt="Control de Plagas">
-            <p class="text-white fw-semibold text-center">Prados y Jardines</p>
-          </div>
-          <h1 class="h1-cp">Jardinería de excelencia para <br> hogares y empresas.</h1>
-          <h2 class="h2-cp d-none d-md-block mt-3">Embelleciendo las áreas comunes, un jardín a la vez.</h2>
-          <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg" class="align-content-center"><span>Conoce más sobre nuestra división</span></div>
-        </div>
-      </div>
+<section class="video-background" id="portada">
+  <div class="container-fluid px-0">
+    <img src="assets/img/website/banner-jardineria.png" class="hero" alt="Portada-Ecovitali">
+    <div class="video-background__content" data-aos="fade-up">
+      <img src="assets/img/website/SVG-Icono-Division-13.svg" class="icon-jardineria" alt="Control de Plagas"><span class="text-light fw-semibold m-0 mb-3">Prados y Jardines</span>
+      <h1 class="text-center text-light">Jardinería de excelencia<br> para Hogares y Empresas.</h1>
+      <h5 class="text-center text-light fw-normal">Descubre el poder de una limpieza impecable</h5>
+      <div (click)="scrollToSection('sectores')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
     </div>
   </div>
 </section>
+
 <section class="container" data-aos="fade-right" id="sectores">
-  <div class="row">
-    <div class="d-flex align-content-center align-items-center flex-wrap justify-content-between">
-      <div class="d-block col-7">
-        <h2 class="fw-bold text-center">TRABAJAMOS PARA TU <br>BIENESTAR</h2>
-        <p class="text-center mt-3">Cuidado y mantenimiento de áreas verdes en manos de los expertos.</p>
-        <div class="container d-flex justify-content-around">
-          <a class="card card-sectores col-md-5 col-12 m-3 p-3">
-            <span class="icon text-center m-2 ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-buildings"
-                viewBox="0 0 16 16">
-                <path
-                  d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z" />
-                <path
-                  d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z" />
-              </svg>
-            </span>
-            <h4 class="text-center">SECTOR EMPRESARIAL</h4>
-            <p class="text-center">Talento humano profesional altamente capacitado y certificado</p>
-          </a>
-          <a class="card card-sectores col-md-5 col-12 m-3 p-3">
-            <span class="icon bi-house text-center m-2"></span>
-            <h4 class="text-center">SECTOR <br>RESIDENCIAL</h4>
-            <p class="text-center">Su hogar y su familia protegidos en un entorno libre de plagas garantizado.</p>
-          </a>
-        </div>
+  <div class="row align-content-center align-items-center flex-wrap justify-content-between">
+    <div class="col-md-7 col-12">
+      <h2 class="fw-bold text-center">TRABAJAMOS PARA TU <br>BIENESTAR</h2>
+      <p class="text-center mt-3">Cuidado y mantenimiento de áreas verdes en manos de los expertos.</p>
+      <div class="d-flex justify-content-around">
+        <a class="card card-sectores col-md-5 col-12 m-3 p-3">
+          <span class="icon text-center m-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-buildings"
+              viewBox="0 0 16 16">
+              <path
+                d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022ZM6 8.694 1 10.36V15h5V8.694ZM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15Z" />
+              <path
+                d="M2 11h1v1H2v-1Zm2 0h1v1H4v-1Zm-2 2h1v1H2v-1Zm2 0h1v1H4v-1Zm4-4h1v1H8V9Zm2 0h1v1h-1V9Zm-2 2h1v1H8v-1Zm2 0h1v1h-1v-1Zm2-2h1v1h-1V9Zm0 2h1v1h-1v-1ZM8 7h1v1H8V7Zm2 0h1v1h-1V7Zm2 0h1v1h-1V7ZM8 5h1v1H8V5Zm2 0h1v1h-1V5Zm2 0h1v1h-1V5Zm0-2h1v1h-1V3Z" />
+            </svg>
+          </span>
+          <h4 class="text-center">SECTOR EMPRESARIAL</h4>
+          <p class="text-center">Talento humano profesional altamente capacitado y certificado</p>
+        </a>
+        <a class="card card-sectores col-md-5 col-12 m-3 p-3">
+          <span class="icon bi-house text-center m-2"></span>
+          <h4 class="text-center">SECTOR <br>RESIDENCIAL</h4>
+          <p class="text-center">Su hogar y su familia protegidos en un entorno libre de plagas garantizado.</p>
+        </a>
       </div>
-      <div class="d-flex col-md-4">
-        <img src="assets/img/website/hero-jardineria.png" class="img-fluid hero-img-jardines" alt="">
-      </div>
+    </div>
+    <div class="d-flex col-md-4">
+      <img src="assets/img/website/hero-jardineria.png" class="img-fluid hero-img-jardines" alt="">
     </div>
   </div>
 </section>
+
+
 <section class="section-padding" id="catalogo">
   <div class="container">
     <div class="row">

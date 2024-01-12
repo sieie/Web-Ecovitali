@@ -1,5 +1,17 @@
 <app-header></app-header>
-<section class="limpieza">
+<section class="video-background" id="portada">
+  <div class="container-fluid px-0">
+    <img src="assets/img/website/banner-limpieza.png" class="hero" alt="Portada-Ecovitali">
+    <div class="video-background__content" data-aos="fade-up">
+      <img src="assets/img/website/SVG-Icono-Division-12.svg" class="icon-limpieza" alt="Control de Plagas"><span class="text-light fw-semibold m-0 mb-3">Limpieza y Sanitización</span>
+      <h1 class="text-center text-light">Ambientes limpios,<br> empresas y hogares saludables.</h1>
+      <h5 class="text-center text-light fw-normal">Descubre el poder de una limpieza impecable</h5>
+      <div (click)="scrollToSection('nosotros')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="limpieza">
   <div class="container py-5" data-aos="fade-up">
     <div class="row align-content-center">
       <div class="col-12 container-limpieza">
@@ -15,7 +27,9 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+
 <section class="section-padding" id="nosotros">
   <div class="container-fluid">
     <div class="row">
