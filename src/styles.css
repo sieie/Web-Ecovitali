@@ -364,12 +364,15 @@ CONTACT
 }
 
 /* Estilo para el carrusel */
+.carousel {
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 12px;
+}
+
 .carousel-inner {
-  border: 2px solid #c3c6ce; /* Borde del carrusel */
-  border-radius: 20px; /* Borde redondeado */
   padding: 1.8rem; /* Espacio interno del carrusel */
   transition: 0.5s ease-out; /* Transición al hacer hover en el carrusel */
-  overflow: visible;
 }
 
 /* Estilo para los indicadores del carrusel (círculos) */
@@ -386,7 +389,6 @@ CONTACT
 
 .carousel-indicators li {
   background-color: #000000 !important; /* Fondo transparente para los indicadores */
-  border: 2px solid #028537; /* Borde para los indicadores */
   border-radius: 50% !important; /* Hace que los indicadores sean círculos */
   width: 10px !important; /* Ancho fijo de los indicadores */
   height: 10px !important; /* Altura fija de los indicadores */
@@ -404,8 +406,7 @@ CONTACT
 
 /* Estilo para las imágenes del carrusel */
 .carousel-inner img {
-  width: 60px; /* Ancho de las imágenes */
-  height: 60px; /* Altura de las imágenes */
+  width: 50px; /* Ancho de las imágenes */
   margin-right: 1rem; /* Espacio entre la imagen y el texto */
 }
 
@@ -414,11 +415,6 @@ CONTACT
   font-weight: bold;
 }
 
-/* Efecto al hacer hover en el carrusel */
-.carousel-inner:hover {
-  border-color: #028537; /* Cambia el color del borde al hacer hover */
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25); /* Sombra al hacer hover */
-}
 
 /* Efecto del botón al hacer hover en el carrusel */
 .carousel-inner:hover button {

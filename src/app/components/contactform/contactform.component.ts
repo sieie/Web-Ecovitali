@@ -9,7 +9,7 @@ import { CorreoService } from '../../services/mails/correo.service';
   styleUrls: ['./contactform.component.css'],
 })
 export class ContactformComponent {
-  @Input() imagenContacto = 'assets/img/website/contacto-plagas.png';
+  @Input() imagenContacto = 'assets/img/website/contacto-plagas.webp';
   @Input() botonColor: string | undefined;
 
   // Maneja cambios en el tamaño de la ventana para actualizar mostrarImagen
