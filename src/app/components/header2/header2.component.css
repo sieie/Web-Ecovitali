@@ -1,7 +1,6 @@
 .icons-divisiones img{
-  margin-top: 60px;
-  height: 80px;
-  min-width: 80px;
+  max-width: 70px;
+  width: 100%;
   position: relative;
 }
 

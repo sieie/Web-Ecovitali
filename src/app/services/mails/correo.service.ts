@@ -11,6 +11,17 @@ export class CorreoService {
   constructor(private http: HttpClient) {}
 
   enviarCorreo(datos: any): Observable<any> {
-    return this.http.post(`${this.apiUrl}/enviar-correo`, datos);
+    return this.http.post(`${this.apiUrl}/enviar-correo/divisiones-empresariales`, datos);
+  }
+
+  enviarCorreoAtCliente(datos: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/enviar-correo/at-cliente`, datos);
+  }
+
+  enviarCorreoAtProveedor(datos: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/enviar-correo/at-proveedor`, datos);
+  }
+  enviarCorreoResponsabilidadSocial(datos: any): Observable<any> {
+    return this.http.post(`${this.apiUrl}/enviar-correo/responsabilidad-social`, datos);
   }
 }

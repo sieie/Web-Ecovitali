@@ -6,31 +6,43 @@
     <img src="assets/img/website/banner-desinfeccion.png" class="hero" alt="Portada-Ecovitali">
     <div class="video-background__content" data-aos="fade-up">
       <img src="assets/img/website/SVG-Icono-Division-14.svg" class="icon-desinfeccion" alt="Desinfección"><span class="text-light fw-semibold m-0 mb-3">Desinfección y Sanitización</span>
-      <h1 class="text-center text-light">Desifección de espacios,<br> un mundo libre de virus.</h1>
-      <h5 class="text-center text-light fw-normal">Tu salud es nuestra prioridad. <br>Protegemos tus espacios de virus y bacterias</h5>
+      <h1 class="text-center text-light">Garantizamos ambientes<br> libre de microorganismos</h1>
+      <h5 class="text-center text-light fw-normal">Utilizamos técnicas efectivas para crear espacios <br>saludables y seguros.</h5>
       <div (click)="scrollToSection('index')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
     </div>
   </div>
 </section>
 
-<section class="section-padding" id="index">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-lg-5 col-12 pe-5 mt-4" data-aos="fade-up">
-        <div class="d-flex align-items-center"><img src="assets/img/website/iconos/check-celeste.svg"><span class="p-2 text-celeste">Confiabilidad en tu hogar y tu empresa</span></div>
-        <h1 class="mt-5">Desinfección Profesional a tu Alcance</h1>
-        <p class="mt-2 text-start">Protegemos tu Bienestar lugar por lugar garantizando espacios limpios y seguros.</p><br>
-        <div class="d-flex justify-content-lg-start justify-content-center">
-          <a routerLink="/nosotros" class="btn btn-dark mt-3 p-3">Conoce más sobre nosotros</a>
+<section class="section-padding" id="sectores">
+  <div class="container-fluid" style="background: #E4F0FF;">
+    <div class="row p-md-0 p-3">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 col-sm-12 col-12 pe-md-5">
+        <h1 class="mt-md-5 mt-3">Tus ambientes <br>Totalmente Desinfectados</h1>
+        <h4 class="mt-2 text-start">Protegemos y bienestar, garantizando <br>ambientes libres de érmenes y saludables.</h4>
+        <div class="mt-2">
+          <a href="https://api.whatsapp.com/send/?phone=%2B593992852299&text&type=phone_number&app_absent=0" class="btn-llama-profesional p-md-3 py-2 px-2 me-2"><img src="assets/img/website/iconos/call.svg" class="me-3 img-fluid" alt="Llama a un profesional de Ecovitali"><span class="fw-semibold">Llama a un profesional</span></a>
+          <button routerLink="/certificaciones" class="btn-contratanos p-md-3 py-2 px-2 my-3"><img src="assets/img/website/iconos/pregunta.svg" class="me-3 img-fluid" alt="Porqué contratar a Ecovitali"><span class="fw-semibold">¿Por qué Contratarnos?</span></button>
+        </div>
+        <h4 class="fw-semibold mt-3">Certificados y Avalados</h4>
+        <div class="col-md-5 d-flex flex-wrap justify-content-around">
+          <!--============ CERTIFICACION ISO-9001 ============-->
+          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Certificación ISO-9001" data-bs-content="Nuestro certificado ISO 9001 2015 cubre todos los aspectos y fases de nuestra empresa, no es parcial o documental, sino que es integral; nuestro sistema de gestion de calidad tiene validaciones internacionales y permite a ECOVITALI ajustarse a los más estrictos procesos de nuestros clientes, volviéndonos los mejores asociados de negocios.">
+            <img src="assets/img/ISO.webp" class="certificados d-flex justify-content-center" alt="Logo Certificación ISO-9001">
+          </div>
+          <!--============ BUSINESS ALLIANCE FOR SECURE ============-->
+          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Business Alliance for Secure" data-bs-content="Somos certificados BASC - Business Alliance for Secure Commerce y como tal formamos parte de una alianza empresarial internacional basada en el comercio seguro en cooperación con otros asociados, gobiernos y organismos internacionales. En ECOVITALI  no decimos que somos honestos sino que lo certificamos.">
+            <img src="assets/img/BASC.webp" class="certificados d-flex justify-content-center" alt="Logo Business Alliance for Secure">
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 col-12 d-flex align-items-end mt-lg-0 mt-4 px-0" data-aos="fade-up">
-        <img src="assets/img/website/desinfeccion-hero.png" class="img-fluid d-none d-md-block" alt="">
+      <div class="col-lg-5 col-12 d-none d-sm-flex align-items-end mt-lg-0 mt-4 px-0">
+        <img src="assets/img/website/desinfeccion-hero2.png" class="img-fluid">
       </div>
     </div>
   </div>
 </section>
+
 <section class="section-padding">
   <div class="container">
     <div class="row d-flex col-lg-12 col-12">
@@ -113,7 +125,11 @@
     </div>
   </div>
 </section>
-<section id="#contacto">
-  <app-contactform imagenContacto="assets/img/website/contacto-desinfeccion.png" botonColor="#52A3D2"></app-contactform>
+
+<section class="pt-5" data-aos="fade-up" data-aos-delay="100">
+  <app-contactform divisionEmpresarial="Desinfección" imagenContacto="assets/img/website/contacto-desinfeccion.png" botonColor="#212529"></app-contactform>
 </section>
-<app-footer></app-footer>
+
+<div class="mt-5">
+  <app-footer></app-footer>
+</div>

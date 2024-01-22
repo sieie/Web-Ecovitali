@@ -13,13 +13,31 @@
   line-height: 40px;
 }
 
-.sectores {
-  height: 100vh;
+.btn-contratanos {
+  border-radius: 8px;
+  border: 2px solid #130F26;
+  background-color: transparent;
 }
 
-.logos {
-  width: 120px;
-  height: 120px;
+.btn-llama-profesional {
+  background: #130F26;
+  border-radius: 8px;
+  width: auto;
+  border: 2px solid #130F26;
+  color: #ffffff;
+}
+
+
+.certificados {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.certificados:hover {
+  transform: scale(1.1); /* Escala el elemento al 110% en hover */
 }
 
 .btn-servicios {
@@ -51,11 +69,6 @@
   gap: 25px;
   width: auto;
   height: auto;
-}
-
-.img-fluid {
-  width: 100%;
-  object-fit: cover;
 }
 
 .card-limpieza {

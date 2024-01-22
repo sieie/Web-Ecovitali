@@ -11,6 +11,7 @@ import { CorreoService } from '../../services/mails/correo.service';
 export class ContactformComponent {
   @Input() imagenContacto = 'assets/img/website/contacto-plagas.webp';
   @Input() botonColor: string | undefined;
+  @Input() divisionEmpresarial: string = '';
 
   // Maneja cambios en el tamaño de la ventana para actualizar mostrarImagen
   @HostListener('window:resize', ['$event'])
@@ -27,6 +28,7 @@ export class ContactformComponent {
       telefono: ['', [Validators.required, this.phoneValidator(), Validators.minLength(10)]],
       email: ['', [Validators.required, Validators.email]],
       comentario: ['', [Validators.required, Validators.minLength(10)]],
+      divisionEmpresarial: [this.divisionEmpresarial]
     });
 
     // Oculta la imagen en el breackpoint sm
@@ -35,7 +37,7 @@ export class ContactformComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
-      this.httpService.enviarCorreo(this.contactForm.value).subscribe(
+      this.httpService.enviarCorreo({ ...this.contactForm.value, divisionEmpresarial: this.divisionEmpresarial}).subscribe(
         (resp) => {
           console.log('Correo Enviado con Éxito:', resp);
         },

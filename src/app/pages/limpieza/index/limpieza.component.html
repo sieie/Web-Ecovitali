@@ -4,50 +4,48 @@
     <img src="assets/img/website/banner-limpieza.png" class="hero" alt="Portada-Ecovitali">
     <div class="video-background__content" data-aos="fade-up">
       <img src="assets/img/website/SVG-Icono-Division-12.svg" class="icon-limpieza" alt="Control de Plagas"><span class="text-light fw-semibold m-0 mb-3">Limpieza y Sanitización</span>
-      <h1 class="text-center text-light">Ambientes limpios,<br> empresas y hogares saludables.</h1>
-      <h5 class="text-center text-light fw-normal">Descubre el poder de una limpieza impecable</h5>
+      <h1 class="text-center text-light">Creamos bienestar<br> en tus ambientes.</h1>
+      <h5 class="text-center text-light fw-normal">Limpieza profesional para hogares, oficinas e Industrias.</h5>
       <div (click)="scrollToSection('nosotros')" class="custom-btn-section mt-4"><img src="assets/img/website/flecha.svg">Conoce más sobre nuestra división</div>
     </div>
   </div>
 </section>
 
-<!-- <section class="limpieza">
-  <div class="container py-5" data-aos="fade-up">
-    <div class="row align-content-center">
-      <div class="col-12 container-limpieza">
-        <div class="text-center">
-          <img src="assets/img/website/SVG-Icono-Division-12.svg" class="icon-limpieza" alt="Control de Plagas">
-          <p class="text-white fw-semibold text-center">Limpieza y Sanitización</p>
-        </div>
-        <h1 class="h1-cp">Ambientes limpios, <br>empresas y hogares saludables.</h1>
-        <h2 class="h2-cp d-none d-md-block mt-2">Descubre el poder de una limpieza Impecable.</h2>
-        <div (click)="scrollToSection('nosotros')" class="custom-btn-section mt-2"><img
-            src="assets/img/website/flecha.svg" class="align-content-center"><span>Conoce más sobre
-            nuestra división</span></div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="section-padding" id="nosotros">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-1"></div>
-      <div class="col-lg-5 col-12 pe-5">
-        <div class="d-flex p-3 align-items-center"><img src="assets/img/website/iconos/check-celeste.svg"><span class="p-2 text-celeste">Confiabilidad en tu hogar y tu empresa</span></div>
-        <h1 class="mt-5">Una Nueva Solución para tu Hogar y tu Empresa</h1>
-        <p class="mt-2 text-start">Ambientes limpios y sanos que aportan al orden y mejoran la productividad.</p><br>
-        <div class="d-flex justify-content-lg-start justify-content-center">
-          <a routerLink="/nosotros" class="btn btn-dark mt-3 p-3">Conoce más sobre nosotros</a>
+  <div class="container-fluid" style="background: #F3EFFF;">
+    <div class="row p-md-0 p-3">
+      <div class="col-md-1"></div>
+      <div class="col-md-6 col-sm-12 col-12 pe-md-5">
+        <h1 class="mt-md-5 mt-3">Una solución eficiente para tu Empresa y Hogar</h1>
+        <h4 class="mt-2 text-start">Ambientes limpios y sanos que aportan al orden y mejoran la productividad.</h4><br>
+        <div class="mt-3">
+          <a href="https://api.whatsapp.com/send/?phone=%2B593992852299&text&type=phone_number&app_absent=0" class="btn-llama-profesional p-md-3 py-2 px-2 my-3 me-2"><img src="assets/img/website/iconos/call.svg" class="me-3 img-fluid" alt="Llama a un profesional de Ecovitali"><span class="fw-semibold">Llama a un profesional</span></a>
+          <button routerLink="/certificaciones" class="btn-contratanos p-md-3 py-2 px-2 my-3"><img src="assets/img/website/iconos/pregunta.svg" class="me-3 img-fluid" alt="Porqué contratar a Ecovitali"><span class="fw-semibold">¿Por qué Contratarnos?</span></button>
+        </div>
+        <h4 class="fw-semibold mt-3">Certificados y Avalados</h4>
+        <div class="col-md-8 d-flex flex-wrap justify-content-around">
+          <!--============ CERTIFICACION ISO-9001 ============-->
+          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Certificación ISO-9001" data-bs-content="Nuestro certificado ISO 9001 2015 cubre todos los aspectos y fases de nuestra empresa, no es parcial o documental, sino que es integral; nuestro sistema de gestion de calidad tiene validaciones internacionales y permite a ECOVITALI ajustarse a los más estrictos procesos de nuestros clientes, volviéndonos los mejores asociados de negocios.">
+            <img src="assets/img/ISO.webp" class="certificados d-flex justify-content-center" alt="Logo Certificación ISO-9001">
+          </div>
+          <!--============ BUSINESS ALLIANCE FOR SECURE ============-->
+          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="Business Alliance for Secure" data-bs-content="Somos certificados BASC - Business Alliance for Secure Commerce y como tal formamos parte de una alianza empresarial internacional basada en el comercio seguro en cooperación con otros asociados, gobiernos y organismos internacionales. En ECOVITALI  no decimos que somos honestos sino que lo certificamos.">
+            <img src="assets/img/BASC.webp" class="certificados d-flex justify-content-center" alt="Logo Business Alliance for Secure">
+          </div>
+          <!--============ ISSA ============-->
+          <div data-bs-toggle="popover" data-bs-tigger="click" data-bs-title="ISSA" data-bs-content="La certificación ISSA en nuestro servicio de limpieza garantiza estándares profesionales, competencia y conocimientos específicos. Demostramos un compromiso serio con la calidad y seguimos las mejores prácticas de la industria. Nuestros clientes confían en la eficiencia y calidad respaldada por esta certificación reconocida internacionalmente.">
+            <img src="assets/img/ISSA.webp" class="issa d-flex justify-content-center" alt="Logo ISSA">
+          </div>
         </div>
       </div>
-      <div class="col-lg-6 col-12 d-none d-sm-flex align-items-end mt-lg-0 mt-4 px-0">
-        <img src="assets/img/website/Limpieza-hero.png" class="img-fluid" alt="">
+      <div class="col-lg-5 col-12 d-none d-sm-flex align-items-end mt-lg-0 mt-4 px-0">
+        <img src="assets/img/website/Limpieza-hero.png" class="img-fluid">
       </div>
     </div>
   </div>
 </section>
+
+
 <section class="section-padding">
   <div class="container">
     <div class="row d-flex col-lg-12 col-12">
@@ -72,67 +70,125 @@
   <div class="container-fluid">
     <div class="row m-md-4">
       <!-- Imagen 1 -->
-      <div class="col-lg-6 col-12 order-lg-2 order-1 mb-3 mt-2" data-aos="fade-up">
+      <div class="col-lg-5 col-12 mb-3 mt-2" data-aos="fade-up">
         <img src="assets/img/website/LimpiezaOficinas.png" class="img-fluid" alt="Limpieza de Oficinas">
       </div>
       <!-- Tarjeta 1 -->
-      <div class="col-lg-6 col-12 order-lg-1 order-2 mb-3 mt-2" data-aos="fade-up">
+      <div class="col-lg-7 col-12 mb-3 mt-2" data-aos="fade-up">
         <div class="card-limpieza p-4 p-md-5">
-          <h2 class="fw-bold title-limpieza">LIMPIEZA DE OFICINAS</h2>
-          <span class="text-start">Descubre la excelencia en cada detalle. Nuestro equipo de expertos en limpieza de oficinas se dedica
-            apasionadamente y a diario superamos las expectativas de nuestros clientes. Nuestro personal de limpieza
-            cuenta con la mejor capacitación en labores de limpieza.
-          </span>
+          <h2 class="fw-bold title-limpieza">Limpieza Empresarial</h2>
+          <span class="text-start">Un empresario responsable sabe que la limpieza en su empresa es un factor de gran relevancia. Disponer de un plan de higiene y mantener los ambientes limpios y sanos es clave para el éxito de cualquier negocio.</span>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="col-lg-7 col-12 mt-2 order-1 order-sm-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-limpieza p-4 p-md-5">
+          <h2 class="fw-bold title-limpieza">Limpieza Residencial</h2>
+          <span class="text-start">Mantenemos tu hogar impecable. Con nuestro servicio de limpieza residencial, disfruta de un espacio limpio y acogedor sin complicaciones. </span>
         </div>
       </div>
       <!-- Imagen 2 -->
-      <div class="col-lg-6 col-12 order-lg-3 order-3 mt-2" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/website/LimpiezaProfunda.png" class="img-fluid" alt="Limpieza Profunda">
-      </div>
-      <!-- Tarjeta 2 -->
-      <div class="col-lg-6 col-12 order-lg-4 order-4 mt-2" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-limpieza p-4 p-md-5">
-          <h2 class="fw-bold title-limpieza">LIMPIEZA DE PROFUNDA</h2>
-          <span class="text-start">Contamos con un equipo de expertos altamente capacitados que se dedican a eliminar meticulosamente la
-            suciedad y los gérmenes de cada rincón de tu espacio. Utilizamos técnicas y productos de limpieza de
-            última tecnología que aseguran un entorno no solo visualmente limpio, sino también verdaderamente
-            saludable y seguro.
-          </span>
-        </div>
+      <div class="col-lg-5 col-12 mt-2" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/website/LimpiezaResidencial.png" class="img-fluid" alt="Limpieza Profunda">
       </div>
     </div>
   </div>
-  <!-- ================== GARANTIA ================== -->
-  <app-garantia></app-garantia>
 
   <div class="container-fluid">
     <div class="row m-lg-4">
       <!-- Imagen 1 -->
-      <div class="col-lg-6 col-12 order-lg-2 order-1 mb-3 mt-2" data-aos="fade-up">
-        <img src="assets/img/website/LimpiezaFinalObra.png" class="img-fluid" alt="Limpieza de Oficinas">
+      <div class="col-lg-5 col-12 mt-2" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/website/LimpiezaIndustrial.png" class="img-fluid" alt="Limpieza Profunda">
       </div>
       <!-- Tarjeta 1 -->
-      <div class="col-lg-6 col-12 order-lg-1 order-2 mb-3 mt-2" data-aos="fade-up">
+      <div class="col-lg-7 col-12 mb-3 mt-2" data-aos="fade-up">
         <div class="card-limpieza p-3 p-md-5">
-          <h2 class="fw-bold title-limpieza">LIMPIEZA FINAL DE OBRAS</h2>
-          <span class="text-start">Lleva tu proyecto a su máxima expresión. Eliminamos meticulosamente restos de construcción, polvo y residuos, dejando cada rincón impecable y listo para su uso. Con técnicas avanzadas para garantizar un resultado final brillante y seguro. Con nosotros, puedes confiar en que tu obra estará lista para recibir a sus ocupantes sin preocupaciones.</span>
+          <h2 class="fw-bold title-limpieza">Limpieza Industrial</h2>
+          <span class="text-start">Somos expertos en entornos de producción, manejando maquinaria pesada y productos químicos. Nos centramos en mantener espacios de trabajo seguros y eficientes al eliminar residuos y contaminantes, priorizando la mejora de instalaciones.</span>
+        </div>
+      </div>
+      <!-- Tarjeta 2 -->
+      <div class="col-lg-7 col-12 mt-2 order-1 order-sm-0" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-limpieza p-3 p-md-5">
+          <h2 class="fw-bold title-limpieza">Limpieza Post-Obra</h2>
+          <span class="text-start">Nos encargamos de limpiar con cuidado los restos de construcción, polvo y desechos, dejando cada rincón bien pulido y listo para usar. Usamos técnicas efectivas para asegurarnos de que el resultado final sea impecable y seguro. Puedes confiar en nosotros para dejar tu obra lista para que la disfruten sin preocupaciones.</span>
         </div>
       </div>
       <!-- Imagen 2 -->
-      <div class="col-lg-6 col-12 order-lg-3 order-3 mt-2" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/website/LimpiezaIndustrial.png" class="img-fluid" alt="Limpieza Profunda">
-      </div>
-      <!-- Tarjeta 2 -->
-      <div class="col-lg-6 col-12 order-lg-4 order-4 mt-2" data-aos="fade-up" data-aos-delay="100">
-        <div class="card-limpieza p-3 p-md-5">
-          <h2 class="fw-bold title-limpieza">LIMPIEZA INDUSTRIAL</h2>
-          <span class="text-start">Abordamos las demandas rigurosas de entornos de producción y fabricación. Con manejo profesional y capacitado de maquinaria pesada y productos químicos industriales. Nos enfocamos en la eliminación de residuos, grasa y otros contaminantes, garantizando así un entorno de trabajo seguro y eficiente. Nuestra prioridad es optimizar la funcionalidad de tu instalación.</span>
-        </div>
+      <div class="col-lg-5 col-12 mb-3 mt-2" data-aos="fade-up">
+        <img src="assets/img/website/LimpiezaFinalObra.png" class="img-fluid" style="border-radius: 20px;" alt="Limpieza de Oficinas">
       </div>
     </div>
   </div>
 </section>
-<section>
-  <app-contactform imagenContacto="assets/img/website/contacto-limpieza.png" botonColor="#644193"></app-contactform>
+
+<!--=========================================== INNOVACION LIMPIEZA ===========================================-->
+<section class="section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="assets/img/website/operador3-ecovitali.png" class="img-fluid">
+      </div>
+      <div class="col-md-7">
+        <h3 class="fw-bold" style="color: #9d85d0;">INNOVAMOS EL</h3>
+        <h3 class="fw-bold" style="color: #0F2435;" >SERVICIO DE LIMPIEZA</h3>
+        <h3>PARA AYUDAR A NUESTROS CLIENTES</h3>
+        <p>Ahora ofrecemos la opción de tener a uno de nuestros operadores de planta en tu establecimiento, brindando un servicio continuo y eficiente. Más que un servicio, es una alianza para un entorno impecable gracias a la limpieza profesional.</p>
+        <div class="container container-innovacion d-flex">
+          <!-- Primera fila -->
+          <div class="row ">
+            <div class="col-md-11 col-12 m-md-3 m-0">
+              <div class="checks-innovacion">
+                <img src="assets/img/website/iconos/Check-limpieza2.svg" class="img-fluid pe-2">
+                <span class="fw-semibold">Servicio Continuo</span>
+              </div>
+            </div>
+            <div class="col-md-11 col-12 m-md-3 m-0">
+              <div class="checks-innovacion">
+                <img src="assets/img/website/iconos/Check-limpieza2.svg" class="img-fluid pe-2">
+                <span class="fw-semibold">Monitoreo Constante</span>
+              </div>
+            </div>
+            <div class="col-md-11 col-12 m-md-3 m-0">
+              <div class="checks-innovacion">
+                <img src="assets/img/website/iconos/Check-limpieza2.svg" class="img-fluid pe-2">
+                <span class="fw-semibold">Optimización de Recursos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Segunda fila -->
+          <div class="row">
+            <div class="col-md-11 col-12 m-md-3 m-0">
+              <div class="checks-innovacion">
+                <img src="assets/img/website/iconos/Check-limpieza2.svg" class="img-fluid pe-2">
+                <span class="fw-semibold">Comunicación Directa</span>
+              </div>
+            </div>
+            <div class="col-md-11 col-12 m-md-3 m-0">
+              <div class="checks-innovacion">
+                <img src="assets/img/website/iconos/Check-limpieza2.svg" class="img-fluid pe-2">
+                <span class="fw-semibold">Soluciones Personalizadas</span>
+              </div>
+            </div>
+            <div class="col-md-11 col-12 m-md-3 m-0">
+              <div class="checks-innovacion">
+                <img src="assets/img/website/iconos/Check-limpieza2.svg" class="img-fluid pe-2">
+                <span class="fw-semibold">Atención Emergente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contacto"></div>
 </section>
-<app-footer></app-footer>
+
+<section class="pt-5" data-aos="fade-up" data-aos-delay="100">
+  <app-contactform divisionEmpresarial="Limpieza y Desinfección" imagenContacto="assets/img/website/contacto-limpieza.png" botonColor="#212529"></app-contactform>
+</section>
+
+<div class="mt-5">
+  <app-footer></app-footer>
+</div>

@@ -10,7 +10,8 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
 import { ResidencialComponent } from './components/residencial/residencial.component';
 import { HomeComponent } from './pages/home/home.component';
-import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
+import { TrabajaNosotrosComponent } from './pages/trabaja-nosotros/trabaja-nosotros.component';
+import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
 import { CertificacionesComponent } from './components/certificaciones/certificaciones.component';
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -73,6 +74,8 @@ const routes: Routes = [
   { path: 'sectores/instituciones-financieras', component: InstFinancierasComponent },
   { path: 'sectores/otros-sectores', component: OtrosSectoresComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'trabaja-con-nosotros', component: TrabajaNosotrosComponent },
+  { path: 'preguntas-frecuentes', component: PreguntasFrecuentesComponent },
 
   { path: '**', component: InicioComponent}
   // { path: '**', component: PagenotfoundComponent}

@@ -33,7 +33,7 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="comentario" class="form-label">Comentario:</label>
+              <label for="comentario" class="form-label">Mensaje:</label>
               <textarea class="form-control" id="comentario" formControlName="comentario"></textarea>
               <div *ngIf="contactForm.get('comentario')?.invalid && (contactForm.get('comentario')?.dirty || contactForm.get('comentario')?.touched)" class="error-message">
                 <div *ngIf="contactForm.get('comentario')?.hasError('required')">Comentario es obligatorio.</div>
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="d-flex justify-content-center mt-4">
-              <button type="submit" class="custom-btn-section-plagas" [style.background-color]="botonColor">Enviar</button>
+              <button type="submit" class="custom-btn-section-plagas text-white" [style.background-color]="botonColor">Enviar</button>
             </div>
           </form>
         </div>

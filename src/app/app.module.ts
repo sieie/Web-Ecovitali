@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule}  from "@angular/common/http";
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +23,7 @@ import { ServiciosComponent } from './components/servicios/servicios.component';
 import { BaseFundamentalComponent } from './components/base-fundamental/base-fundamental.component';
 import { ResidencialComponent } from './components/residencial/residencial.component';
 import { EmpresarialComponent } from './components/empresarial/empresarial.component';
-import { PreguntasFrecuentesComponent } from './components/preguntas-frecuentes/preguntas-frecuentes.component';
+import { PreguntasFrecuentesComponent } from './pages/preguntas-frecuentes/preguntas-frecuentes.component';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { Header2Component } from './components/header2/header2.component';
 import { PreloaderComponent } from './components/preloader/preloader.component';
@@ -55,7 +57,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { TratamientoGranosComponent } from './pages/plagas/tratamiento-granos/tratamiento-granos.component';
 import { TratamientoTermitasComponent } from './pages/plagas/tratamiento-termitas/tratamiento-termitas.component';
 import { TratamientoEspecialComponent } from './pages/plagas/tratamiento-especial/tratamiento-especial.component';
-
+import { TrabajaNosotrosComponent } from './pages/trabaja-nosotros/trabaja-nosotros.component';
 
 
 @NgModule({
@@ -108,13 +110,16 @@ import { TratamientoEspecialComponent } from './pages/plagas/tratamiento-especia
     ContactoComponent,
     TratamientoGranosComponent,
     TratamientoTermitasComponent,
-    TratamientoEspecialComponent
+    TratamientoEspecialComponent,
+    TrabajaNosotrosComponent,
+    PreguntasFrecuentesComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
   ],
