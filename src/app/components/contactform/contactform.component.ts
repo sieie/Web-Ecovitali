@@ -1,7 +1,7 @@
 import { Component, Input, HostListener } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import Swal from 'sweetalert2';
-import { CorreoService } from '../../services/mails/correo.service';
+import { CorreoService } from 'src/app/services/mails/correo.service';
 
 @Component({
   selector: 'app-contactform',
@@ -56,6 +56,9 @@ export class ContactformComponent {
       text: '¡Gracias por ponerte en contacto con nosotros! 🌟 Nos comunicaremos contigo a la brevedad posible. 👋',
       icon: 'success',
       confirmButtonText: 'Aceptar',
+    }).then(() => {
+      // Limpia los datos del formulario
+      this.contactForm.reset();
     })
   }
 

@@ -36,7 +36,6 @@
   color: #B7B6B6;
 }
 
-
 .copyright-text {
   color: var(--white-color);
   font-size: 0.8em;
@@ -81,6 +80,7 @@ SOCIAL ICON
 -----------------------------------------*/
 .icon-img {
   width: 87%;
+  /* max-width: 390px; */
   margin-bottom: 20px;
 }
 

@@ -21,7 +21,18 @@ export class CorreoService {
   enviarCorreoAtProveedor(datos: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/at-proveedor`, datos);
   }
+
   enviarCorreoResponsabilidadSocial(datos: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/responsabilidad-social`, datos);
+  }
+
+  enviarCorreoTrabajaConNosotros(datos: any): Observable<any> {
+    const formData = new FormData();
+
+    Object.keys(datos).forEach(key => {
+      formData.append(key, datos[key]);
+    })
+
+    return this.http.post(`${this.apiUrl}/enviar-correo/trabaja-nosotros`, datos);
   }
 }
