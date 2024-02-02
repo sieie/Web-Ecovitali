@@ -30,10 +30,10 @@
             <div class="mb-3">
               <select name="form-select" id="divisionSeleccionada" formControlName="divisionSeleccionada" (change)="seleccionarColor($event)" required>
                 <option value="default" selected disabled>Seleccione una división:</option>
-                <option value="plagas">División Control de Plagas</option>
-                <option value="limpieza">División Limpieza y Desinfección</option>
-                <option value="jardineria">División Prados y Jardines</option>
-                <option value="desinfeccion">División Desinfección y Sanitización</option>
+                <option value="Control de Plagas">División Control de Plagas</option>
+                <option value="Limpieza">División Limpieza y Desinfección</option>
+                <option value="Jardinería">División Prados y Jardines</option>
+                <option value="Desinfección">División Desinfección y Sanitización</option>
               </select>
               <div *ngIf="trabajoForm.get('divisionSeleccionada')?.invalid && (trabajoForm.get('divisionSeleccionada')?.dirty || trabajoForm.get('divisionSeleccionada')?.touched)">
                 <small class="text-danger">División es obligatoria</small>
@@ -55,9 +55,7 @@
 
           <div class="my-3">
             <div class="input-group align-items-center mb-2">
-              <input type="file" id="cv" name="cv" (change)="updateFileName($event)" formControlName="cv">
-              <div type="button" class="btn btn-secondary" onclick="document.getElementById('cv').click()">Adjuntar CV</div>
-              <span id="file-name" class="ms-2 align-items-center">{{ selectedFileName }}</span>
+              <input type="file" id="cv" name="cv" (change)="getData($event)" formControlName="cv">
               <div *ngIf="trabajoForm.get('cv')?.invalid && (trabajoForm.get('cv')?.dirty || trabajoForm.get('cv')?.touched)">
                 <small class="text-danger">Adjunta un archivo válido (PDF o Word)</small>
               </div>

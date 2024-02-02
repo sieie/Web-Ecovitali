@@ -13,26 +13,16 @@ export class CorreoService {
   enviarCorreo(datos: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/divisiones-empresariales`, datos);
   }
-
   enviarCorreoAtCliente(datos: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/at-cliente`, datos);
   }
-
   enviarCorreoAtProveedor(datos: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/at-proveedor`, datos);
   }
-
   enviarCorreoResponsabilidadSocial(datos: any): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/responsabilidad-social`, datos);
   }
-
-  enviarCorreoTrabajaConNosotros(datos: any): Observable<any> {
-    const formData = new FormData();
-
-    Object.keys(datos).forEach(key => {
-      formData.append(key, datos[key]);
-    })
-
+  enviarCorreoTrabajaConNosotros(datos: FormData): Observable<any> {
     return this.http.post(`${this.apiUrl}/enviar-correo/trabaja-nosotros`, datos);
   }
 }

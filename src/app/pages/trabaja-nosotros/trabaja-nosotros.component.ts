@@ -8,10 +8,14 @@ import Swal from 'sweetalert2';
   templateUrl: './trabaja-nosotros.component.html',
   styleUrls: ['./trabaja-nosotros.component.css']
 })
+
+
 export class TrabajaNosotrosComponent {
   selectedFileName: string = '';
   trabajoForm: FormGroup;
   divisionSeleccionada: string | null = null;
+
+  private fileTmp:any;
 
   constructor(private fb: FormBuilder, private correoService: CorreoService) {
     this.trabajoForm = this.fb.group({
@@ -32,6 +36,17 @@ export class TrabajaNosotrosComponent {
     } else {
       this.selectedFileName = '';
     }
+    console.log(this.selectedFileName);
+  }
+
+  getData($event: any): void {
+    const [ file ] = $event.target.files;
+    this.fileTmp = {
+      fileRaw:file,
+      fileName:file.name
+    }
+
+    console.log(file)
   }
 
   onSubmit() {
@@ -43,7 +58,7 @@ export class TrabajaNosotrosComponent {
       formData.append('divisionSeleccionada', this.trabajoForm.value.divisionSeleccionada);
       formData.append('email', this.trabajoForm.value.email);
       formData.append('comentario', this.trabajoForm.value.comentario);
-      formData.append('cv', this.trabajoForm.value.cv);
+      formData.append('cv', this.fileTmp.fileRaw, this.fileTmp.fileName);
 
       this.correoService.enviarCorreoTrabajaConNosotros(formData).subscribe(
         (resp) => {
@@ -53,7 +68,7 @@ export class TrabajaNosotrosComponent {
           console.error('Formulario inválido:', error);
         }
       );
-      // this.showSuccessAlert();
+      this.showSuccessAlert();
     }
   }
 
@@ -64,13 +79,13 @@ export class TrabajaNosotrosComponent {
 
   divisionColor(division: string): string {
     switch (division) {
-      case 'plagas':
+      case 'Control de Plagas':
         return '#71af32';
-      case 'limpieza':
+      case 'Limpieza':
         return '#542f88';
-      case 'jardineria':
+      case 'Jardinería':
         return '#ef7912';
-      case 'desinfeccion':
+      case 'Desinfección':
         return '#2791cc';
       default:
         return '#a7a7a7';
@@ -83,9 +98,8 @@ export class TrabajaNosotrosComponent {
       text: 'Hemos recibido tu perfil y te contactaremos pronto para una entrevista.',
       icon: 'success',
       confirmButtonText: 'Aceptar',
-    }).then(() => {
-      // Limpia los campos del formulario
-      this.trabajoForm.reset();
+    // }).then(() => {
+    //   this.trabajoForm.reset();
     });
   }
 }
