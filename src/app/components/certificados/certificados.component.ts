@@ -17,7 +17,9 @@ export class CertificadosComponent implements AfterViewInit {
 
     // Itera sobre cada elemento y añade un event listener para el evento 'shown.bs.popover'
     popoverTriggers.forEach((popoverTrigger: { addEventListener: (arg0: string, arg1: () => void) => void; }) => {
-      const popover = new bootstrap.Popover(popoverTrigger);
+      const popover = new bootstrap.Popover(popoverTrigger, {
+        placement: 'bottom', // Puedes ajustar esto según tus necesidades
+      });
 
       popoverTrigger.addEventListener('shown.bs.popover', () => {
         // Cierra el popover actualmente abierto antes de abrir uno nuevo
@@ -51,7 +53,9 @@ export class CertificadosComponent implements AfterViewInit {
     // Abre el popover específico
     if (popoverTriggers.length > popoverIndex) {
       const specificPopoverTrigger = popoverTriggers[popoverIndex];
-      const specificPopover = new bootstrap.Popover(specificPopoverTrigger);
+      const specificPopover = new bootstrap.Popover(specificPopoverTrigger, {
+        placement: 'auto', // Puedes ajustar esto según tus necesidades
+      });
       specificPopover.show();
     }
   }

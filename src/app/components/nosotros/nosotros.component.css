@@ -2,38 +2,11 @@ h5 {
   color:#2F2F2F;
 }
 
-.mision {
-  width: 97%;
-  height: 93%;
-  position: relative;
-  z-index: 2;
-}
-.rounded-rectangle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  background: rgba(116, 116, 116, 0.46);
-  border-radius: 0px 0px 0px 23px;
-  z-index: 1;
-}
-
-.vision {
-  width: 97%;
-  height: 93%;
-  position: relative;
-  z-index: 2;
-}
-
 .card {
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  font-size: small;
-  margin: 1em;
   border: none;
 }
 .rounded-rectangle1 {
