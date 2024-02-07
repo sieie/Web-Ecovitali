@@ -320,3 +320,7 @@ a{
 .img-tratamiento {
   max-width: 50px;
 }
+
+.card-body {
+  padding: .5rem;
+}
