@@ -31,3 +31,31 @@ select:focus {
 .btn-secondary {
   border-radius: 0.375rem !important;
 }
+
+/* Estilo para el contenedor del input */
+.file-input-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 200px;
+  cursor: pointer;
+}
+
+/* Estilo para el botón personalizado */
+.custom-file-button {
+  background-color: #B6B6B6;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para el input de archivo oculto */
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}

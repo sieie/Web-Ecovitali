@@ -80,7 +80,12 @@
 }
 
 .p-cards {
-  font-size: 0.8em;
+  font-size: 0.75em;
+}
+
+.card-img-top {
+  max-width: 80px;
+  margin-bottom: 10px;
 }
 
 .btn-manejo-integral {
@@ -96,6 +101,10 @@
   display: inline-block;
   border-radius: 20px;
   border: 8px solid transparent;
+}
+
+span {
+  font-size: .8rem;
 }
 
 .img-svg{
@@ -306,4 +315,8 @@ a{
 
 .img-experto-plagas {
   width: auto !important;
+}
+
+.img-tratamiento {
+  max-width: 50px;
 }

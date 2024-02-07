@@ -45,7 +45,6 @@ export class TrabajaNosotrosComponent {
       fileRaw:file,
       fileName:file.name
     }
-
     console.log(file)
   }
 
